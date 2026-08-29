@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Test in progress — Indian Aeronautics</title>
+<link rel="icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="examRoot">
+
+  <div class="exam-topbar">
+    <div>
+      <div class="brand-name" style="font-size:0.9rem;" id="paperTitle">Paper</div>
+      <div class="exam-progress-label" id="progressLabel"></div>
+    </div>
+    <div class="gauge-wrap">
+      <div class="gauge">
+        <svg width="56" height="56" viewBox="0 0 56 56">
+          <circle class="gauge-track" cx="28" cy="28" r="24" fill="none" stroke-width="5"/>
+          <circle class="gauge-fill" id="gaugeFill" cx="28" cy="28" r="24" fill="none" stroke-width="5"
+            stroke-linecap="round" stroke-dasharray="150.8" stroke-dashoffset="0"/>
+        </svg>
+        <div class="gauge-time" id="gaugeTime">--:--</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="runway" id="runway"></div>
+
+  <div class="exam-body">
+    <div class="section-tag" id="sectionTag"></div>
+    <div class="question-text" id="questionText"></div>
+    <div class="options" id="options"></div>
+  </div>
+
+  <div class="exam-nav">
+    <button class="btn btn-outline" id="prevBtn">Previous</button>
+    <button class="btn btn-primary" id="nextBtn">Next</button>
+    <button class="btn btn-primary" id="submitBtn" style="display:none;">Submit test</button>
+  </div>
+
+</div>
+
+<script src="js/credentials.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/exam.js"></script>
+</body>
+</html>

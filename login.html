@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Student Login — Indian Aeronautics</title>
+<link rel="icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html">
+    <img src="assets/logo.png" alt="Indian Aeronautics logo" />
+    <span class="brand-name">INDIAN AERONAUTICS</span>
+  </a>
+  <a class="btn btn-outline" href="index.html">Back home</a>
+</div>
+
+<div class="center-page">
+  <div class="card narrow" style="width:100%;">
+    <h2 class="panel-title">Student login</h2>
+    <p class="panel-sub">Enter the ID and password you received on WhatsApp. Each login works for one test attempt.</p>
+
+    <div class="form-error" id="loginError"></div>
+
+    <form id="loginForm">
+      <div class="field">
+        <label for="loginId">Login ID</label>
+        <input type="text" id="loginId" autocomplete="username" placeholder="IA-STUDENT-001" required />
+      </div>
+      <div class="field">
+        <label for="loginPass">Password</label>
+        <input type="password" id="loginPass" autocomplete="current-password" required />
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Log in</button>
+    </form>
+
+    <p class="small muted mt-24 text-center">
+      Don't have a login yet? <a id="waLoginLink" href="#" target="_blank" rel="noopener">Message us on WhatsApp</a>.
+    </p>
+  </div>
+</div>
+
+<script src="js/credentials.js"></script>
+<script src="js/auth.js"></script>
+<script>
+  const WA_NUMBER = "919995863184";
+  document.getElementById("waLoginLink").href =
+    `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi, I'd like access to the Indian Aeronautics HAL DT mock test.")}`;
+
+  document.getElementById("loginForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const id = document.getElementById("loginId").value;
+    const pass = document.getElementById("loginPass").value;
+    const errEl = document.getElementById("loginError");
+
+    const result = iaLogin(id, pass);
+    if (result.ok) {
+      window.location.href = "portal.html";
+      return;
+    }
+
+    errEl.classList.add("visible");
+    if (result.reason === "already_used") {
+      errEl.textContent = "This login has already been used to complete a test on this device. Contact your instructor on WhatsApp for help.";
+    } else {
+      errEl.textContent = "That ID or password isn't recognized. Double-check it or contact your instructor on WhatsApp.";
+    }
+  });
+</script>
+</body>
+</html>

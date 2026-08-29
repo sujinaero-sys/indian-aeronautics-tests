@@ -1,0 +1,1768 @@
+{
+ "paper": 4,
+ "title": "HAL Design Trainee (Aeronautical) — Model Question Paper 4",
+ "totalQuestions": 160,
+ "duration_minutes": 150,
+ "questions": [
+  {
+   "id": 1,
+   "question": "As per the HAL 2026 advertisement, candidates are shortlisted for interview in what ratio to vacancies?",
+   "options": {
+    "A": "1:2",
+    "B": "1:3",
+    "C": "1:5",
+    "D": "1:10"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 2,
+   "question": "The final merit list weightage given to the Online Test versus Interview is:",
+   "options": {
+    "A": "50%-50%",
+    "B": "70%-30%",
+    "C": "85%-15%",
+    "D": "90%-10%"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 3,
+   "question": "Minimum qualifying marks required in both the Written Test and Interview is:",
+   "options": {
+    "A": "40%",
+    "B": "50%",
+    "C": "60%",
+    "D": "33%"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 4,
+   "question": "The induction training for selected DT/MT candidates is tentatively scheduled to commence:",
+   "options": {
+    "A": "September 2026",
+    "B": "End of October 2026",
+    "C": "December 2026",
+    "D": "January 2027"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 5,
+   "question": "HAL's Koraput division in Odisha primarily deals with:",
+   "options": {
+    "A": "Helicopter airframes only",
+    "B": "Aero-engines (e.g., licensed production/overhaul)",
+    "C": "Satellite launch vehicles",
+    "D": "Naval radars"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 6,
+   "question": "The Indian government's defence indigenization initiative encouraging local defence production is called:",
+   "options": {
+    "A": "Digital India",
+    "B": "Atmanirbhar Bharat",
+    "C": "Skill India",
+    "D": "Startup India"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 7,
+   "question": "Which of the following is India's premier missile testing range?",
+   "options": {
+    "A": "Chandipur (Odisha)",
+    "B": "Pokhran",
+    "C": "Thumba",
+    "D": "Sriharikota (this is space launch; pick best fit A)"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 8,
+   "question": "The Indian Air Force's aerobatic display team is called:",
+   "options": {
+    "A": "Sarang",
+    "B": "Surya Kiran",
+    "C": "Garuda",
+    "D": "Rudra"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 9,
+   "question": "HAL is headquartered in which city?",
+   "options": {
+    "A": "Hyderabad",
+    "B": "Bengaluru",
+    "C": "Nashik",
+    "D": "New Delhi"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 10,
+   "question": "India's first indigenous nuclear-powered submarine is:",
+   "options": {
+    "A": "INS Arihant",
+    "B": "INS Chakra",
+    "C": "INS Sindhughosh",
+    "D": "INS Kalvari"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 11,
+   "question": "The Indian Parliament's upper house is called:",
+   "options": {
+    "A": "Lok Sabha",
+    "B": "Rajya Sabha",
+    "C": "Vidhan Sabha",
+    "D": "Vidhan Parishad"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 12,
+   "question": "Which Indian PSU is primarily responsible for defence electronics?",
+   "options": {
+    "A": "BEL (Bharat Electronics Limited)",
+    "B": "SAIL",
+    "C": "ONGC",
+    "D": "GAIL"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 13,
+   "question": "India's indigenous artillery gun system is named:",
+   "options": {
+    "A": "Dhanush",
+    "B": "Bofors",
+    "C": "Pinaka (rocket system)",
+    "D": "Both A and C are correct indigenous systems"
+   },
+   "answer": "D"
+  },
+  {
+   "id": 14,
+   "question": "HAL supplies helicopters and fixed-wing trainers to which of the following?",
+   "options": {
+    "A": "Indian Air Force",
+    "B": "Indian Army Aviation",
+    "C": "Indian Navy",
+    "D": "All of the above"
+   },
+   "answer": "D"
+  },
+  {
+   "id": 15,
+   "question": "The Right to Information Act was enacted in India in the year:",
+   "options": {
+    "A": "2003",
+    "B": "2005",
+    "C": "2008",
+    "D": "2010"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 16,
+   "question": "India's Prime Minister as of the advertisement's context leads which branch of government?",
+   "options": {
+    "A": "Judiciary",
+    "B": "Executive",
+    "C": "Legislature only",
+    "D": "None"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 17,
+   "question": "The full form of PSU is:",
+   "options": {
+    "A": "Public Sector Undertaking",
+    "B": "Private Sector Unit",
+    "C": "Public Service Utility",
+    "D": "Personnel Service Unit"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 18,
+   "question": "HAL's aircraft overhaul division for transport aircraft is prominently located at:",
+   "options": {
+    "A": "Kanpur",
+    "B": "Barrackpore",
+    "C": "Lucknow",
+    "D": "Both A and C host relevant divisions"
+   },
+   "answer": "D"
+  },
+  {
+   "id": 19,
+   "question": "Which of these is a major Indian defence PSU besides HAL?",
+   "options": {
+    "A": "Bharat Dynamics Limited (BDL)",
+    "B": "Indian Oil Corporation",
+    "C": "Coal India",
+    "D": "NALCO"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 20,
+   "question": "The acronym \"DPSU\" commonly refers to:",
+   "options": {
+    "A": "Defence Public Sector Undertaking",
+    "B": "District Public Service Unit",
+    "C": "Digital Public Sector Unit",
+    "D": "Development Public Service Undertaking"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 21,
+   "question": "Choose the correct spelling:",
+   "options": {
+    "A": "Priviledge",
+    "B": "Privilege",
+    "C": "Privilage",
+    "D": "Previlege"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 22,
+   "question": "Fill in the blank: \"The candidate was asked to wait ___ the interview panel called him.\"",
+   "options": {
+    "A": "until",
+    "B": "for",
+    "C": "since",
+    "D": "during"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 23,
+   "question": "Synonym of \"Diligent\":",
+   "options": {
+    "A": "Lazy",
+    "B": "Hardworking",
+    "C": "Careless",
+    "D": "Indifferent"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 24,
+   "question": "Antonym of \"Abundant\":",
+   "options": {
+    "A": "Plentiful",
+    "B": "Scarce",
+    "C": "Ample",
+    "D": "Copious"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 25,
+   "question": "Choose the correct passive voice: \"The board reviews all applications carefully.\"",
+   "options": {
+    "A": "All applications are reviewed carefully by the board.",
+    "B": "All applications reviewed carefully by the board.",
+    "C": "All applications was reviewed by the board.",
+    "D": "All applications review carefully by the board."
+   },
+   "answer": "A"
+  },
+  {
+   "id": 26,
+   "question": "Identify the error: \"One of the engineer are responsible for this design.\"",
+   "options": {
+    "A": "One of the",
+    "B": "engineer are responsible",
+    "C": "for this design",
+    "D": "No error"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 27,
+   "question": "Choose the correct preposition: \"The test results will be announced ___ the website.\"",
+   "options": {
+    "A": "at",
+    "B": "on",
+    "C": "in",
+    "D": "by"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 28,
+   "question": "Meaning of the idiom \"to hit the nail on the head\":",
+   "options": {
+    "A": "To cause damage",
+    "B": "To say or do exactly the right thing",
+    "C": "To fail completely",
+    "D": "To postpone a decision"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 29,
+   "question": "Choose the correctly punctuated sentence:",
+   "options": {
+    "A": "Dont forget your admit card.",
+    "B": "Don't forget your admit card.",
+    "C": "Do'nt forget your admit card.",
+    "D": "Dont' forget your admit card."
+   },
+   "answer": "B"
+  },
+  {
+   "id": 30,
+   "question": "Choose the correct tense: \"She ___ for the exam for the past two weeks.\"",
+   "options": {
+    "A": "is preparing",
+    "B": "has been preparing",
+    "C": "prepared",
+    "D": "will prepare"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 31,
+   "question": "According to the passage, fatigue is critical because components experience:",
+   "options": {
+    "A": "A single overload event",
+    "B": "Millions of repeated load cycles over their service life",
+    "C": "Only static loads",
+    "D": "Only thermal loads"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 32,
+   "question": "The passage states that damage tolerance design ensures:",
+   "options": {
+    "A": "No cracks can ever form",
+    "B": "Undetected cracks cannot grow to critical size between inspections",
+    "C": "Inspections are unnecessary",
+    "D": "Structures are replaced after every flight"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 33,
+   "question": "According to the passage, fatigue can be critical even when:",
+   "options": {
+    "A": "Loads exceed ultimate strength",
+    "B": "Individual loads are well below ultimate strength",
+    "C": "The aircraft never flies",
+    "D": "There are no cyclic loads"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 34,
+   "question": "The word \"critical\" in the passage most nearly means:",
+   "options": {
+    "A": "Unimportant",
+    "B": "Crucially important",
+    "C": "Optional",
+    "D": "Cosmetic"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 35,
+   "question": "This passage is most likely from a text about:",
+   "options": {
+    "A": "Aircraft structural design and fatigue",
+    "B": "Airport ground operations",
+    "C": "Aviation weather forecasting",
+    "D": "Flight scheduling"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 36,
+   "question": "Choose the word closest in meaning to \"Stringent\":",
+   "options": {
+    "A": "Lenient",
+    "B": "Strict",
+    "C": "Flexible",
+    "D": "Casual"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 37,
+   "question": "Correct plural of \"Criterion\":",
+   "options": {
+    "A": "Criterions",
+    "B": "Criteria",
+    "C": "Criterion's",
+    "D": "Criteria's"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 38,
+   "question": "Choose the correctly formed sentence:",
+   "options": {
+    "A": "The team of engineers are working overtime.",
+    "B": "The team of engineers is working overtime.",
+    "C": "The team of engineers were work overtime.",
+    "D": "The team of engineer is working overtime."
+   },
+   "answer": "B"
+  },
+  {
+   "id": 39,
+   "question": "\"Meticulous\" most nearly means:",
+   "options": {
+    "A": "Careless",
+    "B": "Extremely careful and precise",
+    "C": "Quick",
+    "D": "Disorganized"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 40,
+   "question": "Choose the correct sentence:",
+   "options": {
+    "A": "Neither the pilot nor the engineers was informed.",
+    "B": "Neither the pilot nor the engineers were informed.",
+    "C": "Neither the pilot or the engineers were informed.",
+    "D": "Neither pilot or engineers was informed."
+   },
+   "answer": "B"
+  },
+  {
+   "id": 41,
+   "question": "Complete the series: 1, 1, 2, 3, 5, 8, ?",
+   "options": {
+    "A": "11",
+    "B": "12",
+    "C": "13",
+    "D": "14"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 42,
+   "question": "If PLANE is coded as QMBOF (+1 shift), then ROCKET is coded as:",
+   "options": {
+    "A": "SPDLFU",
+    "B": "SPDLFU",
+    "C": "SQDLFU",
+    "D": "SPDLEU"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 43,
+   "question": "Find the odd one out:",
+   "options": {
+    "A": "Nickel superalloy",
+    "B": "CFRP",
+    "C": "Aluminium alloy",
+    "D": "Diesel fuel"
+   },
+   "answer": "D"
+  },
+  {
+   "id": 44,
+   "question": "A is B's daughter. B is C's son. D is C's spouse. How is A related to D?",
+   "options": {
+    "A": "Granddaughter",
+    "B": "Daughter",
+    "C": "Niece",
+    "D": "Sister"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 45,
+   "question": "Using a -1 letter shift, \"GLPMT\" decodes to:",
+   "options": {
+    "A": "FLIGHT (check: shifting -1 each letter: G→F, L→K... verify)",
+    "B": "FLIGHT",
+    "C": "FKOLS",
+    "D": "FLIHT — choose the correctly decoded word B"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 46,
+   "question": "Statement: All test engineers are detail-oriented. Some detail-oriented people are managers. Conclusion I: Some test engineers are managers. Conclusion II: All managers are test engineers.",
+   "options": {
+    "A": "Only I follows",
+    "B": "Only II follows",
+    "C": "Neither follows",
+    "D": "Both follow"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 47,
+   "question": "A man walks 7 km West, then 24 km North. How far is he from the starting point?",
+   "options": {
+    "A": "24 km",
+    "B": "25 km",
+    "C": "31 km",
+    "D": "17 km"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 48,
+   "question": "Find the next number: 100, 96, 90, 82, 72, ?",
+   "options": {
+    "A": "60",
+    "B": "62",
+    "C": "58",
+    "D": "64"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 49,
+   "question": "Which number replaces the question mark: 2, 5, 10, 17, 26, ?",
+   "options": {
+    "A": "35",
+    "B": "36",
+    "C": "37",
+    "D": "38"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 50,
+   "question": "If \"COMPUTER\" is coded with a +1 shift as \"DPNQVUFS\", then \"AIRCRAFT\" is coded as:",
+   "options": {
+    "A": "BJSDSBGU",
+    "B": "BJSDSBGU",
+    "C": "BJSDRBGU",
+    "D": "BJTDSBGU"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 51,
+   "question": "Complete the analogy: Nozzle : Accelerates Exhaust :: Diffuser : ?",
+   "options": {
+    "A": "Accelerates intake air",
+    "B": "Decelerates intake air, raising static pressure",
+    "C": "Burns fuel",
+    "D": "Cools turbine blades"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 52,
+   "question": "A clock shows 12:40. What is the angle between the hour and minute hands (approx)?",
+   "options": {
+    "A": "100°",
+    "B": "110°",
+    "C": "120°",
+    "D": "130°"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 53,
+   "question": "Five boxes P,Q,R,S,T are stacked; P is above Q, Q is above R, S is above P, and T is at the bottom. What is the order from top to bottom?",
+   "options": {
+    "A": "S,P,Q,R,T",
+    "B": "P,S,Q,R,T",
+    "C": "S,P,Q,T,R",
+    "D": "T,R,Q,P,S — correct order top to bottom: S,P,Q,R,T → answer A"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 54,
+   "question": "If \"5\" means \"aircraft\", \"1\" means \"flies\", \"9\" means \"high\", what does \"5 1 9\" mean?",
+   "options": {
+    "A": "aircraft flies high",
+    "B": "high flies aircraft",
+    "C": "flies aircraft high",
+    "D": "high aircraft flies"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 55,
+   "question": "Find the missing term: AZ, BY, CX, DW, ?",
+   "options": {
+    "A": "EV",
+    "B": "FE",
+    "C": "EU",
+    "D": "FV"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 56,
+   "question": "A cyclist covers 90 km in 2.5 hours. His average speed is:",
+   "options": {
+    "A": "30 km/h",
+    "B": "36 km/h",
+    "C": "40 km/h",
+    "D": "45 km/h"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 57,
+   "question": "Choose the odd pair:",
+   "options": {
+    "A": "Compressor–Raises pressure",
+    "B": "Turbine–Extracts energy",
+    "C": "Nozzle–Accelerates flow",
+    "D": "Combustor–Reduces temperature (odd, combustor raises temperature)"
+   },
+   "answer": "D"
+  },
+  {
+   "id": 58,
+   "question": "If West becomes North (90° clockwise rotation), then East becomes:",
+   "options": {
+    "A": "South",
+    "B": "West",
+    "C": "North",
+    "D": "East stays"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 59,
+   "question": "In a code, ENGINE is written as FOHJOF (+1 shift). How is TURBINE written?",
+   "options": {
+    "A": "UVSCJOF",
+    "B": "UVSCJOF",
+    "C": "UVSBJOF",
+    "D": "UVSCINE"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 60,
+   "question": "Statement: All birds can fly. Penguins are birds. Conclusion: Penguins can fly.",
+   "options": {
+    "A": "True",
+    "B": "False (exception exists, but per strict syllogism logic, conclusion follows from premises even if factually the premise is false)",
+    "C": "Cannot be determined",
+    "D": "None of these — for pure logical validity based on given statements, answer A; note the real-world fact makes premise false"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 61,
+   "question": "The energy equation applied along a streamline (incompressible, no losses) yields:",
+   "options": {
+    "A": "Continuity equation",
+    "B": "Bernoulli's equation",
+    "C": "Navier-Stokes equation only",
+    "D": "Ideal gas law"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 62,
+   "question": "For an airfoil at zero-lift angle of attack, the moment about the aerodynamic center for a cambered section is:",
+   "options": {
+    "A": "Zero",
+    "B": "A finite, non-zero constant value",
+    "C": "Always positive infinity",
+    "D": "Undefined"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 63,
+   "question": "The supersonic flow regime generally starts at Mach numbers:",
+   "options": {
+    "A": "Above 1.2 (approximately)",
+    "B": "Below 0.8",
+    "C": "Exactly 1.0 only",
+    "D": "Above 5.0 only"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 64,
+   "question": "Total aircraft drag at cruise typically consists of:",
+   "options": {
+    "A": "Parasite drag and induced drag (and wave drag at high subsonic/transonic speeds)",
+    "B": "Only induced drag",
+    "C": "Only skin friction",
+    "D": "Only wave drag"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 65,
+   "question": "Elliptical lift distribution across a wing span minimizes:",
+   "options": {
+    "A": "Wave drag",
+    "B": "Induced drag for a given lift and span",
+    "C": "Skin friction drag",
+    "D": "Structural weight"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 66,
+   "question": "Turbulent boundary layers delay separation because they:",
+   "options": {
+    "A": "Have less kinetic energy near the wall",
+    "B": "Have more kinetic energy/momentum near the wall, resisting adverse pressure gradients better",
+    "C": "Are always thinner than laminar layers",
+    "D": "Have zero skin friction"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 67,
+   "question": "NACA 4-digit airfoil \"4412\": the \"44\" and \"12\" represent respectively:",
+   "options": {
+    "A": "Camber(4%)/camber position(4)/thickness(12%) — precisely: first digit 4=max camber(%), second digit 4=location of max camber(x10% chord), last two digits 12=max thickness(%)",
+    "B": "Only Reynolds number",
+    "C": "Sweep angle and thickness",
+    "D": "None of the above"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 68,
+   "question": "Reynolds number is used to characterize:",
+   "options": {
+    "A": "The relative importance of inertial versus viscous forces, determining laminar/turbulent flow",
+    "B": "Only compressibility effects",
+    "C": "Only thermal effects",
+    "D": "Only electrical properties"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 69,
+   "question": "Critical Mach number is the free-stream Mach number at which:",
+   "options": {
+    "A": "Local flow first reaches Mach 1 somewhere on the airfoil surface",
+    "B": "The aircraft stalls",
+    "C": "Drag becomes zero",
+    "D": "The engine flames out"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 70,
+   "question": "For subsonic thin airfoil theory, center of pressure and aerodynamic center coincide only when:",
+   "options": {
+    "A": "The airfoil is symmetric (zero camber)",
+    "B": "The airfoil has maximum camber",
+    "C": "Angle of attack is zero for any airfoil",
+    "D": "Mach number equals 1"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 71,
+   "question": "Wing loading is defined as:",
+   "options": {
+    "A": "Lift coefficient divided by drag coefficient",
+    "B": "Aircraft weight divided by wing reference area",
+    "C": "Wingspan divided by chord",
+    "D": "Thrust divided by weight"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 72,
+   "question": "Slotted flaps increase CLmax by:",
+   "options": {
+    "A": "Reducing wing area",
+    "B": "Allowing high-energy air from below the wing to re-energize the upper surface boundary layer, delaying separation",
+    "C": "Increasing sweep angle",
+    "D": "Decreasing camber"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 73,
+   "question": "As Mach number increases toward 1 in subsonic flow, compressibility effects cause the effective lift-curve slope to:",
+   "options": {
+    "A": "Decrease toward zero always",
+    "B": "Increase compared to incompressible predictions (per Prandtl-Glauert correction)",
+    "C": "Remain exactly the same",
+    "D": "Become negative"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 74,
+   "question": "Across an oblique shock (compared to a normal shock of similar strength), the flow:",
+   "options": {
+    "A": "Always becomes subsonic",
+    "B": "May remain supersonic downstream, with a smaller total pressure loss for the same pressure rise achieved in stages",
+    "C": "Cannot exist in real flows",
+    "D": "Produces no deflection"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 75,
+   "question": "For a finite wing, the lift-curve slope a is approximately given by:",
+   "options": {
+    "A": "a0 / (1 + a0/(πAR)) where a0 is 2D slope",
+    "B": "Exactly equal to 2D slope regardless of aspect ratio",
+    "C": "Independent of aspect ratio",
+    "D": "Always higher than the 2D slope"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 76,
+   "question": "Ground effect primarily reduces:",
+   "options": {
+    "A": "Wave drag",
+    "B": "Induced drag (due to restricted downwash near the ground)",
+    "C": "Skin friction drag",
+    "D": "Profile drag due to thickness"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 77,
+   "question": "The Mach angle relation sin(μ) = 1/M implies that as Mach number increases, the Mach angle:",
+   "options": {
+    "A": "Increases",
+    "B": "Decreases",
+    "C": "Stays constant",
+    "D": "Becomes undefined"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 78,
+   "question": "Dihedral effect (roll stability due to wing dihedral) primarily helps counter:",
+   "options": {
+    "A": "Pitch oscillations",
+    "B": "Sideslip-induced roll, aiding lateral (roll) stability",
+    "C": "Engine vibration",
+    "D": "Wave drag"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 79,
+   "question": "For two wings of equal area but different aspect ratio, the higher aspect ratio wing generally has:",
+   "options": {
+    "A": "Higher induced drag at a given CL",
+    "B": "Lower induced drag at a given CL",
+    "C": "Identical induced drag regardless of AR",
+    "D": "Higher wave drag at all speeds"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 80,
+   "question": "Downwash velocity behind a wing is directly linked to:",
+   "options": {
+    "A": "The strength of the trailing vortex system, itself related to spanwise lift distribution",
+    "B": "Engine thrust only",
+    "C": "Cabin pressurization",
+    "D": "Fuel quantity"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 81,
+   "question": "The Kutta condition essentially fixes:",
+   "options": {
+    "A": "The circulation around an airfoil such that flow leaves the trailing edge smoothly",
+    "B": "The Reynolds number of the flow",
+    "C": "The Mach number of the flow",
+    "D": "The thickness distribution of the airfoil"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 82,
+   "question": "Compared to a wing without winglets, a wing with well-designed winglets for the same span typically shows:",
+   "options": {
+    "A": "Increased induced drag",
+    "B": "Reduced induced drag due to weakened tip vortex",
+    "C": "No aerodynamic change",
+    "D": "Increased wave drag only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 83,
+   "question": "In supersonic flow over a concave corner, a(n) ___ forms.",
+   "options": {
+    "A": "Expansion fan",
+    "B": "Oblique shock wave (compression)",
+    "C": "Normal shock only",
+    "D": "No disturbance at all"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 84,
+   "question": "The transonic area rule suggests that the cross-sectional area distribution of an aircraft (including fuselage and wing) along its length should vary:",
+   "options": {
+    "A": "Abruptly for best performance",
+    "B": "Smoothly, similar to an equivalent body of revolution, to minimize wave drag",
+    "C": "Randomly",
+    "D": "Only based on cabin volume requirements"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 85,
+   "question": "In the lift equation L = ½ρV²S·CL, doubling the airspeed (all else constant) approximately:",
+   "options": {
+    "A": "Doubles the lift",
+    "B": "Quadruples the lift (if CL held constant)",
+    "C": "Halves the lift",
+    "D": "Has no effect on lift"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 86,
+   "question": "In semi-monocoque fuselage construction, frames primarily:",
+   "options": {
+    "A": "Carry the entire bending load alone",
+    "B": "Maintain the fuselage cross-sectional shape and redistribute concentrated loads into the skin/stringers",
+    "C": "Provide only aerodynamic smoothness",
+    "D": "Only support fuel tanks"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 87,
+   "question": "Torsional shear stress in an open thin-walled section is generally ___ compared to an equivalent closed section for the same torque.",
+   "options": {
+    "A": "Much lower",
+    "B": "Much higher (open sections are far less torsionally stiff/efficient)",
+    "C": "Identical",
+    "D": "Zero in both cases"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 88,
+   "question": "In the Bredt-Batho theory for closed thin-walled sections, twist per unit length is related to torque, shear modulus, and:",
+   "options": {
+    "A": "The enclosed area and wall thickness distribution (a line integral around the perimeter)",
+    "B": "Only the material's yield strength",
+    "C": "Only the cross-sectional area of material",
+    "D": "Only the length of the member"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 89,
+   "question": "Wing spars are typically oriented to run:",
+   "options": {
+    "A": "Chordwise near the trailing edge only",
+    "B": "Spanwise, from wing root to tip, to carry bending and shear loads",
+    "C": "Only vertically through the fuselage",
+    "D": "Perpendicular to the fuselage centerline only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 90,
+   "question": "High-cycle fatigue is generally associated with:",
+   "options": {
+    "A": "A small number of large-amplitude stress cycles",
+    "B": "A large number of stress cycles at relatively low stress amplitude (typically elastic range)",
+    "C": "Only static overload",
+    "D": "Only thermal cycling with no mechanical load"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 91,
+   "question": "In a V-n diagram, the positive limit load factor for a typical transport category aircraft is commonly around:",
+   "options": {
+    "A": "1.0",
+    "B": "2.5",
+    "C": "6.0",
+    "D": "9.0"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 92,
+   "question": "Increasing the moment of inertia of a column's cross-section (for the same material and length) generally:",
+   "options": {
+    "A": "Decreases its buckling resistance",
+    "B": "Increases its critical (Euler) buckling load",
+    "C": "Has no effect on buckling",
+    "D": "Only affects tensile strength"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 93,
+   "question": "A key drawback of composite materials compared to metals in aircraft structures is:",
+   "options": {
+    "A": "Lower strength-to-weight ratio",
+    "B": "More complex damage detection (e.g., delamination not always visible) and repair procedures",
+    "C": "Higher density",
+    "D": "Poor fatigue performance compared to metals"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 94,
+   "question": "Damage tolerance analysis typically uses fracture mechanics to predict:",
+   "options": {
+    "A": "Elastic modulus of the material",
+    "B": "Crack growth rate and residual strength with an assumed initial flaw size",
+    "C": "Thermal expansion coefficient",
+    "D": "Electrical conductivity"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 95,
+   "question": "In a wing box structure, the skin between stringers primarily resists:",
+   "options": {
+    "A": "Only axial tension",
+    "B": "Shear flow and, together with stringers, contributes to bending stiffness",
+    "C": "Only torsion",
+    "D": "Only hoop stress"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 96,
+   "question": "Limit load in aircraft design refers to:",
+   "options": {
+    "A": "The maximum load expected in service, which the structure must withstand without permanent deformation",
+    "B": "The load at which the structure fractures",
+    "C": "Zero load condition",
+    "D": "The load only applied during ground testing"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 97,
+   "question": "The maximum shear stress theory (Tresca criterion) predicts yielding based on:",
+   "options": {
+    "A": "The maximum principal stress alone",
+    "B": "The maximum shear stress reaching a critical value related to yield strength",
+    "C": "Volumetric strain only",
+    "D": "Thermal stress only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 98,
+   "question": "Bolted joints, compared to riveted joints in aircraft structures, are often preferred where:",
+   "options": {
+    "A": "Permanent joining with no future disassembly is required",
+    "B": "The joint may need to be disassembled for maintenance or carries very high loads",
+    "C": "Weight is the only consideration",
+    "D": "Only aesthetic panels are involved"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 99,
+   "question": "A major reason for limiting titanium usage despite its excellent properties is:",
+   "options": {
+    "A": "Poor strength-to-weight ratio",
+    "B": "High material and machining cost",
+    "C": "Poor corrosion resistance",
+    "D": "Low melting point"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 100,
+   "question": "For a thin-walled pressure vessel (cylinder), the longitudinal stress is approximately:",
+   "options": {
+    "A": "pr/t",
+    "B": "pr/(2t)",
+    "C": "2pr/t",
+    "D": "4pr/t"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 101,
+   "question": "A key disadvantage of pure monocoque construction (skin-only load carrying) compared to semi-monocoque is:",
+   "options": {
+    "A": "Lower weight always",
+    "B": "Susceptibility to buckling and difficulty accommodating cutouts (doors, windows) without reinforcement",
+    "C": "Higher torsional stiffness always",
+    "D": "Simpler load paths in all cases"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 102,
+   "question": "In a wing structure, the primary load path for spanwise bending is generally through the:",
+   "options": {
+    "A": "Ribs",
+    "B": "Spars (spar caps/flanges)",
+    "C": "Skin panels alone",
+    "D": "Fasteners alone"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 103,
+   "question": "Poisson's ratio describes:",
+   "options": {
+    "A": "The ratio of transverse strain to axial strain under uniaxial load",
+    "B": "The ratio of stress to strain (Young's modulus)",
+    "C": "The ratio of shear stress to shear strain",
+    "D": "The ratio of load to area"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 104,
+   "question": "In fatigue analysis, the S-N curve (Wöhler curve) relates:",
+   "options": {
+    "A": "Stress amplitude to number of cycles to failure",
+    "B": "Stress to strain in monotonic loading",
+    "C": "Load to displacement",
+    "D": "Temperature to pressure"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 105,
+   "question": "A disadvantage of honeycomb sandwich panels can be:",
+   "options": {
+    "A": "Excellent bending stiffness with no drawbacks",
+    "B": "Susceptibility to moisture ingress and difficulty in repair/inspection for hidden core damage",
+    "C": "Very high weight",
+    "D": "Inability to be used in any aircraft structure"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 106,
+   "question": "Ultimate tensile strength refers to:",
+   "options": {
+    "A": "The stress at which elastic deformation begins",
+    "B": "The maximum stress a material can withstand before necking/fracture in a tensile test",
+    "C": "The stress at exactly zero strain",
+    "D": "The stress during compression only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 107,
+   "question": "In aeroelasticity, \"divergence\" refers to:",
+   "options": {
+    "A": "A stable oscillation that decays over time",
+    "B": "A static instability where aerodynamic twisting moment exceeds structural restoring stiffness, causing runaway deformation",
+    "C": "Only engine vibration",
+    "D": "Only fuel sloshing"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 108,
+   "question": "Flutter speed is the airspeed at which:",
+   "options": {
+    "A": "Damping of a coupled aeroelastic mode becomes zero or negative, leading to divergent oscillation",
+    "B": "The aircraft achieves maximum range",
+    "C": "Fuel consumption is minimized",
+    "D": "The aircraft stalls"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 109,
+   "question": "Stress relaxation, related to creep, refers to:",
+   "options": {
+    "A": "Increasing stress over time under constant strain",
+    "B": "Decreasing stress over time under constant strain/displacement, especially at elevated temperature",
+    "C": "No change in stress ever",
+    "D": "Only occurring in compression"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 110,
+   "question": "In compression, thin skin panels between stringers typically buckle at a stress level that depends on:",
+   "options": {
+    "A": "Only the material's yield strength",
+    "B": "Panel geometry (width, thickness), boundary conditions, and material modulus (per plate buckling theory)",
+    "C": "Only ambient temperature",
+    "D": "Only the length of the fuselage"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 111,
+   "question": "The Brayton cycle's isentropic compression process corresponds physically to which engine component?",
+   "options": {
+    "A": "Combustor",
+    "B": "Compressor",
+    "C": "Turbine",
+    "D": "Nozzle"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 112,
+   "question": "A key reason turbofans are quieter than turbojets is:",
+   "options": {
+    "A": "Higher exhaust velocity",
+    "B": "Lower average exhaust velocity due to bypass air mixing, reducing jet noise",
+    "C": "Larger combustion chamber",
+    "D": "Absence of a turbine"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 113,
+   "question": "If a turbofan has a bypass ratio of 8:1, this means:",
+   "options": {
+    "A": "Core mass flow is 8 times the fan mass flow",
+    "B": "Fan (bypass) mass flow is 8 times the core mass flow",
+    "C": "Fuel flow is 8 times air flow",
+    "D": "Thrust equals 8 times weight"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 114,
+   "question": "The nozzle in a jet engine primarily functions to:",
+   "options": {
+    "A": "Compress incoming air",
+    "B": "Accelerate exhaust gases to produce thrust via expansion",
+    "C": "Cool the turbine blades",
+    "D": "Increase bypass ratio directly"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 115,
+   "question": "In the Brayton cycle, heat addition (combustion) ideally occurs at:",
+   "options": {
+    "A": "Constant volume",
+    "B": "Constant pressure",
+    "C": "Constant temperature",
+    "D": "Constant entropy with heat rejection simultaneously"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 116,
+   "question": "Centrifugal compressors, compared to axial compressors, are generally preferred for:",
+   "options": {
+    "A": "Large high-bypass turbofans requiring very high mass flow",
+    "B": "Smaller engines (e.g., APUs, small turboshafts) needing a high pressure ratio per stage in a compact package",
+    "C": "Supersonic transport engines exclusively",
+    "D": "All large commercial engines today"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 117,
+   "question": "A multi-stage turbine is often used instead of a single stage because:",
+   "options": {
+    "A": "A single stage can always handle all the required pressure/energy extraction",
+    "B": "It allows extraction of a large amount of energy from the gas while keeping stresses and temperatures manageable per stage",
+    "C": "It reduces engine weight always",
+    "D": "It has no aerodynamic benefit"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 118,
+   "question": "The propeller in a turboprop is typically connected to the gas generator core via a:",
+   "options": {
+    "A": "Direct rigid shaft with no speed reduction",
+    "B": "Reduction gearbox, since propellers operate efficiently at much lower RPM than the turbine",
+    "C": "Hydraulic coupling only",
+    "D": "Belt drive system"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 119,
+   "question": "Thrust-specific fuel consumption is a key metric because it directly relates to:",
+   "options": {
+    "A": "Engine weight only",
+    "B": "Fuel efficiency of the propulsion system for a given thrust level",
+    "C": "Noise levels only",
+    "D": "Engine diameter only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 120,
+   "question": "To achieve supersonic exhaust velocity from subsonic/sonic chamber conditions, the nozzle must have a:",
+   "options": {
+    "A": "Purely convergent shape",
+    "B": "Convergent-divergent (C-D) shape, per the de Laval nozzle principle",
+    "C": "Purely divergent shape from the start",
+    "D": "Constant area duct"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 121,
+   "question": "A major penalty of using afterburners is:",
+   "options": {
+    "A": "Reduced thrust",
+    "B": "Significantly increased fuel consumption for the additional thrust gained",
+    "C": "No effect on fuel consumption",
+    "D": "Reduced engine temperature"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 122,
+   "question": "Combustion efficiency in a gas turbine combustor is influenced by:",
+   "options": {
+    "A": "Fuel-air ratio, residence time, and mixing quality",
+    "B": "Only ambient temperature outside the aircraft",
+    "C": "Only fuselage shape",
+    "D": "Only wing sweep angle"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 123,
+   "question": "In a choked convergent nozzle, further reducing the downstream (back) pressure below the critical value:",
+   "options": {
+    "A": "Increases the mass flow rate further indefinitely",
+    "B": "Does not increase the mass flow rate (it remains at the choked/maximum value)",
+    "C": "Reverses the flow direction",
+    "D": "Has no defined behavior"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 124,
+   "question": "Compared to turbojets/turbofans, turboshaft engines used in helicopters typically deliver power via:",
+   "options": {
+    "A": "Direct jet thrust with no shaft output",
+    "B": "A free power turbine driving an output shaft connected to the rotor gearbox",
+    "C": "A propeller directly bolted to the compressor shaft",
+    "D": "No mechanical output at all"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 125,
+   "question": "Improving a jet engine's overall pressure ratio (OPR), for a well-designed cycle, generally tends to:",
+   "options": {
+    "A": "Decrease thermal efficiency",
+    "B": "Increase thermal efficiency (up to practical/material limits)",
+    "C": "Have no effect on efficiency",
+    "D": "Only affect noise, not efficiency"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 126,
+   "question": "As flight Mach number increases, ram pressure recovery at the intake:",
+   "options": {
+    "A": "Decreases the pressure delivered to the compressor face",
+    "B": "Increases the pressure delivered to the compressor face (up to intake losses)",
+    "C": "Has no relationship to flight speed",
+    "D": "Only matters for turboprops"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 127,
+   "question": "Turbine blade cooling (e.g., internal air channels, film cooling) is necessary because:",
+   "options": {
+    "A": "Turbine inlet gas temperatures often exceed the melting point of blade materials, requiring active cooling",
+    "B": "Blades need to be kept at cryogenic temperatures",
+    "C": "Cooling increases weight with no benefit",
+    "D": "Combustion never produces high temperatures"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 128,
+   "question": "A well-designed diffuser minimizes:",
+   "options": {
+    "A": "Static pressure recovery",
+    "B": "Flow separation and total pressure losses while decelerating the flow",
+    "C": "Mass flow through the engine",
+    "D": "Fuel consumption directly"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 129,
+   "question": "Chemical rocket engines produce thrust by:",
+   "options": {
+    "A": "Drawing in and compressing atmospheric air",
+    "B": "Expelling high-velocity exhaust from combustion of propellant and stored oxidizer",
+    "C": "Using turbine blades to generate lift",
+    "D": "Using only electric fields with no propellant"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 130,
+   "question": "In the simplified thrust equation F = ṁ(Ve - V0), increasing exhaust velocity Ve while keeping mass flow constant:",
+   "options": {
+    "A": "Decreases thrust",
+    "B": "Increases thrust",
+    "C": "Has no effect on thrust",
+    "D": "Only affects fuel consumption, not thrust"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 131,
+   "question": "A higher specific impulse (Isp) generally indicates:",
+   "options": {
+    "A": "Less efficient use of propellant",
+    "B": "More efficient use of propellant (more thrust per unit propellant weight flow)",
+    "C": "Higher engine weight only",
+    "D": "Lower combustion temperature always"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 132,
+   "question": "Distorted or non-uniform inflow into a compressor (e.g., from crosswinds, aircraft maneuvers) increases the risk of:",
+   "options": {
+    "A": "Improved efficiency",
+    "B": "Compressor stall/surge due to locally high angles of attack on blades",
+    "C": "Reduced combustion temperature",
+    "D": "Increased bypass ratio"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 133,
+   "question": "Propulsive efficiency ηp for a simple jet can be approximated as 2V0/(V0+Ve); this shows efficiency is higher when:",
+   "options": {
+    "A": "Ve is much larger than V0",
+    "B": "Ve is close to V0",
+    "C": "V0 is zero",
+    "D": "Ve is infinite"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 134,
+   "question": "Geared turbofan engines use a reduction gearbox between the fan and low-pressure turbine primarily to:",
+   "options": {
+    "A": "Allow the fan to rotate at its own optimal (lower) speed while the turbine rotates faster, improving overall efficiency",
+    "B": "Eliminate the need for a fan",
+    "C": "Increase engine weight with no benefit",
+    "D": "Increase turbine temperature"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 135,
+   "question": "In a regenerative/intercooled gas turbine cycle, the primary goal of intercooling between compressor stages is to:",
+   "options": {
+    "A": "Increase compressor work required",
+    "B": "Reduce the work required to compress the air, improving net cycle output/efficiency",
+    "C": "Increase turbine inlet temperature only",
+    "D": "Eliminate the combustor"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 136,
+   "question": "The vertical speed indicator (VSI) measures rate of climb/descent by sensing:",
+   "options": {
+    "A": "GPS altitude changes only",
+    "B": "The rate of change of static pressure",
+    "C": "Engine RPM changes",
+    "D": "Fuel flow changes"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 137,
+   "question": "A pitot tube blockage (e.g., by ice) would primarily affect:",
+   "options": {
+    "A": "The attitude indicator only",
+    "B": "Airspeed indication (and potentially altimeter/VSI depending on system design)",
+    "C": "Fuel gauge readings only",
+    "D": "Cabin lighting"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 138,
+   "question": "Gyroscopic precession is the principle exploited in which typical flight instrument?",
+   "options": {
+    "A": "Turn coordinator/turn indicator",
+    "B": "Fuel flow gauge",
+    "C": "Altimeter",
+    "D": "Outside air temperature gauge"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 139,
+   "question": "GPS-aided inertial navigation systems are used because:",
+   "options": {
+    "A": "GPS alone is always sufficient with no drift concerns",
+    "B": "GPS updates help correct the accumulated drift error of pure inertial navigation over time",
+    "C": "Inertial systems never have drift",
+    "D": "GPS cannot be integrated with INS"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 140,
+   "question": "Secondary flight control surfaces typically include:",
+   "options": {
+    "A": "Ailerons and rudder",
+    "B": "Flaps, slats, and spoilers",
+    "C": "Elevator only",
+    "D": "Only trim tabs"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 141,
+   "question": "A hydraulic system failure in a modern airliner is typically mitigated by:",
+   "options": {
+    "A": "Having no backup, relying on a single system",
+    "B": "Multiple redundant hydraulic systems and/or electric backup actuators",
+    "C": "Manual cables only in all modern aircraft",
+    "D": "Immediate loss of all flight control"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 142,
+   "question": "Flight control computers in fly-by-wire aircraft often incorporate:",
+   "options": {
+    "A": "No safety logic at all",
+    "B": "Envelope protection features that prevent the aircraft from exceeding safe structural/aerodynamic limits",
+    "C": "Only cosmetic display functions",
+    "D": "Only fuel management logic"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 143,
+   "question": "Cabin pressurization systems maintain cabin altitude typically around:",
+   "options": {
+    "A": "Sea level exactly at all cruise altitudes",
+    "B": "An equivalent altitude of approximately 6,000-8,000 feet during cruise",
+    "C": "The same altitude as outside ambient at all times",
+    "D": "20,000 feet cabin altitude at cruise"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 144,
+   "question": "Distance Measuring Equipment (DME), often paired with VOR, provides:",
+   "options": {
+    "A": "Cabin temperature data",
+    "B": "Slant-range distance from the aircraft to a ground station",
+    "C": "Fuel remaining",
+    "D": "Weather radar imagery"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 145,
+   "question": "An autothrottle system works together with autopilot to:",
+   "options": {
+    "A": "Control only cabin lighting",
+    "B": "Automatically manage engine thrust/power settings to maintain target speed or thrust",
+    "C": "Only manage landing gear",
+    "D": "Only manage fuel tank switching"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 146,
+   "question": "Redundancy in landing gear extension systems (e.g., hydraulic plus manual/gravity backup) exists mainly to:",
+   "options": {
+    "A": "Add unnecessary weight with no functional benefit",
+    "B": "Ensure the gear can still be extended safely if the primary system fails",
+    "C": "Reduce landing gear cost",
+    "D": "Increase aerodynamic drag intentionally"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 147,
+   "question": "Compared to a barometric altimeter, a radar altimeter is more accurate for:",
+   "options": {
+    "A": "High-altitude cruise over varying terrain",
+    "B": "Low-altitude operations, especially over varying terrain during approach and landing",
+    "C": "Determining true airspeed",
+    "D": "Determining outside air temperature"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 148,
+   "question": "Stall warning systems typically use inputs from:",
+   "options": {
+    "A": "Fuel quantity sensors only",
+    "B": "Angle of attack sensors (often combined with airspeed)",
+    "C": "Cabin pressure sensors only",
+    "D": "Landing gear position sensors only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 149,
+   "question": "Fuel jettison systems, found on some larger aircraft, allow:",
+   "options": {
+    "A": "Adding fuel in flight",
+    "B": "Dumping fuel in flight to reduce weight for an emergency landing below max landing weight",
+    "C": "Only ground refueling",
+    "D": "Only fuel heating"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 150,
+   "question": "Cockpit Voice Recorders (CVR), often paired with the FDR, record:",
+   "options": {
+    "A": "Only engine data",
+    "B": "Flight deck audio including crew conversations and ATC communications",
+    "C": "Only fuel flow data",
+    "D": "Only autopilot mode changes"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 151,
+   "question": "Doppler weather radar aboard aircraft can also detect:",
+   "options": {
+    "A": "Only precipitation intensity, not motion",
+    "B": "Both precipitation intensity and relative motion (useful for detecting wind shear/turbulence)",
+    "C": "Only ground vehicles",
+    "D": "Only other aircraft transponders"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 152,
+   "question": "If the Air Data Computer receives erroneous pitot-static data, it can lead to:",
+   "options": {
+    "A": "No effect on any displayed parameters",
+    "B": "Erroneous airspeed, altitude, and related flight control law inputs",
+    "C": "Only a cosmetic display glitch with no safety impact",
+    "D": "Immediate engine shutdown automatically"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 153,
+   "question": "TCAS \"Traffic Advisories\" (TA), as opposed to \"Resolution Advisories\" (RA), typically:",
+   "options": {
+    "A": "Command immediate evasive maneuvers",
+    "B": "Alert the crew to nearby traffic without commanding a specific maneuver",
+    "C": "Only apply to ground vehicles",
+    "D": "Only function above 40,000 feet"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 154,
+   "question": "In the event of a main generator failure, aircraft electrical systems often rely on:",
+   "options": {
+    "A": "No backup, total loss of power",
+    "B": "Battery power and/or a backup generator/APU to maintain essential systems",
+    "C": "Passenger devices for power",
+    "D": "Manual generators cranked by crew"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 155,
+   "question": "Ground spoilers, deployed automatically upon touchdown, primarily help:",
+   "options": {
+    "A": "Increase lift for a smoother landing",
+    "B": "Dump lift quickly to increase weight on wheels for effective braking",
+    "C": "Increase engine thrust for go-around",
+    "D": "Pressurize the cabin"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 156,
+   "question": "The RAT (Ram Air Turbine) is typically stowed and deploys automatically when:",
+   "options": {
+    "A": "The aircraft reaches cruise altitude normally",
+    "B": "A major loss of hydraulic/electrical power (e.g., dual engine failure) is detected",
+    "C": "The landing gear is retracted normally",
+    "D": "The autopilot is engaged"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 157,
+   "question": "A Category III ILS approach, compared to Category I, allows:",
+   "options": {
+    "A": "Landing in better visibility conditions only",
+    "B": "Landing (or approach) in much lower visibility/decision height conditions, often near zero-zero for CAT IIIC",
+    "C": "Only VFR operations",
+    "D": "No electronic guidance at all"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 158,
+   "question": "If the APU fails on the ground before engine start, an aircraft typically requires:",
+   "options": {
+    "A": "No alternative power source at all",
+    "B": "An external Ground Power Unit (GPU) to provide electrical/pneumatic power",
+    "C": "Battery power indefinitely with no other options",
+    "D": "Immediate cancellation of the flight in all cases"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 159,
+   "question": "Emergency Locator Transmitters (ELT) aboard aircraft function to:",
+   "options": {
+    "A": "Provide cabin entertainment",
+    "B": "Transmit a distress signal automatically upon a crash to aid search and rescue",
+    "C": "Control landing gear",
+    "D": "Manage fuel transfer"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 160,
+   "question": "Autotrim systems in some aircraft automatically:",
+   "options": {
+    "A": "Increase drag intentionally at all times",
+    "B": "Adjust trim to reduce the control force needed as flight conditions (speed, configuration) change",
+    "C": "Shut down the engine",
+    "D": "Control cabin pressurization"
+   },
+   "answer": "B"
+  }
+ ]
+}

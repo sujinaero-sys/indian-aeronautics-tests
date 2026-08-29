@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Indian Aeronautics — HAL Design Trainee Mock Test Portal</title>
+<link rel="icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html">
+    <img src="assets/logo.png" alt="Indian Aeronautics logo" />
+    <span class="brand-name">INDIAN AERONAUTICS</span>
+  </a>
+  <a class="btn btn-outline" href="login.html">Student login</a>
+</div>
+
+<section class="shell hero">
+  <span class="eyebrow">HAL Design Trainee (Aeronautical) · Mock Test Series</span>
+  <h1>Engineering Rockets.<br><span>Powering the Future.</span></h1>
+  <p class="lede">
+    Five full-length mock papers built to the HAL Design Trainee exam pattern —
+    General Awareness, English &amp; Reasoning, and Aeronautical Engineering,
+    160 questions each with instant scoring and answer review.
+  </p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="login.html">I already have a login</a>
+    <a class="btn btn-whatsapp" id="waHero" href="#" target="_blank" rel="noopener">
+      Get access on WhatsApp
+    </a>
+  </div>
+</section>
+
+<section class="shell">
+  <div class="steps">
+    <div class="step">
+      <div class="step-index">STEP 1</div>
+      <h3>Make payment</h3>
+      <p>Pay the mock-test fee via UPI or bank transfer using the details your instructor shares with you.</p>
+    </div>
+    <div class="step">
+      <div class="step-index">STEP 2</div>
+      <h3>Message on WhatsApp</h3>
+      <p>Send your payment screenshot to <strong id="waNumberText">+91 99958 63184</strong>. You'll receive a personal login ID and password — valid for one attempt only.</p>
+    </div>
+    <div class="step">
+      <div class="step-index">STEP 3</div>
+      <h3>Take your test</h3>
+      <p>Log in, pick a paper, and attempt it in one sitting. You'll get your score and full answer review right away.</p>
+    </div>
+  </div>
+</section>
+
+<section class="shell">
+  <div class="card text-center">
+    <h2 class="panel-title">Ready when you are</h2>
+    <p class="panel-sub">Each login works once. Keep your credentials private — sharing them won't let a second attempt through.</p>
+    <div class="hero-actions" style="margin-top:0;">
+      <a class="btn btn-primary" href="login.html">Go to student login</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  Indian Aeronautics · Practice test portal · Not affiliated with Hindustan Aeronautics Limited (HAL)
+</footer>
+
+<a class="wa-float btn btn-whatsapp" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
+  WhatsApp
+</a>
+
+<script>
+  const WA_NUMBER = "919995863184"; // country code + number, no spaces or plus sign
+  const waLink = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi, I'd like access to the Indian Aeronautics HAL DT mock test. I've made the payment.")}`;
+  document.getElementById("waHero").href = waLink;
+  document.getElementById("waFloat").href = waLink;
+</script>
+</body>
+</html>

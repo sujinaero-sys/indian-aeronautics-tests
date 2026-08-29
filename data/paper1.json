@@ -1,0 +1,1768 @@
+{
+ "paper": 1,
+ "title": "HAL Design Trainee (Aeronautical) — Model Question Paper 1",
+ "totalQuestions": 160,
+ "duration_minutes": 150,
+ "questions": [
+  {
+   "id": 1,
+   "question": "HAL is administratively under which Ministry of the Government of India?",
+   "options": {
+    "A": "Ministry of Civil Aviation",
+    "B": "Ministry of Defence",
+    "C": "Ministry of Heavy Industries",
+    "D": "Ministry of Science & Technology"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 2,
+   "question": "HAL is classified as which type of Public Sector Undertaking?",
+   "options": {
+    "A": "Navratna",
+    "B": "Miniratna",
+    "C": "Maharatna",
+    "D": "Non-ratna CPSE"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 3,
+   "question": "The indigenous Light Combat Aircraft manufactured by HAL is named:",
+   "options": {
+    "A": "Tejas",
+    "B": "Akash",
+    "C": "Prithvi",
+    "D": "Arjun"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 4,
+   "question": "HAL's Advanced Light Helicopter is known as:",
+   "options": {
+    "A": "Chetak",
+    "B": "Dhruv",
+    "C": "Cheetah",
+    "D": "Rudra"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 5,
+   "question": "Which organisation is India's premier space research body, with which HAL partners?",
+   "options": {
+    "A": "DRDO",
+    "B": "ISRO",
+    "C": "BARC",
+    "D": "CSIR"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 6,
+   "question": "The headquarters of Hindustan Aeronautics Limited is located in:",
+   "options": {
+    "A": "Nashik",
+    "B": "Koraput",
+    "C": "Bengaluru",
+    "D": "Kanpur"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 7,
+   "question": "India's Chief of Defence Staff position was created in the year:",
+   "options": {
+    "A": "2018",
+    "B": "2019",
+    "C": "2020",
+    "D": "2021"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 8,
+   "question": "Which of the following is NOT one of HAL's Production Divisions' locations mentioned in this advertisement?",
+   "options": {
+    "A": "Tumakuru",
+    "B": "Barrackpore",
+    "C": "Chennai",
+    "D": "Korwa"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 9,
+   "question": "The apex body regulating civil aviation safety in India is:",
+   "options": {
+    "A": "AAI",
+    "B": "DGCA",
+    "C": "IAF",
+    "D": "NIA"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 10,
+   "question": "India's first indigenous aircraft carrier is named:",
+   "options": {
+    "A": "INS Vikrant",
+    "B": "INS Vikramaditya",
+    "C": "INS Arihant",
+    "D": "INS Chakra"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 11,
+   "question": "The Rafale fighter jet inducted into the IAF is manufactured by which country's company?",
+   "options": {
+    "A": "USA",
+    "B": "Russia",
+    "C": "France",
+    "D": "Israel"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 12,
+   "question": "GST stands for:",
+   "options": {
+    "A": "Goods and Services Tax",
+    "B": "General Sales Tax",
+    "C": "Government Service Tax",
+    "D": "Gross Sales Tax"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 13,
+   "question": "The Reserve Bank of India's current repo rate decisions are made by which committee?",
+   "options": {
+    "A": "Finance Commission",
+    "B": "Monetary Policy Committee",
+    "C": "Planning Commission",
+    "D": "NITI Aayog"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 14,
+   "question": "Which Indian state is home to HAL's Korwa division?",
+   "options": {
+    "A": "Odisha",
+    "B": "West Bengal",
+    "C": "Uttar Pradesh",
+    "D": "Maharashtra"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 15,
+   "question": "The full form of DRDO is:",
+   "options": {
+    "A": "Defence Research and Development Organisation",
+    "B": "Defence Regulatory and Development Office",
+    "C": "Directorate of Research in Defence Operations",
+    "D": "Defence Rocket Development Organisation"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 16,
+   "question": "India's National Space Policy was released in which year?",
+   "options": {
+    "A": "2021",
+    "B": "2022",
+    "C": "2023",
+    "D": "2024"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 17,
+   "question": "The Line of Actual Control separates India from:",
+   "options": {
+    "A": "Pakistan",
+    "B": "China",
+    "C": "Nepal",
+    "D": "Bangladesh"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 18,
+   "question": "Which Indian aircraft engine is co-developed with a foreign partner for the Tejas Mk2 program discussions?",
+   "options": {
+    "A": "GE F404/F414",
+    "B": "Rolls Royce Trent",
+    "C": "Pratt & Whitney PW1000G",
+    "D": "CFM56"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 19,
+   "question": "The National Aerospace Laboratories (NAL) is headquartered in:",
+   "options": {
+    "A": "Bengaluru",
+    "B": "Hyderabad",
+    "C": "Pune",
+    "D": "Thiruvananthapuram"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 20,
+   "question": "\"Aatmanirbhar Bharat\" as a policy theme primarily promotes:",
+   "options": {
+    "A": "Foreign investment only",
+    "B": "Self-reliance in domestic manufacturing",
+    "C": "Export restriction",
+    "D": "Currency devaluation"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 21,
+   "question": "Choose the correctly spelled word:",
+   "options": {
+    "A": "Manoeuver",
+    "B": "Maneuvre",
+    "C": "Manoeuvre",
+    "D": "Manuever"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 22,
+   "question": "Fill in the blank: \"The pilot had to ___ the aircraft due to bad weather.\"",
+   "options": {
+    "A": "devert",
+    "B": "divert",
+    "C": "diverse",
+    "D": "diverge"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 23,
+   "question": "Synonym of \"Meticulous\":",
+   "options": {
+    "A": "Careless",
+    "B": "Precise",
+    "C": "Hasty",
+    "D": "Vague"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 24,
+   "question": "Antonym of \"Ascend\":",
+   "options": {
+    "A": "Rise",
+    "B": "Climb",
+    "C": "Descend",
+    "D": "Soar"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 25,
+   "question": "Choose the correct passive voice: \"The technician repaired the engine.\"",
+   "options": {
+    "A": "The engine repaired the technician.",
+    "B": "The engine is repaired by the technician.",
+    "C": "The engine was repaired by the technician.",
+    "D": "The engine has repair by the technician."
+   },
+   "answer": "C"
+  },
+  {
+   "id": 26,
+   "question": "Identify the error: \"Each of the students have submitted their report.\"",
+   "options": {
+    "A": "Each of",
+    "B": "have submitted",
+    "C": "their",
+    "D": "report"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 27,
+   "question": "Choose the correct preposition: \"The aircraft is capable ___ supersonic flight.\"",
+   "options": {
+    "A": "for",
+    "B": "of",
+    "C": "with",
+    "D": "in"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 28,
+   "question": "Meaning of the idiom \"to be grounded\":",
+   "options": {
+    "A": "To be praised",
+    "B": "To be prevented from flying/leaving",
+    "C": "To be promoted",
+    "D": "To be relocated"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 29,
+   "question": "Choose the correctly punctuated sentence:",
+   "options": {
+    "A": "The engineer said, \"the test is complete.\"",
+    "B": "The engineer said \"The test is complete.\"",
+    "C": "The engineer said, \"The test is complete.\"",
+    "D": "The engineer said \"the test is complete\""
+   },
+   "answer": "C"
+  },
+  {
+   "id": 30,
+   "question": "Select the correct tense: \"By the time the test begins, the candidates ___ their admit cards.\"",
+   "options": {
+    "A": "will check",
+    "B": "will have checked",
+    "C": "checked",
+    "D": "are checking"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 31,
+   "question": "Fly-by-wire systems primarily replace:",
+   "options": {
+    "A": "Hydraulic pumps",
+    "B": "Mechanical linkages",
+    "C": "Fuel lines",
+    "D": "Radar systems"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 32,
+   "question": "According to the passage, aerodynamically unstable designs are made viable by:",
+   "options": {
+    "A": "Larger wings",
+    "B": "Flight computers",
+    "C": "Heavier materials",
+    "D": "Manual pilot skill alone"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 33,
+   "question": "The main advantage of fly-by-wire mentioned is:",
+   "options": {
+    "A": "Lower cost",
+    "B": "Improved responsiveness and agility",
+    "C": "Reduced weight only",
+    "D": "Simplicity of design"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 34,
+   "question": "The word \"linkages\" in the passage most nearly means:",
+   "options": {
+    "A": "Software codes",
+    "B": "Physical connecting mechanisms",
+    "C": "Radio frequencies",
+    "D": "Fuel connections"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 35,
+   "question": "This passage would most likely appear in a text about:",
+   "options": {
+    "A": "Aircraft history",
+    "B": "Flight control systems",
+    "C": "Airport management",
+    "D": "Aviation weather"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 36,
+   "question": "Choose the word closest in meaning to \"Redundancy\" (as used in engineering systems):",
+   "options": {
+    "A": "Failure",
+    "B": "Backup/duplication for safety",
+    "C": "Deletion",
+    "D": "Obsolescence"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 37,
+   "question": "Correct plural of \"Axis\":",
+   "options": {
+    "A": "Axises",
+    "B": "Axes",
+    "C": "Axis's",
+    "D": "Axies"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 38,
+   "question": "Choose the correctly formed sentence:",
+   "options": {
+    "A": "Neither the pilot nor the crew was ready.",
+    "B": "Neither the pilot nor the crew were ready.",
+    "C": "Neither the pilot or the crew was ready.",
+    "D": "Neither pilot nor crew was not ready."
+   },
+   "answer": "A"
+  },
+  {
+   "id": 39,
+   "question": "\"Concur\" most nearly means:",
+   "options": {
+    "A": "Disagree",
+    "B": "Agree",
+    "C": "Compete",
+    "D": "Delay"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 40,
+   "question": "Choose the correct sentence:",
+   "options": {
+    "A": "The data indicate a rising trend.",
+    "B": "The data indicates a rising trend.",
+    "C": "The datas indicate a rising trend.",
+    "D": "The data was indicate a rising trend."
+   },
+   "answer": "A"
+  },
+  {
+   "id": 41,
+   "question": "Complete the series: 2, 6, 12, 20, 30, ?",
+   "options": {
+    "A": "40",
+    "B": "42",
+    "C": "44",
+    "D": "36"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 42,
+   "question": "If AIRCRAFT is coded as BJSDBGSU, then ENGINE is coded as:",
+   "options": {
+    "A": "FOHJOF",
+    "B": "FOHJPF",
+    "C": "FOHIOF",
+    "D": "FOIJPF"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 43,
+   "question": "Find the odd one out:",
+   "options": {
+    "A": "Turbojet",
+    "B": "Turbofan",
+    "C": "Turboprop",
+    "D": "Carburettor"
+   },
+   "answer": "D"
+  },
+  {
+   "id": 44,
+   "question": "A is the brother of B. B is the sister of C. C is the father of D. How is A related to D?",
+   "options": {
+    "A": "Uncle",
+    "B": "Father",
+    "C": "Grandfather",
+    "D": "Cousin"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 45,
+   "question": "If NORTH is written as SLNVI (each letter shifted), find the pattern and decode: given a 5-position shift cipher, what does \"FLIGHT\" become? (Use +1 shift per letter)",
+   "options": {
+    "A": "GMJHIU",
+    "B": "GMJHIV",
+    "C": "GMJHIU",
+    "D": "GLJHIU"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 46,
+   "question": "Statement: All engineers are analytical. Some analytical people are pilots. Conclusion I: Some engineers are pilots. Conclusion II: All pilots are engineers.",
+   "options": {
+    "A": "Only I follows",
+    "B": "Only II follows",
+    "C": "Neither follows",
+    "D": "Both follow"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 47,
+   "question": "Directions: A man walks 5 km North, then 3 km East, then 5 km South. How far is he from the starting point?",
+   "options": {
+    "A": "3 km",
+    "B": "5 km",
+    "C": "8 km",
+    "D": "13 km"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 48,
+   "question": "Find the next number: 1, 4, 9, 16, 25, ?",
+   "options": {
+    "A": "30",
+    "B": "36",
+    "C": "49",
+    "D": "32"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 49,
+   "question": "Which number should replace the question mark: 7, 14, 28, 56, ?",
+   "options": {
+    "A": "84",
+    "B": "112",
+    "C": "100",
+    "D": "96"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 50,
+   "question": "If in a certain code, \"PLANE\" is written as \"QMBOF\", how is \"PILOT\" written?",
+   "options": {
+    "A": "QJMPU",
+    "B": "QJMPU",
+    "C": "QJMPT",
+    "D": "QJMOU"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 51,
+   "question": "Choose the figure that completes the analogy: Wing : Lift :: Rudder : ?",
+   "options": {
+    "A": "Thrust",
+    "B": "Drag",
+    "C": "Yaw control",
+    "D": "Roll control"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 52,
+   "question": "A clock shows 3:15. What is the angle between the hour and minute hands?",
+   "options": {
+    "A": "0°",
+    "B": "7.5°",
+    "C": "15°",
+    "D": "30°"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 53,
+   "question": "Five friends P, Q, R, S, T are sitting in a row. P is to the left of Q but right of R. S is at one end. Who is in the middle? (Assume a valid arrangement)",
+   "options": {
+    "A": "P",
+    "B": "Q",
+    "C": "R",
+    "D": "T"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 54,
+   "question": "If \"1234\" means \"fly high fast\" and \"1256\" means \"fly low slow\", what does \"1\" mean?",
+   "options": {
+    "A": "fly",
+    "B": "high",
+    "C": "low",
+    "D": "fast"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 55,
+   "question": "Find the missing term: AB, DE, GH, JK, ?",
+   "options": {
+    "A": "LM",
+    "B": "MN",
+    "C": "NO",
+    "D": "LM"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 56,
+   "question": "A train 100m long crosses a pole in 10 seconds. What is its speed?",
+   "options": {
+    "A": "10 m/s",
+    "B": "36 km/h",
+    "C": "Both A and B",
+    "D": "5 m/s"
+   },
+   "answer": "C"
+  },
+  {
+   "id": 57,
+   "question": "Choose the odd pair:",
+   "options": {
+    "A": "Aileron–Roll",
+    "B": "Elevator–Pitch",
+    "C": "Rudder–Yaw",
+    "D": "Flap–Roll"
+   },
+   "answer": "D"
+  },
+  {
+   "id": 58,
+   "question": "If South-East becomes North, then North-West becomes:",
+   "options": {
+    "A": "South",
+    "B": "South-East",
+    "C": "East",
+    "D": "South-West"
+   },
+   "answer": "D"
+  },
+  {
+   "id": 59,
+   "question": "In a certain code, COMPUTER is written as RFUVQNPC. How is MEDICINE written in that code?",
+   "options": {
+    "A": "EOJDJDEM",
+    "B": "NFEDJDJM",
+    "C": "EOJDJDNM",
+    "D": "NEIDJDEM"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 60,
+   "question": "Statement: All pens are pencils. All pencils are erasers. Conclusion: All pens are erasers.",
+   "options": {
+    "A": "True",
+    "B": "False",
+    "C": "Cannot be determined",
+    "D": "None of these"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 61,
+   "question": "Bernoulli's equation is derived by applying which conservation principle along a streamline?",
+   "options": {
+    "A": "Mass",
+    "B": "Energy",
+    "C": "Momentum",
+    "D": "Angular momentum"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 62,
+   "question": "The centre of pressure of a symmetric airfoil at zero lift is:",
+   "options": {
+    "A": "At the leading edge",
+    "B": "At the trailing edge",
+    "C": "Undefined (no lift)",
+    "D": "At the quarter-chord"
+   },
+   "answer": "D"
+  },
+  {
+   "id": 63,
+   "question": "The critical Mach number is the free-stream Mach number at which:",
+   "options": {
+    "A": "Shock waves first appear on the airfoil surface",
+    "B": "Flow becomes fully supersonic",
+    "C": "Stall occurs",
+    "D": "Drag becomes zero"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 64,
+   "question": "Induced drag is primarily caused by:",
+   "options": {
+    "A": "Skin friction",
+    "B": "Wingtip vortices",
+    "C": "Shock waves",
+    "D": "Boundary layer separation"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 65,
+   "question": "For a finite wing, induced drag coefficient is proportional to:",
+   "options": {
+    "A": "CL",
+    "B": "CL²",
+    "C": "CL^0.5",
+    "D": "1/CL"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 66,
+   "question": "The boundary layer separates when:",
+   "options": {
+    "A": "Pressure gradient is favorable",
+    "B": "Adverse pressure gradient overcomes momentum near the wall",
+    "C": "Flow is purely laminar",
+    "D": "Mach number is zero"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 67,
+   "question": "A NACA 4-digit airfoil \"2412\" — the first digit \"2\" represents:",
+   "options": {
+    "A": "Maximum thickness (%)",
+    "B": "Maximum camber (%)",
+    "C": "Location of max camber",
+    "D": "Chord length"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 68,
+   "question": "The Reynolds number represents the ratio of:",
+   "options": {
+    "A": "Inertial to viscous forces",
+    "B": "Gravitational to viscous forces",
+    "C": "Pressure to inertial forces",
+    "D": "Compressibility to viscous forces"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 69,
+   "question": "Wave drag arises due to:",
+   "options": {
+    "A": "Viscosity",
+    "B": "Shock waves in transonic/supersonic flow",
+    "C": "Wingtip vortices",
+    "D": "Boundary layer growth"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 70,
+   "question": "The aerodynamic center of a subsonic thin airfoil is located approximately at:",
+   "options": {
+    "A": "Leading edge",
+    "B": "Quarter-chord",
+    "C": "Mid-chord",
+    "D": "Trailing edge"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 71,
+   "question": "Stall occurs when:",
+   "options": {
+    "A": "Angle of attack exceeds the critical angle",
+    "B": "Airspeed exceeds Vne",
+    "C": "Flaps are retracted",
+    "D": "Reynolds number is very high"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 72,
+   "question": "Which of these increases CLmax?",
+   "options": {
+    "A": "Slats and flaps",
+    "B": "Winglets alone",
+    "C": "Reducing wing area",
+    "D": "Increasing sweep angle only"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 73,
+   "question": "The Prandtl-Glauert compressibility correction is applied to:",
+   "options": {
+    "A": "Subsonic flow at high Mach number",
+    "B": "Hypersonic flow",
+    "C": "Incompressible low-speed flow",
+    "D": "Supersonic shock-expansion theory"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 74,
+   "question": "An oblique shock wave, compared to a normal shock, causes:",
+   "options": {
+    "A": "Greater total pressure loss",
+    "B": "Lower total pressure loss for the same deflection",
+    "C": "No change in flow direction",
+    "D": "Subsonic to supersonic transition"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 75,
+   "question": "The lift curve slope of a thin symmetric airfoil (per radian, incompressible, 2D) is approximately:",
+   "options": {
+    "A": "π",
+    "B": "2π",
+    "C": "4π",
+    "D": "π/2"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 76,
+   "question": "Ground effect on an aircraft near landing typically:",
+   "options": {
+    "A": "Increases induced drag",
+    "B": "Decreases induced drag and increases lift",
+    "C": "Has no aerodynamic effect",
+    "D": "Causes stall"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 77,
+   "question": "The Mach angle is given by:",
+   "options": {
+    "A": "sin⁻¹(1/M)",
+    "B": "cos⁻¹(1/M)",
+    "C": "tan⁻¹(M)",
+    "D": "sin⁻¹(M)"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 78,
+   "question": "Adverse yaw is caused by:",
+   "options": {
+    "A": "Rudder deflection alone",
+    "B": "Differential drag from ailerons during roll",
+    "C": "Elevator deflection",
+    "D": "Flap deployment"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 79,
+   "question": "Which parameter defines the aspect ratio of a wing?",
+   "options": {
+    "A": "Span²/Area",
+    "B": "Area/Span",
+    "C": "Span/Chord at root",
+    "D": "Chord²/Area"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 80,
+   "question": "Downwash behind a finite wing causes:",
+   "options": {
+    "A": "Increase in effective angle of attack",
+    "B": "Reduction in effective angle of attack (induced drag)",
+    "C": "No aerodynamic penalty",
+    "D": "Increase in stall speed only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 81,
+   "question": "The Kutta condition specifies that:",
+   "options": {
+    "A": "Flow separates smoothly at trailing edge with finite velocity",
+    "B": "Flow must be supersonic at leading edge",
+    "C": "Pressure is constant everywhere",
+    "D": "Circulation is zero"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 82,
+   "question": "Winglets primarily reduce:",
+   "options": {
+    "A": "Profile drag",
+    "B": "Induced drag",
+    "C": "Wave drag",
+    "D": "Skin friction drag"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 83,
+   "question": "In supersonic flow, an expansion fan causes:",
+   "options": {
+    "A": "Increase in Mach number and decrease in pressure",
+    "B": "Decrease in Mach number and increase in pressure",
+    "C": "No change in flow properties",
+    "D": "Formation of a shock"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 84,
+   "question": "The area rule (Whitcomb) is used to minimize:",
+   "options": {
+    "A": "Induced drag",
+    "B": "Transonic wave drag",
+    "C": "Skin friction drag",
+    "D": "Interference drag at subsonic speeds only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 85,
+   "question": "Dynamic pressure (q) is given by:",
+   "options": {
+    "A": "ρV",
+    "B": "½ρV²",
+    "C": "ρV²",
+    "D": "2ρV²"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 86,
+   "question": "In a semi-monocoque fuselage, primary bending loads are carried mainly by:",
+   "options": {
+    "A": "Skin only",
+    "B": "Longerons/stringers",
+    "C": "Frames only",
+    "D": "Rivets"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 87,
+   "question": "Shear flow in a thin-walled open section under torsion is:",
+   "options": {
+    "A": "Uniform and finite",
+    "B": "Zero at free edges, builds up along the profile",
+    "C": "Constant everywhere including edges",
+    "D": "Independent of thickness"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 88,
+   "question": "For a thin-walled closed section under torsion, shear flow (Bredt-Batho theory) is:",
+   "options": {
+    "A": "q = T/A (A = enclosed area)",
+    "B": "q = T/(2A)",
+    "C": "q = 2T/A",
+    "D": "q = T·A"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 89,
+   "question": "The primary function of wing spars is to:",
+   "options": {
+    "A": "Carry bending and shear loads",
+    "B": "Provide aerodynamic shape only",
+    "C": "Reduce weight only",
+    "D": "Carry only torsional loads"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 90,
+   "question": "Fatigue failure in aircraft structures is caused by:",
+   "options": {
+    "A": "A single overload event",
+    "B": "Repeated cyclic loading below ultimate strength",
+    "C": "Static loading only",
+    "D": "Temperature rise alone"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 91,
+   "question": "The V-n diagram represents variation of:",
+   "options": {
+    "A": "Velocity vs number of engines",
+    "B": "Load factor vs velocity",
+    "C": "Voltage vs current",
+    "D": "Volume vs number of cycles"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 92,
+   "question": "Buckling of a column depends on which of the following (Euler's formula)?",
+   "options": {
+    "A": "Only material yield strength",
+    "B": "Length, end conditions, and moment of inertia",
+    "C": "Only cross-sectional area",
+    "D": "Only Young's modulus"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 93,
+   "question": "Composite materials like CFRP are preferred in aircraft primarily for:",
+   "options": {
+    "A": "Low cost",
+    "B": "High strength-to-weight ratio",
+    "C": "High density",
+    "D": "Ease of repair only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 94,
+   "question": "The \"damage tolerance\" design philosophy assumes:",
+   "options": {
+    "A": "Structures are defect-free",
+    "B": "Cracks/flaws may exist and must not propagate to failure within inspection intervals",
+    "C": "No inspection is needed",
+    "D": "Only static loads matter"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 95,
+   "question": "Stringers in a fuselage primarily resist:",
+   "options": {
+    "A": "Torsional loads only",
+    "B": "Axial/bending loads",
+    "C": "Hoop stress only",
+    "D": "Shear loads only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 96,
+   "question": "The safety factor typically used in aircraft structural design (ultimate load factor) is commonly:",
+   "options": {
+    "A": "1.0",
+    "B": "1.5",
+    "C": "3.0",
+    "D": "5.0"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 97,
+   "question": "Which failure theory is commonly used for ductile materials under combined stress?",
+   "options": {
+    "A": "Maximum principal stress theory",
+    "B": "Von Mises (distortion energy) theory",
+    "C": "Maximum shear-strain theory only for brittle",
+    "D": "Coulomb's theory"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 98,
+   "question": "Riveted joints in aircraft skins are designed primarily to transmit:",
+   "options": {
+    "A": "Torque only",
+    "B": "Shear loads between plates",
+    "C": "Thermal loads",
+    "D": "Compressive loads only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 99,
+   "question": "Titanium alloys are preferred over aluminium in high-temperature aircraft regions (like near engines) because of:",
+   "options": {
+    "A": "Lower cost",
+    "B": "Better strength retention at elevated temperature",
+    "C": "Lower density than aluminium",
+    "D": "Higher electrical conductivity"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 100,
+   "question": "A pressurized fuselage primarily experiences which type of stress due to cabin pressurization?",
+   "options": {
+    "A": "Pure bending",
+    "B": "Hoop and longitudinal (biaxial) stress",
+    "C": "Pure shear",
+    "D": "Pure torsion"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 101,
+   "question": "The term \"monocoque\" structure means:",
+   "options": {
+    "A": "Load carried entirely by internal frame",
+    "B": "Load carried by the skin itself (no internal bracing)",
+    "C": "Load carried only by spars",
+    "D": "A truss-type structure"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 102,
+   "question": "Rib in a wing structure primarily:",
+   "options": {
+    "A": "Carries bending loads across span",
+    "B": "Maintains aerodynamic shape and transfers loads to skin/spars locally",
+    "C": "Carries fuel only",
+    "D": "Provides torsional rigidity to fuselage"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 103,
+   "question": "The modulus of elasticity of a material relates:",
+   "options": {
+    "A": "Stress and strain in elastic range",
+    "B": "Stress and area",
+    "C": "Load and volume",
+    "D": "Strain and time only"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 104,
+   "question": "Crack propagation rate in fatigue is commonly modeled by:",
+   "options": {
+    "A": "Hooke's Law",
+    "B": "Paris' Law",
+    "C": "Bernoulli's equation",
+    "D": "Euler's buckling formula"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 105,
+   "question": "Honeycomb sandwich panels are used in aircraft for:",
+   "options": {
+    "A": "High weight, high strength",
+    "B": "Lightweight with good bending stiffness",
+    "C": "Only for aesthetic panels",
+    "D": "Only in landing gear"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 106,
+   "question": "The term \"yield strength\" refers to:",
+   "options": {
+    "A": "Stress at fracture",
+    "B": "Stress at onset of permanent (plastic) deformation",
+    "C": "Maximum elastic stress at zero strain",
+    "D": "Stress at zero load"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 107,
+   "question": "Aeroelasticity deals with the interaction between:",
+   "options": {
+    "A": "Aerodynamic, elastic, and inertial forces",
+    "B": "Only aerodynamic forces",
+    "C": "Only structural forces",
+    "D": "Thermal and electrical forces"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 108,
+   "question": "Flutter is a dangerous dynamic aeroelastic phenomenon involving:",
+   "options": {
+    "A": "Static deflection only",
+    "B": "Self-excited oscillation coupling bending and torsion modes",
+    "C": "Only engine vibration",
+    "D": "Only landing gear bounce"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 109,
+   "question": "Which of the following best describes \"creep\" in materials?",
+   "options": {
+    "A": "Instantaneous deformation under load",
+    "B": "Time-dependent permanent deformation under sustained stress, especially at high temperature",
+    "C": "Deformation only under cyclic load",
+    "D": "Elastic deformation that fully recovers"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 110,
+   "question": "Skin-stringer panels under compression may fail by:",
+   "options": {
+    "A": "Only tensile fracture",
+    "B": "Local buckling",
+    "C": "Only shear yield",
+    "D": "Only fatigue"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 111,
+   "question": "The ideal thermodynamic cycle for a gas turbine engine is:",
+   "options": {
+    "A": "Otto cycle",
+    "B": "Brayton cycle",
+    "C": "Rankine cycle",
+    "D": "Diesel cycle"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 112,
+   "question": "A turbofan engine, compared to a turbojet of the same core, generally has:",
+   "options": {
+    "A": "Higher specific fuel consumption at subsonic speeds",
+    "B": "Lower specific fuel consumption and higher propulsive efficiency at subsonic speeds",
+    "C": "No bypass air",
+    "D": "Lower thrust at all conditions"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 113,
+   "question": "Bypass ratio is defined as the ratio of:",
+   "options": {
+    "A": "Core airflow to fan airflow",
+    "B": "Fan (bypass) airflow to core airflow",
+    "C": "Fuel flow to air flow",
+    "D": "Thrust to weight"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 114,
+   "question": "In a turbojet engine, thrust is primarily generated by:",
+   "options": {
+    "A": "Propeller",
+    "B": "Acceleration of exhaust gases through the nozzle",
+    "C": "Piston motion",
+    "D": "Ram air alone"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 115,
+   "question": "The function of the compressor in a gas turbine engine is to:",
+   "options": {
+    "A": "Reduce pressure of incoming air",
+    "B": "Increase pressure of incoming air before combustion",
+    "C": "Mix fuel and air only",
+    "D": "Generate electrical power only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 116,
+   "question": "Axial flow compressors are generally preferred over centrifugal compressors in modern jet engines because they offer:",
+   "options": {
+    "A": "Higher frontal area",
+    "B": "Higher mass flow for a given frontal area (better efficiency at high speeds)",
+    "C": "Simpler single-stage design",
+    "D": "Lower cost only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 117,
+   "question": "The function of the turbine in a jet engine is to:",
+   "options": {
+    "A": "Compress incoming air",
+    "B": "Extract energy from hot gases to drive the compressor/fan",
+    "C": "Cool the exhaust",
+    "D": "Increase bypass ratio"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 118,
+   "question": "Turboprop engines are most efficient at:",
+   "options": {
+    "A": "High subsonic/transonic speeds",
+    "B": "Low to moderate subsonic speeds",
+    "C": "Supersonic speeds",
+    "D": "Hypersonic speeds"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 119,
+   "question": "The specific fuel consumption (SFC) of an engine is defined as:",
+   "options": {
+    "A": "Fuel flow rate per unit thrust produced",
+    "B": "Total fuel used per flight",
+    "C": "Thrust per unit weight of engine",
+    "D": "Air mass flow per unit fuel"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 120,
+   "question": "A convergent-divergent (de Laval) nozzle is required to achieve:",
+   "options": {
+    "A": "Subsonic exhaust only",
+    "B": "Supersonic exhaust velocity",
+    "C": "Zero thrust",
+    "D": "Reverse thrust only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 121,
+   "question": "Afterburners increase thrust by:",
+   "options": {
+    "A": "Increasing compressor pressure ratio",
+    "B": "Injecting and burning additional fuel in the exhaust stream downstream of the turbine",
+    "C": "Reducing bypass ratio permanently",
+    "D": "Increasing bypass air only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 122,
+   "question": "The combustion chamber in a gas turbine must ensure:",
+   "options": {
+    "A": "Complete combustion with acceptable pressure loss and uniform temperature distribution",
+    "B": "Maximum pressure loss",
+    "C": "Minimum residence time regardless of combustion completeness",
+    "D": "Cooling of turbine blades only"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 123,
+   "question": "Choked flow at a nozzle throat occurs when:",
+   "options": {
+    "A": "Mach number at throat equals 1",
+    "B": "Mach number at throat is less than 1 always",
+    "C": "Flow is subsonic throughout",
+    "D": "Pressure ratio is below critical value"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 124,
+   "question": "Turboshaft engines are primarily used in:",
+   "options": {
+    "A": "Fighter jets",
+    "B": "Helicopters",
+    "C": "Airliners",
+    "D": "Rockets"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 125,
+   "question": "The overall efficiency of a jet engine is the product of:",
+   "options": {
+    "A": "Thermal efficiency and propulsive efficiency",
+    "B": "Only thermal efficiency",
+    "C": "Only propulsive efficiency",
+    "D": "Mechanical efficiency alone"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 126,
+   "question": "Ram effect in a jet engine intake refers to:",
+   "options": {
+    "A": "Pressure rise due to forward flight speed decelerating incoming air",
+    "B": "Pressure drop due to high speed",
+    "C": "Cooling effect of intake air",
+    "D": "Combustion pressure rise"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 127,
+   "question": "Which material is commonly used for turbine blades due to high-temperature strength?",
+   "options": {
+    "A": "Aluminium alloys",
+    "B": "Nickel-based superalloys",
+    "C": "Mild steel",
+    "D": "Cast iron"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 128,
+   "question": "The function of a diffuser in a gas turbine engine intake is to:",
+   "options": {
+    "A": "Accelerate flow and increase velocity",
+    "B": "Decelerate flow and increase static pressure before the compressor",
+    "C": "Cool the compressor",
+    "D": "Mix fuel with air"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 129,
+   "question": "Rocket engines differ fundamentally from air-breathing engines because rockets:",
+   "options": {
+    "A": "Require atmospheric oxygen",
+    "B": "Carry their own oxidizer and can operate in vacuum",
+    "C": "Cannot produce thrust in space",
+    "D": "Use only turbine-driven compressors"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 130,
+   "question": "The thrust equation for a jet engine (neglecting pressure term) is generally expressed as:",
+   "options": {
+    "A": "F = ṁ(Ve − V0)",
+    "B": "F = ṁ × V0 only",
+    "C": "F = P × A only",
+    "D": "F = m × g"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 131,
+   "question": "Specific impulse (Isp) of a propulsion system is a measure of:",
+   "options": {
+    "A": "Total engine weight",
+    "B": "Thrust produced per unit weight flow rate of propellant (efficiency indicator)",
+    "C": "Engine diameter",
+    "D": "Combustion chamber pressure only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 132,
+   "question": "Surge or stall in a compressor refers to:",
+   "options": {
+    "A": "Smooth steady flow condition",
+    "B": "Flow breakdown/reversal due to adverse operating conditions",
+    "C": "Normal operating condition at high RPM",
+    "D": "Turbine blade cooling failure"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 133,
+   "question": "The propulsive efficiency of a jet engine is highest when:",
+   "options": {
+    "A": "Exhaust velocity is much greater than flight velocity",
+    "B": "Exhaust velocity is close to flight velocity",
+    "C": "Exhaust velocity is zero",
+    "D": "Flight velocity is zero"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 134,
+   "question": "Which engine cycle modification improves fuel efficiency by increasing overall pressure ratio and bypass ratio in modern turbofans?",
+   "options": {
+    "A": "Simple turbojet cycle",
+    "B": "High bypass ratio, high OPR turbofan cycle",
+    "C": "Ramjet cycle",
+    "D": "Pulsejet cycle"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 135,
+   "question": "Intercooling and reheat in gas turbine cycles are used to:",
+   "options": {
+    "A": "Reduce compressor work and increase turbine work respectively, improving efficiency/power",
+    "B": "Increase fuel consumption only",
+    "C": "Eliminate the need for a compressor",
+    "D": "Eliminate the need for a turbine"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 136,
+   "question": "The altimeter in an aircraft measures altitude based on:",
+   "options": {
+    "A": "GPS signals only",
+    "B": "Static air pressure",
+    "C": "Engine RPM",
+    "D": "Fuel quantity"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 137,
+   "question": "The Pitot-static system is primarily used to determine:",
+   "options": {
+    "A": "Engine temperature",
+    "B": "Airspeed, altitude, and vertical speed",
+    "C": "Fuel flow",
+    "D": "Electrical voltage"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 138,
+   "question": "A gyroscope's property of \"rigidity in space\" is used in which instrument?",
+   "options": {
+    "A": "Airspeed indicator",
+    "B": "Attitude indicator (artificial horizon)",
+    "C": "Fuel gauge",
+    "D": "Altimeter"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 139,
+   "question": "INS (Inertial Navigation System) determines position using:",
+   "options": {
+    "A": "External radio signals only",
+    "B": "Accelerometers and gyroscopes to integrate motion from a known start point",
+    "C": "Visual references only",
+    "D": "Sonar"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 140,
+   "question": "Primary flight control surfaces include:",
+   "options": {
+    "A": "Flaps, slats, spoilers",
+    "B": "Ailerons, elevator, rudder",
+    "C": "Landing gear, brakes",
+    "D": "Fuel pumps, valves"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 141,
+   "question": "Hydraulic systems in aircraft are primarily used for:",
+   "options": {
+    "A": "Cabin pressurization only",
+    "B": "Actuating flight controls, landing gear, and brakes",
+    "C": "Communication systems",
+    "D": "Fuel storage"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 142,
+   "question": "Fly-by-wire systems replace mechanical linkages with:",
+   "options": {
+    "A": "Hydraulic lines only",
+    "B": "Electronic signals processed by flight computers",
+    "C": "Pneumatic tubes only",
+    "D": "Cable pulleys only"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 143,
+   "question": "The function of the Environmental Control System (ECS) in an aircraft is to:",
+   "options": {
+    "A": "Control cabin pressure, temperature, and air quality",
+    "B": "Control engine thrust",
+    "C": "Control navigation",
+    "D": "Control landing gear retraction"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 144,
+   "question": "VOR (VHF Omnidirectional Range) is a type of:",
+   "options": {
+    "A": "Weather radar",
+    "B": "Ground-based radio navigation aid",
+    "C": "Fuel gauge",
+    "D": "Flight control actuator"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 145,
+   "question": "Autopilot systems primarily function to:",
+   "options": {
+    "A": "Replace the pilot completely at all times",
+    "B": "Automatically maintain heading, altitude, and other flight parameters as set",
+    "C": "Only control cabin lighting",
+    "D": "Only manage fuel consumption"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 146,
+   "question": "The landing gear retraction/extension system in most modern aircraft is powered by:",
+   "options": {
+    "A": "Manual force only",
+    "B": "Hydraulic or electric actuators",
+    "C": "Pneumatic only in all aircraft",
+    "D": "Gravity drop only in all aircraft"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 147,
+   "question": "Radar altimeters, unlike barometric altimeters, measure:",
+   "options": {
+    "A": "Pressure altitude",
+    "B": "Actual height above terrain using radio wave reflection",
+    "C": "True airspeed",
+    "D": "Engine RPM"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 148,
+   "question": "The function of an Angle of Attack (AoA) sensor is to:",
+   "options": {
+    "A": "Measure engine thrust",
+    "B": "Measure the angle between chord line and relative wind",
+    "C": "Measure fuel flow",
+    "D": "Measure cabin pressure"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 149,
+   "question": "Fuel systems in aircraft must ensure:",
+   "options": {
+    "A": "Fuel is delivered at the correct pressure/flow regardless of attitude and altitude",
+    "B": "Fuel is stored only in the fuselage",
+    "C": "No fuel transfer between tanks",
+    "D": "Constant fuel weight regardless of consumption"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 150,
+   "question": "The purpose of a Flight Data Recorder (commonly called the \"black box\") is to:",
+   "options": {
+    "A": "Record only radio communications",
+    "B": "Record flight parameters for accident investigation and analysis",
+    "C": "Store only fuel data",
+    "D": "Control autopilot functions"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 151,
+   "question": "Weather radar on aircraft primarily helps pilots detect:",
+   "options": {
+    "A": "Other aircraft only",
+    "B": "Precipitation and turbulence areas",
+    "C": "Ground obstacles only",
+    "D": "Fuel leaks"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 152,
+   "question": "The Air Data Computer (ADC) processes inputs mainly from:",
+   "options": {
+    "A": "Pitot-static system sensors",
+    "B": "Fuel gauges only",
+    "C": "Landing gear sensors only",
+    "D": "Radio only"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 153,
+   "question": "TCAS (Traffic Collision Avoidance System) works by:",
+   "options": {
+    "A": "Communicating with other aircrafts' transponders to avoid collision",
+    "B": "Detecting weather only",
+    "C": "Measuring fuel levels",
+    "D": "Controlling landing gear"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 154,
+   "question": "Electrical power in modern aircraft is typically generated by:",
+   "options": {
+    "A": "Engine-driven generators/alternators",
+    "B": "Only batteries throughout flight",
+    "C": "Only ground power units",
+    "D": "Solar panels only"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 155,
+   "question": "The function of spoilers on an aircraft wing is to:",
+   "options": {
+    "A": "Increase lift for takeoff",
+    "B": "Reduce lift and increase drag (e.g., during descent or landing roll)",
+    "C": "Control yaw only",
+    "D": "Control engine thrust"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 156,
+   "question": "Which system provides backup power in case of total engine failure on many aircraft?",
+   "options": {
+    "A": "APU or RAT (Ram Air Turbine)",
+    "B": "Extra fuel tanks",
+    "C": "Additional landing gear",
+    "D": "Extra flaps"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 157,
+   "question": "ILS (Instrument Landing System) provides guidance for:",
+   "options": {
+    "A": "Cruise navigation",
+    "B": "Precision approach and landing",
+    "C": "Taxiing only",
+    "D": "Engine start-up"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 158,
+   "question": "The primary purpose of an Auxiliary Power Unit (APU) is to:",
+   "options": {
+    "A": "Provide main propulsion",
+    "B": "Provide electrical/pneumatic power on ground and as backup in flight",
+    "C": "Control weather radar",
+    "D": "Store fuel"
+   },
+   "answer": "B"
+  },
+  {
+   "id": 159,
+   "question": "Communication between ATC and aircraft primarily uses:",
+   "options": {
+    "A": "VHF/UHF radio",
+    "B": "Visual signals only",
+    "C": "Wired telephone lines",
+    "D": "Morse code exclusively today"
+   },
+   "answer": "A"
+  },
+  {
+   "id": 160,
+   "question": "The purpose of trim tabs on control surfaces is to:",
+   "options": {
+    "A": "Increase drag permanently",
+    "B": "Reduce pilot control force needed to maintain a desired flight attitude",
+    "C": "Increase engine thrust",
+    "D": "Control fuel flow"
+   },
+   "answer": "B"
+  }
+ ]
+}

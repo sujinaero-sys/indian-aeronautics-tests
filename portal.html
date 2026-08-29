@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Test Portal — Indian Aeronautics</title>
+<link rel="icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html">
+    <img src="assets/logo.png" alt="Indian Aeronautics logo" />
+    <span class="brand-name">INDIAN AERONAUTICS</span>
+  </a>
+  <button class="btn btn-outline" id="logoutBtn">Log out</button>
+</div>
+
+<section class="shell" style="padding-top:48px;">
+  <h1 style="font-size:1.9rem;">Choose a mock paper</h1>
+  <p class="muted mt-24" style="margin-top:8px;">
+    Each paper has 160 questions across three sections and a 2.5 hour timer.
+    Once you start, stay on this device until you submit — your login can only complete one attempt.
+  </p>
+
+  <div class="papers-grid" id="papersGrid"></div>
+</section>
+
+<footer class="site-footer">Indian Aeronautics · Practice test portal</footer>
+
+<script src="js/credentials.js"></script>
+<script src="js/auth.js"></script>
+<script>
+  const session = iaRequireSession("login.html");
+
+  document.getElementById("logoutBtn").addEventListener("click", iaLogout);
+
+  if (session) {
+    const grid = document.getElementById("papersGrid");
+    const alreadyFinished = iaCredentialAlreadyFinished(session.id);
+
+    for (let i = 1; i <= 5; i++) {
+      const div = document.createElement("div");
+      div.className = "paper-card";
+      div.innerHTML = `
+        <div class="paper-name">Paper ${i}</div>
+        <div class="paper-meta">160 questions · 2.5 hours</div>
+        <a class="btn btn-primary btn-block" href="test.html?paper=${i}" ${alreadyFinished ? "aria-disabled='true' style='pointer-events:none;opacity:0.5;'" : ""}>
+          ${alreadyFinished ? "Attempt used" : "Start test"}
+        </a>
+      `;
+      grid.appendChild(div);
+    }
+
+    if (alreadyFinished) {
+      const notice = document.createElement("p");
+      notice.className = "form-error visible mt-24";
+      notice.textContent = "This login has already completed a test attempt on this device.";
+      grid.parentElement.insertBefore(notice, grid);
+    }
+  }
+</script>
+</body>
+</html>
