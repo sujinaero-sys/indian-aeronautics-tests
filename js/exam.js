@@ -185,7 +185,47 @@ function submitExam(auto) {
     reviewRows.push({ q, given, isCorrect });
   });
 
+  backupResult({
+  studentId: session.id,
+  paper: paperNum,
+  paperTitle: paperData.title,
+  submittedAt: new Date().toISOString(),
+  autoSubmitted: auto,
+  totalQuestions: paperData.questions.length,
+  score: correct,
+  percentage: Math.round((correct / paperData.questions.length) * 100),
+  sectionScores: sectionScores,
+  answers: reviewRows.map((r) => ({
+    questionId: r.q.id,
+    question: r.q.question,
+    studentAnswer: r.given || null,
+    correctAnswer: r.q.answer,
+    isCorrect: r.isCorrect,
+    options: r.q.options
+  }))
+});
+
   renderResults(correct, paperData.questions.length, sectionScores, reviewRows, auto);
+}
+
+async function backupResult(result) {
+  const BACKUP_URL =
+    "https://script.google.com/macros/s/AKfycbzfZwoF7StscCZZ2GC0TqI9Z98gA3d3CZz3VZmjChw4BUNT6hsfrjic5xpZR0c0KfJy/exec";
+
+  try {
+    await fetch(BACKUP_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      body: JSON.stringify(result)
+    });
+
+    console.log("Result backup request sent.");
+  } catch (error) {
+    console.error("Result backup failed:", error);
+  }
 }
 
 function renderResults(correct, total, sectionScores, reviewRows, auto) {
