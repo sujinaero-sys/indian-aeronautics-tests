@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>Your Mock Test Access — Indian Aeronautics</title>
+
+<link
+  rel="stylesheet"
+  href="css/style.css"
+>
+
+</head>
+
+
+<body>
+
+
+<div class="topbar">
+
+  <a class="brand" href="index.html">
+
+    <img
+      src="assets/logo.png"
+      alt="Indian Aeronautics logo"
+    >
+
+    <span class="brand-name">
+      INDIAN AERONAUTICS
+    </span>
+
+  </a>
+
+
+  <button
+    class="btn btn-outline"
+    onclick="iaLogout()"
+  >
+    Log out
+  </button>
+
+</div>
+
+
+
+<div class="center-page">
+
+  <div
+    class="card"
+    style="width:100%; max-width:760px;"
+  >
+
+    <h2 class="panel-title">
+      Choose your mock-test series
+    </h2>
+
+
+    <p class="panel-sub">
+      Your account has access to both examination series.
+    </p>
+
+
+    <div
+      style="
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+        gap:20px;
+        margin-top:30px;
+      "
+    >
+
+
+      <div class="card">
+
+        <h3>
+          HAL
+        </h3>
+
+        <p>
+          Design Trainee — Aeronautical
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="portal.html"
+        >
+          HAL Mock Tests
+        </a>
+
+      </div>
+
+
+
+      <div class="card">
+
+        <h3>
+          ISRO
+        </h3>
+
+        <p>
+          Scientist/Engineer 'SC'
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="isro-mock-tests/"
+        >
+          ISRO Mock Tests
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<script src="js/auth.js"></script>
+
+
+<script>
+
+const session =
+  iaRequireSession(
+    "login.html"
+  );
+
+
+if (
+  session &&
+  !iaHasAccess("HAL") &&
+  !iaHasAccess("ISRO")
+) {
+
+  alert(
+    "Your account has no active mock-test access."
+  );
+
+  iaLogout();
+
+}
+
+</script>
+
+
+</body>
+</html>

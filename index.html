@@ -1,14 +1,111 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Indian Aeronautics — HAL Design Trainee Mock Test Portal</title>
+
+<title>Indian Aeronautics — HAL & ISRO Mock Test Portal</title>
+
 <link rel="icon" href="assets/logo.png" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="css/style.css" />
+
+<style>
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.series-card {
+  padding: 28px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+}
+
+.series-card h3 {
+  margin-bottom: 10px;
+}
+
+.series-card p {
+  margin-bottom: 20px;
+}
+
+.status-list {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.04);
+  font-size: .92rem;
+}
+
+.available {
+  color: #35d07f;
+  font-weight: 600;
+}
+
+.upcoming {
+  color: #f4b942;
+  font-weight: 600;
+}
+
+.premium-card {
+  margin-top: 40px;
+  padding: 36px;
+  text-align: center;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+}
+
+.price {
+  font-family: Rajdhani, sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 12px 0 4px;
+}
+
+.validity {
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.portal-note {
+  max-width: 760px;
+  margin: 14px auto 0;
+}
+
+.login-strip {
+  margin-top: 24px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .premium-card {
+    padding: 26px 18px;
+  }
+
+  .price {
+    font-size: 2.4rem;
+  }
+}
+</style>
 </head>
+
 <body>
 
 <div class="topbar">
@@ -16,68 +113,370 @@
     <img src="assets/logo.png" alt="Indian Aeronautics logo" />
     <span class="brand-name">INDIAN AERONAUTICS</span>
   </a>
-  <a class="btn btn-outline" href="login.html">Student login</a>
+
+  <a class="btn btn-outline" href="login.html">
+    Student Login
+  </a>
 </div>
 
+
+<!-- HERO -->
+
 <section class="shell hero">
-  <span class="eyebrow">HAL Design Trainee (Aeronautical) · Mock Test Series</span>
-  <h1>Engineering Rockets.<br><span>Powering the Future.</span></h1>
+
+  <span class="eyebrow">
+    ENGINEERING EXAM MOCK TEST PLATFORM
+  </span>
+
+  <h1>
+    Engineering Rockets.<br>
+    <span>Powering the Future.</span>
+  </h1>
+
   <p class="lede">
-    Five full-length mock papers built to the HAL Design Trainee exam pattern —
-    General Awareness, English &amp; Reasoning, and Aeronautical Engineering,
-    160 questions each with instant scoring and answer review.
+    Practice with structured mock tests for HAL Design Trainee
+    and ISRO Scientist/Engineer examinations, with timed tests,
+    instant scoring and detailed answer review.
   </p>
+
   <div class="hero-actions">
-    <a class="btn btn-primary" href="login.html">I already have a login</a>
-    <a class="btn btn-whatsapp" id="waHero" href="#" target="_blank" rel="noopener">
-      Get access on WhatsApp
+
+    
+
+    <a
+      class="btn btn-whatsapp"
+      id="waHero"
+      href="#"
+      target="_blank"
+      rel="noopener"
+    >
+      WhatsApp Support
     </a>
+
   </div>
+
 </section>
 
+
+<!-- TEST SERIES -->
+
 <section class="shell">
+
+  <div class="card">
+
+    <h2 class="panel-title">
+      Mock Test Series
+    </h2>
+
+    <p class="panel-sub portal-note">
+      Choose your examination series and prepare with
+      full-length practice tests.
+    </p>
+
+
+    <div class="series-grid">
+
+
+      <!-- HAL -->
+
+      <div class="series-card">
+
+        <span class="eyebrow">
+          HAL
+        </span>
+
+        <h3>
+          Design Trainee — Aeronautical
+        </h3>
+
+        <p>
+          Full-length aeronautical mock-test series covering
+          General Awareness, English & Reasoning and
+          Aeronautical Engineering.
+        </p>
+
+        <div class="status-list">
+
+          <div class="status-item">
+            <span>Mock Test 01</span>
+            <span class="available">AVAILABLE</span>
+          </div>
+
+          <div class="status-item">
+            <span>Mock Test 02</span><span class="available">AVAILABLE</span>
+          </div>
+
+          <div class="status-item">
+            <span>Mock Test 03</span><span class="available">AVAILABLE</span>
+          </div>
+
+          <div class="status-item">
+            <span>Mock Test 04</span><span class="available">AVAILABLE</span>
+          </div>
+
+          <div class="status-item">
+            <span>Mock Test 05</span><span class="available">AVAILABLE</span>
+          </div>
+
+        </div>
+
+        <a class="btn btn-primary" href="login.html">
+          Access HAL Tests
+        </a>
+
+      </div>
+
+
+      <!-- ISRO -->
+
+      <div class="series-card">
+
+        <span class="eyebrow">
+          ISRO · ICRB 2026
+        </span>
+
+        <h3>
+          Scientist/Engineer 'SC'
+        </h3>
+
+        <p>
+          Practice series based on the ISRO ICRB
+          examination pattern.
+        </p>
+
+        <div class="status-list">
+
+          <div class="status-item">
+            <span>Electronics — Mock 01</span>
+            <span class="available">AVAILABLE</span>
+          </div>
+
+          <div class="status-item">
+            <span>Mechanical — Mock 01</span>
+            <span class="available">AVAILABLE</span>
+          </div>
+
+          <div class="status-item">
+            <span>Computer Science — Mock 01</span>
+            <span class="available">AVAILABLE</span>
+          </div>
+
+          <div class="status-item">
+            <span>Mock Test 02</span><span class="available">AVAILABLE</span>
+          </div>
+
+          <div class="status-item">
+            <span>Mock Test 03+</span>
+            <span class="upcoming">COMING SOON</span>
+          </div>
+
+        </div>
+
+        <a
+          class="btn btn-primary"
+          href="isro-mock-tests/"
+        >
+          Explore ISRO Tests
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PREMIUM ACCESS -->
+
+<section class="shell">
+
+  <div class="premium-card">
+
+    <span class="eyebrow">
+      PREMIUM ACCESS
+    </span>
+
+    <h2 class="panel-title">
+      Get Full Mock Test Access
+    </h2>
+
+    <p class="panel-sub portal-note">
+      Purchase premium access through BUYE and use your
+      student login to access the available mock tests.
+    </p>
+
+    <div class="price">
+      ₹512.69
+    </div>
+
+    <div class="validity">
+      7-Day Premium Access
+    </div>
+
+    <a
+      class="btn btn-primary"
+      href="https://www.buye.online/wlp/course-phpat-1788258235079"
+      target="_blank"
+      rel="noopener"
+    >
+      BUY NOW — GET ACCESS
+    </a>
+
+    
+
+  </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="shell">
+
   <div class="steps">
+
     <div class="step">
-      <div class="step-index">STEP 1</div>
-      <h3>Make payment</h3>
-      <p>Pay the mock-test fee via UPI or bank transfer using the details your instructor shares with you.</p>
+
+      <div class="step-index">
+        STEP 1
+      </div>
+
+      <h3>
+        Purchase access
+      </h3>
+
+      <p>
+        Purchase the Premium Mock Test Series through
+        the BUYE course page.
+      </p>
+
     </div>
+
+
     <div class="step">
-      <div class="step-index">STEP 2</div>
-      <h3>Message on WhatsApp</h3>
-      <p>Send your payment screenshot to <strong id="waNumberText">+91 99958 63184</strong>. You'll receive a personal login ID and password — valid for one attempt only.</p>
+
+      <div class="step-index">
+        STEP 2
+      </div>
+
+      <h3>
+        Get your login
+      </h3>
+
+      <p>
+        Your student account and access details will be
+        provided according to your enrollment.
+      </p>
+
     </div>
+
+
     <div class="step">
-      <div class="step-index">STEP 3</div>
-      <h3>Take your test</h3>
-      <p>Log in, pick a paper, and attempt it in one sitting. You'll get your score and full answer review right away.</p>
+
+      <div class="step-index">
+        STEP 3
+      </div>
+
+      <h3>
+        Take your tests
+      </h3>
+
+      <p>
+        Login, choose an available mock test and receive
+        your score and detailed answer review.
+      </p>
+
     </div>
+
   </div>
+
 </section>
 
+
+<!-- UPCOMING -->
+
 <section class="shell">
+
   <div class="card text-center">
-    <h2 class="panel-title">Ready when you are</h2>
-    <p class="panel-sub">Each login works once. Keep your credentials private — sharing them won't let a second attempt through.</p>
-    <div class="hero-actions" style="margin-top:0;">
-      <a class="btn btn-primary" href="login.html">Go to student login</a>
+
+    <h2 class="panel-title">
+      Upcoming Mock Tests
+    </h2>
+
+    <p class="panel-sub">
+      More practice papers are being prepared and will
+      appear here as they become available.
+    </p>
+
+    <div class="status-list">
+
+      <div class="status-item">
+        <span>HAL Aeronautical — Mock 02</span>
+        <span class="upcoming">COMING SOON</span>
+      </div>
+
+      <div class="status-item">
+        <span>ISRO Electronics — Mock 02</span>
+        <span class="upcoming">COMING SOON</span>
+      </div>
+
+      <div class="status-item">
+        <span>ISRO Mechanical — Mock 02</span>
+        <span class="upcoming">COMING SOON</span>
+      </div>
+
+      <div class="status-item">
+        <span>ISRO Computer Science — Mock 02</span>
+        <span class="upcoming">COMING SOON</span>
+      </div>
+
     </div>
+
   </div>
+
 </section>
+
 
 <footer class="site-footer">
-  Indian Aeronautics · Practice test portal · Not affiliated with Hindustan Aeronautics Limited (HAL)
+
+  Indian Aeronautics · Mock Test Platform ·
+  Not affiliated with Hindustan Aeronautics Limited (HAL)
+  or ISRO.
+
 </footer>
 
-<a class="wa-float btn btn-whatsapp" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
+
+<a
+  class="wa-float btn btn-whatsapp"
+  id="waFloat"
+  href="#"
+  target="_blank"
+  rel="noopener"
+  aria-label="Contact on WhatsApp"
+>
   WhatsApp
 </a>
 
+
 <script>
-  const WA_NUMBER = "919995863184"; // country code + number, no spaces or plus sign
-  const waLink = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi, I'd like access to the Indian Aeronautics HAL DT mock test. I've made the payment.")}`;
-  document.getElementById("waHero").href = waLink;
-  document.getElementById("waFloat").href = waLink;
+
+const WA_NUMBER = "919995863184";
+
+const waMessage =
+  "Hi, I'd like information about the Indian Aeronautics mock test series.";
+
+const waLink =
+  `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waMessage)}`;
+
+document.getElementById("waHero").href = waLink;
+document.getElementById("waFloat").href = waLink;
+
 </script>
+
 </body>
 </html>
+
+
+

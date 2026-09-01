@@ -1,53 +1,92 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
 
 <title>Student Login — Indian Aeronautics</title>
 
-<link rel="icon" href="assets/logo.png" />
+<link rel="icon" href="assets/logo.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+  rel="stylesheet"
+>
+
+<link
+  rel="stylesheet"
+  href="css/style.css"
+>
+
 </head>
+
 
 <body>
 
+
 <div class="topbar">
 
-  <a class="brand" href="index.html">
-    <img src="assets/logo.png" alt="Indian Aeronautics logo" />
-    <span class="brand-name">INDIAN AERONAUTICS</span>
+  <a
+    class="brand"
+    href="index.html"
+  >
+
+    <img
+      src="assets/logo.png"
+      alt="Indian Aeronautics logo"
+    >
+
+    <span class="brand-name">
+      INDIAN AERONAUTICS
+    </span>
+
   </a>
 
-  <a class="btn btn-outline" href="index.html">
+
+  <a
+    class="btn btn-outline"
+    href="index.html"
+  >
     Back home
   </a>
 
 </div>
 
 
+
 <div class="center-page">
 
-  <div class="card narrow" style="width:100%;">
+  <div
+    class="card narrow"
+    style="width:100%;"
+  >
 
     <h2 class="panel-title">
       Student login
     </h2>
 
+
     <p class="panel-sub">
-      Enter the ID and password you received on WhatsApp.
-      Each login works for one test attempt.
+      Enter the student ID and password provided by Indian Aeronautics.
     </p>
 
 
-    <div class="form-error" id="loginError"></div>
+    <div
+      class="form-error"
+      id="loginError"
+    ></div>
 
 
     <form id="loginForm">
+
 
       <div class="field">
 
@@ -61,9 +100,10 @@
           autocomplete="username"
           placeholder="IA-STUDENT-001"
           required
-        />
+        >
 
       </div>
+
 
 
       <div class="field">
@@ -77,24 +117,27 @@
           id="loginPass"
           autocomplete="current-password"
           required
-        />
+        >
 
       </div>
+
 
 
       <button
         type="submit"
         class="btn btn-primary btn-block"
+        id="loginButton"
       >
         Log in
       </button>
+
 
     </form>
 
 
     <p class="small muted mt-24 text-center">
 
-      Don't have a login yet?
+      Need access?
 
       <a
         id="waLoginLink"
@@ -102,81 +145,90 @@
         target="_blank"
         rel="noopener"
       >
-        Message us on WhatsApp
-      </a>.
+        Contact us on WhatsApp
+      </a>
 
     </p>
+
 
   </div>
 
 </div>
 
 
-<!-- =========================================================
-     AUTHENTICATION
-     ========================================================= -->
 
 <script src="js/auth.js"></script>
 
 
 <script>
 
-  /* =========================================================
-     WHATSAPP
-     ========================================================= */
-
-  const WA_NUMBER = "919995863184";
-
-  document.getElementById("waLoginLink").href =
-    `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
-      "Hi, I'd like access to the Indian Aeronautics HAL DT mock test."
-    )}`;
+const WA_NUMBER =
+  "919995863184";
 
 
-  /* =========================================================
-     LOGIN FORM
-     ========================================================= */
+document.getElementById(
+  "waLoginLink"
+).href =
+  `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
+    "Hi, I'd like access to the Indian Aeronautics mock tests."
+  )}`;
 
-  document
-    .getElementById("loginForm")
-    .addEventListener("submit", async (e) => {
 
-      e.preventDefault();
+
+document
+  .getElementById("loginForm")
+  .addEventListener(
+    "submit",
+    async function(event) {
+
+      event.preventDefault();
 
 
       const id =
-        document.getElementById("loginId").value.trim();
+        document
+          .getElementById("loginId")
+          .value
+          .trim();
 
-      const pass =
-        document.getElementById("loginPass").value;
 
-      const errEl =
-        document.getElementById("loginError");
+      const password =
+        document
+          .getElementById("loginPass")
+          .value;
 
-      const submitBtn =
-        e.target.querySelector(
-          "button[type='submit']"
+
+      const errorBox =
+        document.getElementById(
+          "loginError"
         );
 
 
-      /* Clear previous error */
+      const button =
+        document.getElementById(
+          "loginButton"
+        );
 
-      errEl.classList.remove("visible");
-      errEl.textContent = "";
+
+      errorBox.classList.remove(
+        "visible"
+      );
+
+      errorBox.textContent = "";
 
 
-      /* Disable button while checking */
+      button.disabled = true;
 
-      submitBtn.disabled = true;
-      submitBtn.textContent = "Checking login...";
+      button.textContent =
+        "Checking login...";
 
 
       try {
 
-        /* Send credentials to Apps Script */
-
         const result =
-          await iaLogin(id, pass);
+          await iaLogin(
+            id,
+            password
+          );
 
 
         console.log(
@@ -185,54 +237,200 @@
         );
 
 
-        /* Successful login */
+        if (!result.ok) {
 
-        if (result.ok) {
-
-  const returnTo =
-    new URLSearchParams(window.location.search).get("return");
-
-  if (returnTo) {
-    window.location.href = decodeURIComponent(returnTo);
-  } else {
-    window.location.href = "portal.html";
-  }
-
-  return;
-}
+          errorBox.classList.add(
+            "visible"
+          );
 
 
-        /* Login failed */
+          if (
+            result.reason ===
+            "already_used"
+          ) {
 
-        errEl.classList.add("visible");
+            errorBox.textContent =
+              "This login has already been used to complete a test on this device.";
+
+          }
+
+          else if (
+            result.reason ===
+            "server"
+          ) {
+
+            errorBox.textContent =
+              "Unable to connect to the login service. Please try again.";
+
+          }
+
+          else {
+
+            errorBox.textContent =
+              result.message ||
+              "Invalid student ID or password.";
+
+          }
 
 
-        if (result.reason === "already_used") {
-
-          errEl.textContent =
-            "This login has already been used to complete a test on this device. Contact your instructor on WhatsApp for help.";
-
-        }
-
-        else if (result.reason === "server") {
-
-          errEl.textContent =
-            "Unable to connect to the login service. Please check your internet connection and try again.";
-
-        }
-
-        else {
-
-          errEl.textContent =
-            result.message ||
-            "That ID or password isn't recognized. Double-check it or contact your instructor on WhatsApp.";
+          return;
 
         }
 
+
+        /*
+         * Successful login.
+         */
+
+        const access =
+          iaGetAccess();
+
+
+        /*
+         * If the student arrived from
+         * a protected ISRO page, return there
+         * only if the student has ISRO access.
+         */
+
+        const params =
+          new URLSearchParams(
+            window.location.search
+          );
+
+
+        const returnTo =
+          params.get("return");
+
+
+        if (
+          returnTo &&
+          access !== "NONE"
+        ) {
+
+          const decoded =
+            decodeURIComponent(
+              returnTo
+            );
+
+
+          /*
+           * Prevent external redirects.
+           */
+
+          if (
+            decoded.startsWith("/") &&
+            !decoded.startsWith("//")
+          ) {
+
+            /*
+             * ISRO destination
+             */
+
+            if (
+              decoded.includes(
+                "/isro-mock-tests/"
+              )
+            ) {
+
+              if (
+                access === "ISRO" ||
+                access === "BOTH"
+              ) {
+
+                window.location.href =
+                  decoded;
+
+                return;
+
+              }
+
+            }
+
+
+            /*
+             * HAL destination
+             */
+
+            if (
+              decoded.includes(
+                "/portal.html"
+              )
+            ) {
+
+              if (
+                access === "HAL" ||
+                access === "BOTH"
+              ) {
+
+                window.location.href =
+                  decoded;
+
+                return;
+
+              }
+
+            }
+
+          }
+
+        }
+
+
+        /*
+         * Normal login routing.
+         */
+
+        if (
+          access === "HAL"
+        ) {
+
+          window.location.href =
+            "portal.html";
+
+          return;
+
+        }
+
+
+        if (
+          access === "ISRO"
+        ) {
+
+          window.location.href =
+            "isro-mock-tests/";
+
+          return;
+
+        }
+
+
+        if (
+          access === "BOTH"
+        ) {
+
+          window.location.href =
+            "access.html";
+
+          return;
+
+        }
+
+
+        errorBox.classList.add(
+          "visible"
+        );
+
+        errorBox.textContent =
+          "Your account has no active mock-test package. Please contact us on WhatsApp.";
+
+        sessionStorage.removeItem(
+          IA_SESSION_KEY
+        );
 
       }
 
-      catch (error) {
+
+      catch(error) {
 
         console.error(
           "LOGIN FORM ERROR:",
@@ -240,24 +438,30 @@
         );
 
 
-        errEl.classList.add("visible");
+        errorBox.classList.add(
+          "visible"
+        );
 
-        errEl.textContent =
-          "Something went wrong while checking your login. Please try again.";
+        errorBox.textContent =
+          "Something went wrong while checking your login.";
 
       }
 
 
       finally {
 
-        submitBtn.disabled = false;
-        submitBtn.textContent = "Log in";
+        button.disabled = false;
+
+        button.textContent =
+          "Log in";
 
       }
 
-    });
+    }
+  );
 
 </script>
+
 
 </body>
 </html>
