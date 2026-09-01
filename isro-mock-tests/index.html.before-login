@@ -57,20 +57,7 @@
   </footer>
 
 </div>
-<script src="../js/auth.js"></script>
-
-<script>
-  const session = iaRequireSession("../login.html");
-
-  if (session) {
-    const catalogScript = document.createElement("script");
-    catalogScript.src = "assets/catalog.js";
-    document.body.appendChild(catalogScript);
-
-    const homeScript = document.createElement("script");
-    homeScript.src = "assets/home.js";
-    document.body.appendChild(homeScript);
-  }
-</script>
+<script src="assets/catalog.js"></script>
+<script src="assets/home.js"></script>
 </body>
 </html>

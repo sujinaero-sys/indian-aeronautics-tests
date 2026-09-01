@@ -3,13 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Mock Test — ICRB Series</title>
+
 <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
+
 <div class="quiz-shell" id="app">
-  <p style="font-family:var(--font-mono); color:var(--paper-dim);">Loading test&hellip;</p>
+  <p style="font-family:var(--font-mono); color:var(--paper-dim);">
+    Checking student login...
+  </p>
 </div>
-<script src="assets/quiz.js"></script>
+
+
+<!-- Main Indian Aeronautics authentication -->
+<script src="../js/auth.js"></script>
+
+<script>
+  /*
+   * ISRO TEST ACCESS PROTECTION
+   *
+   * A student must have a valid Indian Aeronautics
+   * login session before the ISRO test can load.
+   */
+
+  const returnUrl =
+  encodeURIComponent(window.location.href);
+
+const session =
+  iaRequireSession("../login.html?return=" + returnUrl);
+
+  if (session) {
+
+    /*
+     * Only load the ISRO quiz after authentication.
+     */
+    const quizScript = document.createElement("script");
+
+    quizScript.src = "assets/quiz.js";
+
+    document.body.appendChild(quizScript);
+  }
+</script>
+
 </body>
 </html>
