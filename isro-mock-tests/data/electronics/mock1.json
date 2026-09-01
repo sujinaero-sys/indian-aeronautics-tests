@@ -1,0 +1,1054 @@
+{
+  "id": "electronics-1",
+  "title": "Electronics & Communication — Mock Test 1",
+  "discipline": "electronics",
+  "partA": [
+    {
+      "text": "Three resistors of 6 Ω, 3 Ω and 2 Ω are connected in parallel. The equivalent resistance is:",
+      "options": [
+        "1 Ω",
+        "11 Ω",
+        "6 Ω",
+        "0.9 Ω"
+      ],
+      "correct": 0,
+      "explanation": "1/R = 1/6 + 1/3 + 1/2 = 1/6+2/6+3/6 = 6/6 = 1, so R = 1 Ω."
+    },
+    {
+      "text": "In a purely capacitive AC circuit, the current:",
+      "options": [
+        "Lags voltage by 90°",
+        "Leads voltage by 90°",
+        "Is in phase with voltage",
+        "Leads voltage by 180°"
+      ],
+      "correct": 1,
+      "explanation": "For a capacitor, i = C dv/dt, so current leads voltage by 90°."
+    },
+    {
+      "text": "Thevenin's theorem replaces a linear two-terminal network by:",
+      "options": [
+        "A current source in parallel with a resistance",
+        "A voltage source in series with a resistance",
+        "Two voltage sources",
+        "A pure resistance only"
+      ],
+      "correct": 1,
+      "explanation": "Thevenin equivalent is Vth in series with Rth."
+    },
+    {
+      "text": "The Q-factor of a series RLC circuit at resonance is given by:",
+      "options": [
+        "R/ωL",
+        "ωL/R",
+        "1/(ωRC)",
+        "ωRC"
+      ],
+      "correct": 1,
+      "explanation": "Q = ωL/R = 1/(ωCR) for a series resonant circuit."
+    },
+    {
+      "text": "Maximum power transfer from a source to a load occurs when load resistance equals:",
+      "options": [
+        "Half the source resistance",
+        "Twice the source resistance",
+        "Source resistance",
+        "Zero"
+      ],
+      "correct": 2,
+      "explanation": "Maximum power transfer theorem: RL = Rs (source internal resistance) for DC resistive networks."
+    },
+    {
+      "text": "The unit of admittance is:",
+      "options": [
+        "Ohm",
+        "Siemens",
+        "Farad",
+        "Henry"
+      ],
+      "correct": 1,
+      "explanation": "Admittance Y = 1/Z is measured in Siemens (mho)."
+    },
+    {
+      "text": "In a series RLC circuit at resonance, the impedance is:",
+      "options": [
+        "Maximum and inductive",
+        "Minimum and purely resistive",
+        "Maximum and capacitive",
+        "Zero"
+      ],
+      "correct": 1,
+      "explanation": "At resonance XL = XC, so they cancel, leaving Z = R, minimum and purely resistive."
+    },
+    {
+      "text": "Norton's equivalent circuit consists of:",
+      "options": [
+        "Voltage source in series with resistance",
+        "Current source in parallel with resistance",
+        "Two current sources in series",
+        "A pure inductance"
+      ],
+      "correct": 1,
+      "explanation": "Norton equivalent is a current source IN in parallel with RN (= Rth)."
+    },
+    {
+      "text": "The time constant of an RC series circuit is:",
+      "options": [
+        "RC",
+        "R/C",
+        "1/RC",
+        "L/R"
+      ],
+      "correct": 0,
+      "explanation": "Time constant τ = RC for a charging/discharging RC circuit."
+    },
+    {
+      "text": "The depletion region in a p-n junction diode acts as:",
+      "options": [
+        "A conductor",
+        "An insulator",
+        "A capacitor plate pair",
+        "Both an insulator and forms a capacitance"
+      ],
+      "correct": 3,
+      "explanation": "The depletion region has no free carriers (insulating) but also forms a junction capacitance that varies with bias."
+    },
+    {
+      "text": "In a forward-biased silicon diode, the typical cut-in (knee) voltage is approximately:",
+      "options": [
+        "0.2 V",
+        "0.3 V",
+        "0.7 V",
+        "1.4 V"
+      ],
+      "correct": 2,
+      "explanation": "Silicon diodes have a typical forward cut-in voltage of about 0.7 V; germanium is about 0.3 V."
+    },
+    {
+      "text": "A Zener diode is normally operated in:",
+      "options": [
+        "Forward bias, active region",
+        "Reverse breakdown region",
+        "Cut-off region",
+        "Saturation region"
+      ],
+      "correct": 1,
+      "explanation": "Zener diodes are designed to operate in reverse breakdown for voltage regulation."
+    },
+    {
+      "text": "The current gain β of a BJT is defined as:",
+      "options": [
+        "IC/IB",
+        "IE/IC",
+        "IB/IE",
+        "IC/IE"
+      ],
+      "correct": 0,
+      "explanation": "β (common-emitter current gain) = IC/IB."
+    },
+    {
+      "text": "Which configuration of BJT amplifier provides voltage gain, current gain, but 180° phase shift?",
+      "options": [
+        "Common base",
+        "Common collector",
+        "Common emitter",
+        "Common gate"
+      ],
+      "correct": 2,
+      "explanation": "Common emitter (CE) provides both voltage and current gain with 180° phase inversion."
+    },
+    {
+      "text": "An enhancement type MOSFET conducts when:",
+      "options": [
+        "Gate-source voltage is zero",
+        "Gate-source voltage exceeds threshold voltage",
+        "Drain-source voltage is zero",
+        "It is always conducting"
+      ],
+      "correct": 1,
+      "explanation": "E-MOSFET requires VGS > VT to create a conducting channel; it is normally OFF."
+    },
+    {
+      "text": "The early effect in a BJT refers to:",
+      "options": [
+        "Variation of base width with collector-base voltage",
+        "Increase in emitter current with temperature",
+        "Breakdown of collector junction",
+        "Reduction of gain at high frequency"
+      ],
+      "correct": 0,
+      "explanation": "Early effect: base-width modulation as VCB increases, affecting output characteristics."
+    },
+    {
+      "text": "In an ideal op-amp, the input impedance is assumed to be:",
+      "options": [
+        "Zero",
+        "Infinite",
+        "Equal to output impedance",
+        "1 kΩ"
+      ],
+      "correct": 1,
+      "explanation": "Ideal op-amp characteristics: infinite input impedance, zero output impedance, infinite gain."
+    },
+    {
+      "text": "A photodiode is normally operated in:",
+      "options": [
+        "Forward bias",
+        "Reverse bias",
+        "Zero bias only",
+        "Breakdown region always"
+      ],
+      "correct": 1,
+      "explanation": "Photodiodes are reverse biased so photogenerated carriers increase reverse leakage current proportionally to light."
+    },
+    {
+      "text": "For an ideal op-amp in inverting configuration with Rf and Rin, the closed-loop gain is:",
+      "options": [
+        "Rin/Rf",
+        "-Rf/Rin",
+        "Rf + Rin",
+        "1 + Rf/Rin"
+      ],
+      "correct": 1,
+      "explanation": "Inverting amplifier gain Av = -Rf/Rin."
+    },
+    {
+      "text": "The gain of a non-inverting op-amp amplifier with feedback resistor Rf and input resistor R1 is:",
+      "options": [
+        "-Rf/R1",
+        "1 + Rf/R1",
+        "R1/Rf",
+        "Rf/R1"
+      ],
+      "correct": 1,
+      "explanation": "Non-inverting amplifier gain Av = 1 + Rf/R1."
+    },
+    {
+      "text": "A class B power amplifier has a theoretical maximum efficiency of approximately:",
+      "options": [
+        "25%",
+        "50%",
+        "78.5%",
+        "100%"
+      ],
+      "correct": 2,
+      "explanation": "Class B push-pull amplifiers have a maximum theoretical efficiency of about 78.5% (π/4)."
+    },
+    {
+      "text": "Negative feedback in an amplifier:",
+      "options": [
+        "Increases distortion and noise",
+        "Increases bandwidth and reduces distortion",
+        "Decreases bandwidth only",
+        "Has no effect on gain stability"
+      ],
+      "correct": 1,
+      "explanation": "Negative feedback trades gain for improved bandwidth, reduced distortion, and gain stability."
+    },
+    {
+      "text": "The CMRR of a differential amplifier is defined as the ratio of:",
+      "options": [
+        "Differential gain to common-mode gain",
+        "Common-mode gain to differential gain",
+        "Output voltage to input voltage",
+        "Bandwidth to gain"
+      ],
+      "correct": 0,
+      "explanation": "CMRR = Ad/Acm, ideally infinite for a perfect differential amplifier."
+    },
+    {
+      "text": "An oscillator circuit must satisfy the Barkhausen criterion, which requires loop gain magnitude equal to:",
+      "options": [
+        "0",
+        "0.5",
+        "1",
+        "2"
+      ],
+      "correct": 2,
+      "explanation": "Barkhausen criterion: loop gain |Aβ| = 1 and total phase shift = 0° (or 360°) for sustained oscillation."
+    },
+    {
+      "text": "A Wien bridge oscillator is commonly used to generate:",
+      "options": [
+        "Square waves",
+        "Sine waves at audio frequencies",
+        "Sawtooth waves",
+        "Pulse trains"
+      ],
+      "correct": 1,
+      "explanation": "The Wien bridge oscillator is a classic RC oscillator producing sinusoidal output in the audio range."
+    },
+    {
+      "text": "In a voltage regulator using a series pass transistor, the transistor operates in:",
+      "options": [
+        "Cut-off region",
+        "Active (linear) region",
+        "Saturation only",
+        "Breakdown region"
+      ],
+      "correct": 1,
+      "explanation": "Series regulators keep the pass transistor in the active region to control the voltage drop continuously."
+    },
+    {
+      "text": "The slew rate of an op-amp is defined as:",
+      "options": [
+        "Maximum rate of change of output voltage",
+        "Maximum input voltage",
+        "Gain bandwidth product",
+        "Input offset voltage"
+      ],
+      "correct": 0,
+      "explanation": "Slew rate = maximum dVout/dt the op-amp output can achieve, expressed in V/µs."
+    },
+    {
+      "text": "The number of NAND gates required to realize an AND gate is:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 1,
+      "explanation": "AND = NAND followed by another NAND used as an inverter, so 2 NAND gates."
+    },
+    {
+      "text": "A full adder circuit has how many inputs and outputs?",
+      "options": [
+        "2 inputs, 1 output",
+        "3 inputs, 2 outputs",
+        "2 inputs, 2 outputs",
+        "3 inputs, 1 output"
+      ],
+      "correct": 1,
+      "explanation": "Full adder: inputs A, B, Cin; outputs Sum and Cout — 3 inputs, 2 outputs."
+    },
+    {
+      "text": "A JK flip-flop with J=K=1 on each clock pulse will:",
+      "options": [
+        "Reset to 0",
+        "Set to 1",
+        "Toggle its output",
+        "Remain unchanged"
+      ],
+      "correct": 2,
+      "explanation": "J=K=1 causes the JK flip-flop to toggle state on each clock edge."
+    },
+    {
+      "text": "The minimum number of flip-flops needed to build a MOD-10 (decade) counter is:",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "10"
+      ],
+      "correct": 1,
+      "explanation": "2^4=16 ≥ 10, and 2^3=8 < 10, so 4 flip-flops are the minimum needed."
+    },
+    {
+      "text": "A multiplexer with 8 input lines requires how many select lines?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "8"
+      ],
+      "correct": 1,
+      "explanation": "n select lines address 2^n inputs; 2^3 = 8, so 3 select lines are needed."
+    },
+    {
+      "text": "The Boolean expression A + AB simplifies to:",
+      "options": [
+        "A",
+        "B",
+        "AB",
+        "A + B"
+      ],
+      "correct": 0,
+      "explanation": "By absorption law, A + AB = A."
+    },
+    {
+      "text": "In K-map simplification, a group of 4 adjacent 1s is called a:",
+      "options": [
+        "Pair",
+        "Quad",
+        "Octet",
+        "Cell"
+      ],
+      "correct": 1,
+      "explanation": "A group of 2 cells is a pair, 4 cells is a quad, 8 cells is an octet."
+    },
+    {
+      "text": "A ripple counter is also known as:",
+      "options": [
+        "Synchronous counter",
+        "Asynchronous counter",
+        "Up-down counter",
+        "Ring counter"
+      ],
+      "correct": 1,
+      "explanation": "Ripple (asynchronous) counters have flip-flops triggered by the output of the previous stage, not a common clock."
+    },
+    {
+      "text": "The number of bits required to represent the decimal number 255 in binary is:",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 2,
+      "explanation": "255 in binary is 11111111, which uses 8 bits."
+    },
+    {
+      "text": "A system is said to be causal if its output at any time depends on:",
+      "options": [
+        "Future inputs only",
+        "Present and past inputs only",
+        "Present output only",
+        "Neither past nor future inputs"
+      ],
+      "correct": 1,
+      "explanation": "Causal system: output at time t depends only on present and past input values, not future ones."
+    },
+    {
+      "text": "The Fourier transform of a unit impulse δ(t) is:",
+      "options": [
+        "0",
+        "1",
+        "δ(ω)",
+        "∞"
+      ],
+      "correct": 1,
+      "explanation": "The Fourier transform of δ(t) is 1 for all frequencies (flat spectrum)."
+    },
+    {
+      "text": "The region of convergence (ROC) of the Laplace transform of a causal signal lies:",
+      "options": [
+        "To the left of the rightmost pole",
+        "To the right of the rightmost pole",
+        "On the imaginary axis",
+        "Nowhere in the s-plane"
+      ],
+      "correct": 1,
+      "explanation": "For causal signals, ROC is to the right of the rightmost pole in the s-plane."
+    },
+    {
+      "text": "Convolution of a signal x(t) with δ(t-t0) results in:",
+      "options": [
+        "x(t)",
+        "x(t-t0)",
+        "x(t)+t0",
+        "0"
+      ],
+      "correct": 1,
+      "explanation": "Convolving with a shifted impulse shifts the signal: x(t) * δ(t-t0) = x(t-t0)."
+    },
+    {
+      "text": "The Nyquist sampling rate for a signal band-limited to fm Hz is:",
+      "options": [
+        "fm",
+        "2fm",
+        "fm/2",
+        "4fm"
+      ],
+      "correct": 1,
+      "explanation": "Nyquist rate = 2fm to avoid aliasing when sampling a band-limited signal."
+    },
+    {
+      "text": "A system is LTI (linear time-invariant) if it satisfies:",
+      "options": [
+        "Only linearity",
+        "Only time invariance",
+        "Both linearity and time invariance",
+        "Neither property"
+      ],
+      "correct": 2,
+      "explanation": "LTI systems must satisfy both the superposition (linearity) property and time invariance."
+    },
+    {
+      "text": "The z-transform of a discrete unit step signal u[n] has ROC:",
+      "options": [
+        "|z| < 1",
+        "|z| > 1",
+        "|z| = 1",
+        "All z"
+      ],
+      "correct": 1,
+      "explanation": "Z-transform of u[n] is z/(z-1) with ROC |z| > 1."
+    },
+    {
+      "text": "Energy signals have:",
+      "options": [
+        "Finite energy and finite average power",
+        "Finite energy and zero average power",
+        "Infinite energy and finite average power",
+        "Infinite energy and infinite power"
+      ],
+      "correct": 1,
+      "explanation": "Energy signals have finite total energy, and their average power over infinite time is zero."
+    },
+    {
+      "text": "The impulse response of a stable LTI system must be:",
+      "options": [
+        "Absolutely non-integrable",
+        "Absolutely integrable (BIBO condition)",
+        "Always periodic",
+        "Always an impulse"
+      ],
+      "correct": 1,
+      "explanation": "BIBO stability requires the impulse response h(t) to be absolutely integrable/summable."
+    },
+    {
+      "text": "The transfer function of a system is defined as the ratio of:",
+      "options": [
+        "Input to output in time domain",
+        "Laplace transform of output to input with zero initial conditions",
+        "Output to input at steady state only",
+        "Gain to phase margin"
+      ],
+      "correct": 1,
+      "explanation": "Transfer function G(s) = L[output]/L[input] assuming zero initial conditions."
+    },
+    {
+      "text": "A system is said to be stable if all poles of its transfer function lie:",
+      "options": [
+        "On the imaginary axis",
+        "In the right half of the s-plane",
+        "In the left half of the s-plane",
+        "At the origin"
+      ],
+      "correct": 2,
+      "explanation": "For BIBO stability, all poles of the transfer function must lie in the left half of the s-plane."
+    },
+    {
+      "text": "The Routh-Hurwitz criterion is used to determine:",
+      "options": [
+        "The frequency response of a system",
+        "The number of poles in the right half s-plane",
+        "The steady-state error",
+        "The gain margin only"
+      ],
+      "correct": 1,
+      "explanation": "Routh-Hurwitz criterion determines system stability by counting sign changes indicating RHP poles."
+    },
+    {
+      "text": "In a unity feedback control system, the steady-state error for a step input depends on the:",
+      "options": [
+        "Type 0 system's position error constant",
+        "Derivative gain only",
+        "Output impedance",
+        "Phase margin"
+      ],
+      "correct": 0,
+      "explanation": "For a type-0 system, steady-state error to a step input is determined by the position error constant Kp."
+    },
+    {
+      "text": "The phase margin of a control system is a measure of:",
+      "options": [
+        "Absolute stability",
+        "Relative stability",
+        "Steady state error",
+        "Bandwidth only"
+      ],
+      "correct": 1,
+      "explanation": "Phase margin indicates relative stability — how close the system is to instability."
+    },
+    {
+      "text": "A PID controller combines:",
+      "options": [
+        "Proportional and integral action only",
+        "Proportional, integral, and derivative action",
+        "Only derivative action",
+        "Only proportional action"
+      ],
+      "correct": 1,
+      "explanation": "PID = Proportional + Integral + Derivative control actions combined."
+    },
+    {
+      "text": "The root locus technique is used to study the variation of closed-loop poles with respect to:",
+      "options": [
+        "Time",
+        "A system parameter (usually gain K)",
+        "Frequency only",
+        "Input amplitude"
+      ],
+      "correct": 1,
+      "explanation": "Root locus shows how closed-loop pole locations move as a parameter, typically gain K, varies from 0 to ∞."
+    },
+    {
+      "text": "A type-1 system has how many poles at the origin in its open-loop transfer function?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 1,
+      "explanation": "System type is defined by the number of poles at the origin (integrators); type-1 has exactly one."
+    },
+    {
+      "text": "Bode plot magnitude is typically expressed in:",
+      "options": [
+        "Volts",
+        "Decibels (dB)",
+        "Radians",
+        "Ohms"
+      ],
+      "correct": 1,
+      "explanation": "Bode magnitude plots express gain in decibels: 20 log10|G(jω)|."
+    },
+    {
+      "text": "In amplitude modulation, the bandwidth of the AM signal is:",
+      "options": [
+        "Equal to message bandwidth",
+        "Twice the message bandwidth",
+        "Half the message bandwidth",
+        "Four times message bandwidth"
+      ],
+      "correct": 1,
+      "explanation": "AM bandwidth = 2fm (upper and lower sidebands), twice the message signal bandwidth."
+    },
+    {
+      "text": "Frequency modulation is more resistant to noise than amplitude modulation mainly because:",
+      "options": [
+        "FM has lower bandwidth",
+        "Noise mainly affects amplitude, not frequency",
+        "FM uses lower carrier frequency",
+        "AM cannot be demodulated"
+      ],
+      "correct": 1,
+      "explanation": "Since noise primarily affects amplitude, an FM receiver (sensitive to frequency, with amplitude limiting) is more immune to noise."
+    },
+    {
+      "text": "The minimum sampling rate to avoid aliasing when digitizing a signal is called the:",
+      "options": [
+        "Baud rate",
+        "Nyquist rate",
+        "Bit rate",
+        "Carrier frequency"
+      ],
+      "correct": 1,
+      "explanation": "Nyquist rate = 2 × highest frequency component of the signal, minimum sampling rate to avoid aliasing."
+    },
+    {
+      "text": "Pulse Code Modulation (PCM) involves which three steps in order?",
+      "options": [
+        "Quantization, Sampling, Encoding",
+        "Sampling, Quantization, Encoding",
+        "Encoding, Sampling, Quantization",
+        "Modulation, Sampling, Filtering"
+      ],
+      "correct": 1,
+      "explanation": "PCM process order: Sampling the analog signal, Quantizing the samples, then Encoding into binary form."
+    },
+    {
+      "text": "In digital communication, the term 'bit rate' refers to:",
+      "options": [
+        "Number of symbols transmitted per second",
+        "Number of bits transmitted per second",
+        "Bandwidth of the channel",
+        "Signal to noise ratio"
+      ],
+      "correct": 1,
+      "explanation": "Bit rate is the number of bits transmitted per unit time (bps), distinct from baud (symbol) rate."
+    },
+    {
+      "text": "Shannon's channel capacity theorem states that channel capacity C is given by:",
+      "options": [
+        "C = B log2(1 + S/N)",
+        "C = B/log2(S/N)",
+        "C = 2B(S/N)",
+        "C = B(S-N)"
+      ],
+      "correct": 0,
+      "explanation": "Shannon-Hartley theorem: C = B log2(1 + S/N), where B is bandwidth and S/N is signal-to-noise ratio."
+    },
+    {
+      "text": "Time Division Multiplexing (TDM) allows multiple signals to share a channel by:",
+      "options": [
+        "Assigning different frequency bands",
+        "Assigning different time slots",
+        "Using different modulation schemes only",
+        "Using separate cables"
+      ],
+      "correct": 1,
+      "explanation": "TDM interleaves samples of different signals into distinct time slots on a shared channel."
+    },
+    {
+      "text": "The main advantage of digital communication systems over analog is:",
+      "options": [
+        "Lower implementation cost always",
+        "Better noise immunity and signal regeneration",
+        "Requires no encoding",
+        "Unlimited bandwidth"
+      ],
+      "correct": 1,
+      "explanation": "Digital signals can be regenerated at repeaters, offering much better noise immunity than analog transmission."
+    },
+    {
+      "text": "A satellite in geostationary orbit appears stationary relative to Earth because its orbital period equals:",
+      "options": [
+        "12 hours",
+        "24 hours (Earth's rotation period)",
+        "1 hour",
+        "365 days"
+      ],
+      "correct": 1,
+      "explanation": "A geostationary orbit has a period matching Earth's rotation (~24 hours), so it appears fixed from the ground."
+    },
+    {
+      "text": "Gauss's law relates electric flux through a closed surface to:",
+      "options": [
+        "The magnetic field inside",
+        "The enclosed electric charge",
+        "The velocity of charge",
+        "The permeability of free space"
+      ],
+      "correct": 1,
+      "explanation": "Gauss's law: total electric flux through a closed surface = enclosed charge / ε0."
+    },
+    {
+      "text": "The unit of electric field intensity is:",
+      "options": [
+        "Volt",
+        "Volt per metre",
+        "Newton",
+        "Coulomb"
+      ],
+      "correct": 1,
+      "explanation": "Electric field intensity E is measured in volts per metre (V/m) or equivalently N/C."
+    },
+    {
+      "text": "Skin effect in a conductor causes current to concentrate:",
+      "options": [
+        "At the center of the conductor",
+        "Near the surface of the conductor",
+        "Uniformly throughout",
+        "Outside the conductor"
+      ],
+      "correct": 1,
+      "explanation": "At high frequencies, skin effect forces current to flow mainly near the conductor's surface."
+    },
+    {
+      "text": "The characteristic impedance of free space is approximately:",
+      "options": [
+        "50 Ω",
+        "75 Ω",
+        "120π Ω (≈377 Ω)",
+        "600 Ω"
+      ],
+      "correct": 2,
+      "explanation": "Intrinsic impedance of free space η0 = √(μ0/ε0) ≈ 377 Ω = 120π Ω."
+    },
+    {
+      "text": "A waveguide, unlike a transmission line, cannot support:",
+      "options": [
+        "TE modes",
+        "TM modes",
+        "TEM modes",
+        "Any propagating mode"
+      ],
+      "correct": 2,
+      "explanation": "Hollow metallic waveguides cannot support a pure TEM mode; they support TE and TM modes above cutoff."
+    },
+    {
+      "text": "The polarization of an antenna refers to the orientation of the:",
+      "options": [
+        "Magnetic field only",
+        "Electric field vector of the radiated wave",
+        "Current in the feed line",
+        "Ground plane"
+      ],
+      "correct": 1,
+      "explanation": "Antenna polarization describes the orientation of the radiated wave's electric field vector."
+    },
+    {
+      "text": "Brewster's angle is the angle of incidence at which:",
+      "options": [
+        "Total internal reflection occurs",
+        "Reflected wave is fully polarized (no reflection for one polarization)",
+        "The wave is completely absorbed",
+        "The refractive index becomes zero"
+      ],
+      "correct": 1,
+      "explanation": "At Brewster's angle, one polarization component is not reflected at all — the reflected light is fully polarized."
+    },
+    {
+      "text": "A quarter-wave transformer is used for:",
+      "options": [
+        "Amplification",
+        "Impedance matching between two different impedances",
+        "Frequency modulation",
+        "Rectification"
+      ],
+      "correct": 1,
+      "explanation": "A λ/4 transmission line section can transform one impedance to another for matching purposes."
+    },
+    {
+      "text": "The standing wave ratio (VSWR) for a perfectly matched line is:",
+      "options": [
+        "0",
+        "1",
+        "Infinite",
+        "-1"
+      ],
+      "correct": 1,
+      "explanation": "A perfectly matched line has no reflections, giving VSWR = 1."
+    },
+    {
+      "text": "The 8085 microprocessor is a:",
+      "options": [
+        "4-bit processor",
+        "8-bit processor",
+        "16-bit processor",
+        "32-bit processor"
+      ],
+      "correct": 1,
+      "explanation": "The 8085 is a classic 8-bit microprocessor with an 8-bit data bus and 16-bit address bus."
+    },
+    {
+      "text": "In the 8085, the address bus width is 16 bits, which allows addressing of:",
+      "options": [
+        "256 memory locations",
+        "1024 memory locations",
+        "64 KB (65,536) memory locations",
+        "1 MB memory locations"
+      ],
+      "correct": 2,
+      "explanation": "16-bit address bus can address 2^16 = 65,536 locations = 64 KB."
+    },
+    {
+      "text": "The purpose of the Program Counter (PC) in a microprocessor is to:",
+      "options": [
+        "Store the current instruction being executed",
+        "Hold the address of the next instruction to be fetched",
+        "Store the result of ALU operations",
+        "Hold the stack pointer value"
+      ],
+      "correct": 1,
+      "explanation": "PC holds the memory address of the next instruction to fetch, incrementing after each fetch."
+    },
+    {
+      "text": "An interrupt in a microprocessor system is used to:",
+      "options": [
+        "Permanently stop program execution",
+        "Temporarily divert the CPU to service a specific event",
+        "Reset the entire system",
+        "Clear all registers"
+      ],
+      "correct": 1,
+      "explanation": "Interrupts temporarily suspend the main program so the CPU can service a higher-priority event, then resume."
+    },
+    {
+      "text": "The stack in a microprocessor operates on which principle?",
+      "options": [
+        "FIFO (First In First Out)",
+        "LIFO (Last In First Out)",
+        "Random access",
+        "Priority based only"
+      ],
+      "correct": 1,
+      "explanation": "A stack follows LIFO — the last item pushed is the first popped."
+    },
+    {
+      "text": "DMA (Direct Memory Access) is used to:",
+      "options": [
+        "Allow peripherals to access memory directly without CPU intervention for each byte",
+        "Increase CPU clock speed",
+        "Store the interrupt vector table",
+        "Encrypt memory contents"
+      ],
+      "correct": 0,
+      "explanation": "DMA lets peripherals transfer data to/from memory directly, bypassing the CPU for each transfer, improving speed."
+    },
+    {
+      "text": "An assembler's primary function is to:",
+      "options": [
+        "Translate high-level language to machine code",
+        "Translate assembly language mnemonics into machine code",
+        "Execute programs directly",
+        "Debug hardware faults"
+      ],
+      "correct": 1,
+      "explanation": "An assembler converts assembly language source code (mnemonics) into machine code."
+    },
+    {
+      "text": "In embedded systems, a watchdog timer is used to:",
+      "options": [
+        "Measure execution time of programs",
+        "Reset the system if software hangs or malfunctions",
+        "Generate audio signals",
+        "Store non-volatile data"
+      ],
+      "correct": 1,
+      "explanation": "A watchdog timer resets the microcontroller if it isn't periodically 'kicked', recovering from software hangs."
+    }
+  ],
+  "partB": [
+    {
+      "text": "If 5 workers can complete a task in 12 days, how many days will 10 workers take to complete the same task?",
+      "options": [
+        "3 days",
+        "6 days",
+        "10 days",
+        "24 days"
+      ],
+      "correct": 1,
+      "explanation": "Work is inversely proportional to number of workers: 5×12 = 10×x → x = 6 days."
+    },
+    {
+      "text": "A train travels 300 km in 5 hours. What is its average speed?",
+      "options": [
+        "50 km/h",
+        "60 km/h",
+        "65 km/h",
+        "75 km/h"
+      ],
+      "correct": 1,
+      "explanation": "Speed = distance/time = 300/5 = 60 km/h."
+    },
+    {
+      "text": "Find the next number in the series: 2, 6, 12, 20, 30, ?",
+      "options": [
+        "36",
+        "40",
+        "42",
+        "44"
+      ],
+      "correct": 2,
+      "explanation": "Differences are 4, 6, 8, 10, 12 → 30 + 12 = 42 (pattern n(n+1))."
+    },
+    {
+      "text": "If CODE is written as DPEF, how is WORD written in the same code?",
+      "options": [
+        "XPSE",
+        "XQSE",
+        "YPSE",
+        "XPTE"
+      ],
+      "correct": 0,
+      "explanation": "Each letter is shifted forward by 1: W→X, O→P, R→S, D→E → XPSE."
+    },
+    {
+      "text": "A is the father of B. B is the sister of C. C is the son of D. How is D related to A?",
+      "options": [
+        "Wife",
+        "Daughter",
+        "Sister",
+        "Mother"
+      ],
+      "correct": 0,
+      "explanation": "A is father of B and C (siblings), and D is the parent of C — so D is A's spouse (wife)."
+    },
+    {
+      "text": "Statement: All pens are books. All books are papers. Conclusion: All pens are papers.",
+      "options": [
+        "Conclusion follows",
+        "Conclusion does not follow",
+        "Cannot be determined",
+        "Conclusion is partially true"
+      ],
+      "correct": 0,
+      "explanation": "This is a valid syllogism: All A are B, All B are C, therefore All A are C."
+    },
+    {
+      "text": "Which figure completes the series in a rotation pattern where a shape turns 90° clockwise each step? (Assume standard rotation logic)",
+      "options": [
+        "The shape rotated 90° further clockwise from the previous figure",
+        "The shape rotated 90° counter-clockwise",
+        "The same shape unchanged",
+        "A mirror image of the shape"
+      ],
+      "correct": 0,
+      "explanation": "In a consistent 90° clockwise rotation series, the next figure continues rotating 90° clockwise from the last one."
+    },
+    {
+      "text": "Look at this series: 7, 10, 8, 11, 9, 12, ? What number should come next?",
+      "options": [
+        "10",
+        "12",
+        "13",
+        "15"
+      ],
+      "correct": 0,
+      "explanation": "Two interleaved series: +3,-2 alternating: 7,10,8,11,9,12,10 — next is 10."
+    },
+    {
+      "text": "A dice has numbers 1-6. If the sum of numbers on opposite faces is always 7, what is opposite to 4?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5"
+      ],
+      "correct": 2,
+      "explanation": "7 - 4 = 3, so 3 is opposite to 4."
+    },
+    {
+      "text": "Pointing to a photograph, a man said, 'She is the daughter of my grandfather's only son.' How is the woman related to the man?",
+      "options": [
+        "Mother",
+        "Sister",
+        "Aunt",
+        "Wife"
+      ],
+      "correct": 1,
+      "explanation": "Grandfather's only son is the man's father, and the daughter of the man's father is his sister."
+    },
+    {
+      "text": "If the day before yesterday was Thursday, what day will it be tomorrow?",
+      "options": [
+        "Saturday",
+        "Sunday",
+        "Monday",
+        "Friday"
+      ],
+      "correct": 1,
+      "explanation": "Day before yesterday = Thursday, so today = Saturday, tomorrow = Sunday."
+    },
+    {
+      "text": "Insert the missing number: 3, 9, 27, 81, ?",
+      "options": [
+        "162",
+        "243",
+        "324",
+        "729"
+      ],
+      "correct": 1,
+      "explanation": "Each term is multiplied by 3: 81 × 3 = 243."
+    },
+    {
+      "text": "Two pipes A and B can fill a tank in 20 and 30 minutes respectively. If both are opened together, how long will they take to fill the tank?",
+      "options": [
+        "10 minutes",
+        "12 minutes",
+        "15 minutes",
+        "25 minutes"
+      ],
+      "correct": 1,
+      "explanation": "Combined rate = 1/20 + 1/30 = 3/60 + 2/60 = 5/60 = 1/12, so time = 12 minutes."
+    },
+    {
+      "text": "Choose the odd one out: Triangle, Square, Circle, Cube",
+      "options": [
+        "Triangle",
+        "Square",
+        "Circle",
+        "Cube"
+      ],
+      "correct": 3,
+      "explanation": "Triangle, Square, and Circle are 2D shapes; Cube is a 3D solid — the odd one out."
+    },
+    {
+      "text": "A man walks 5 km north, then 3 km east, then 5 km south. How far is he from his starting point?",
+      "options": [
+        "3 km",
+        "5 km",
+        "8 km",
+        "13 km"
+      ],
+      "correct": 0,
+      "explanation": "Net displacement: 5 km north and 5 km south cancel out, leaving only 3 km east."
+    }
+  ]
+}

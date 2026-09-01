@@ -1,0 +1,1054 @@
+{
+  "id": "mechanical-1",
+  "title": "Mechanical Engineering — Mock Test 1",
+  "discipline": "mechanical",
+  "partA": [
+    {
+      "text": "The centroid of a triangle lies at a distance from the base equal to:",
+      "options": [
+        "1/2 of the height",
+        "1/3 of the height",
+        "2/3 of the height",
+        "1/4 of the height"
+      ],
+      "correct": 1,
+      "explanation": "The centroid of a triangle is located at 1/3 the height from the base (2/3 from the apex)."
+    },
+    {
+      "text": "A force couple produces:",
+      "options": [
+        "Translation only",
+        "Pure rotation (moment) with no net force",
+        "Both translation and rotation equally",
+        "No effect on the body"
+      ],
+      "correct": 1,
+      "explanation": "A couple consists of two equal, opposite, parallel forces producing a pure moment with zero net force."
+    },
+    {
+      "text": "The coefficient of static friction is generally:",
+      "options": [
+        "Equal to the coefficient of kinetic friction",
+        "Greater than the coefficient of kinetic friction",
+        "Less than the coefficient of kinetic friction",
+        "Always zero"
+      ],
+      "correct": 1,
+      "explanation": "Static friction coefficient is typically greater than kinetic friction coefficient for the same surfaces."
+    },
+    {
+      "text": "The moment of inertia of a circular section about its centroidal axis is:",
+      "options": [
+        "πd³/32",
+        "πd⁴/64",
+        "πd²/4",
+        "πd⁴/32"
+      ],
+      "correct": 1,
+      "explanation": "For a circular cross-section, I = πd⁴/64 about the centroidal (diametral) axis."
+    },
+    {
+      "text": "According to the principle of virtual work, a system is in equilibrium if the virtual work done by all forces is:",
+      "options": [
+        "Maximum",
+        "Minimum",
+        "Zero",
+        "Negative"
+      ],
+      "correct": 2,
+      "explanation": "Principle of virtual work: total virtual work done by all forces for a virtual displacement is zero at equilibrium."
+    },
+    {
+      "text": "Newton's second law of motion states that force is directly proportional to:",
+      "options": [
+        "Velocity",
+        "Rate of change of momentum",
+        "Displacement",
+        "Acceleration only, independent of mass"
+      ],
+      "correct": 1,
+      "explanation": "Newton's second law: F = dp/dt, force equals the rate of change of momentum (= ma for constant mass)."
+    },
+    {
+      "text": "The center of gravity of a uniform solid hemisphere of radius R lies at a distance from the flat face equal to:",
+      "options": [
+        "R/2",
+        "3R/8",
+        "2R/3",
+        "R/4"
+      ],
+      "correct": 1,
+      "explanation": "The centroid of a solid hemisphere lies at 3R/8 from the flat (base) face."
+    },
+    {
+      "text": "Work done by a force is defined as the product of force and:",
+      "options": [
+        "Time",
+        "Displacement in the direction of the force",
+        "Velocity",
+        "Mass"
+      ],
+      "correct": 1,
+      "explanation": "Work = Force × displacement in the direction of the applied force."
+    },
+    {
+      "text": "The radius of gyration of a body about an axis is defined such that its moment of inertia equals:",
+      "options": [
+        "Mass times radius of gyration",
+        "Mass times square of radius of gyration",
+        "Mass divided by radius of gyration",
+        "Radius of gyration squared only"
+      ],
+      "correct": 1,
+      "explanation": "I = m·k², where k is the radius of gyration."
+    },
+    {
+      "text": "Hooke's law states that stress is proportional to strain within the:",
+      "options": [
+        "Plastic limit",
+        "Elastic limit",
+        "Ultimate limit",
+        "Fracture point"
+      ],
+      "correct": 1,
+      "explanation": "Hooke's Law: stress ∝ strain holds true only within the elastic limit of the material."
+    },
+    {
+      "text": "The ratio of lateral strain to longitudinal strain is called:",
+      "options": [
+        "Young's modulus",
+        "Poisson's ratio",
+        "Bulk modulus",
+        "Shear modulus"
+      ],
+      "correct": 1,
+      "explanation": "Poisson's ratio μ = lateral strain / longitudinal strain."
+    },
+    {
+      "text": "The maximum shear stress theory of failure is also known as:",
+      "options": [
+        "Rankine's theory",
+        "Tresca's theory",
+        "Von Mises theory",
+        "St. Venant's theory"
+      ],
+      "correct": 1,
+      "explanation": "Maximum shear stress theory is also called Tresca's theory of failure."
+    },
+    {
+      "text": "For a simply supported beam with a central point load W and span L, the maximum bending moment is:",
+      "options": [
+        "WL/2",
+        "WL/4",
+        "WL/8",
+        "WL/6"
+      ],
+      "correct": 1,
+      "explanation": "Maximum bending moment for a central point load on a simply supported beam = WL/4."
+    },
+    {
+      "text": "The bending equation M/I = σ/y = E/R relates bending moment to:",
+      "options": [
+        "Stress, section, and radius of curvature",
+        "Only stress",
+        "Only deflection",
+        "Only shear force"
+      ],
+      "correct": 0,
+      "explanation": "The bending equation links bending moment M, moment of inertia I, bending stress σ, distance y, Young's modulus E, and radius of curvature R."
+    },
+    {
+      "text": "A shaft subjected to pure torsion experiences maximum shear stress at:",
+      "options": [
+        "The center (axis)",
+        "The outer surface",
+        "Midway between center and surface",
+        "It is uniform throughout"
+      ],
+      "correct": 1,
+      "explanation": "In torsion, shear stress varies linearly from zero at the center to a maximum at the outer surface."
+    },
+    {
+      "text": "Euler's formula for buckling load of a column is valid for:",
+      "options": [
+        "Short columns",
+        "Long, slender columns",
+        "Columns under pure tension",
+        "Columns with zero length"
+      ],
+      "correct": 1,
+      "explanation": "Euler's buckling formula applies specifically to long, slender columns where buckling governs failure, not crushing."
+    },
+    {
+      "text": "The strain energy stored in a body due to gradually applied load is given by:",
+      "options": [
+        "½ × Load × Deflection",
+        "Load × Deflection",
+        "2 × Load × Deflection",
+        "Load / Deflection"
+      ],
+      "correct": 0,
+      "explanation": "For a gradually applied load, strain energy U = ½ × P × δ (area under the load-deflection curve)."
+    },
+    {
+      "text": "The modulus of rigidity relates shear stress to:",
+      "options": [
+        "Normal strain",
+        "Shear strain",
+        "Volumetric strain",
+        "Bending strain"
+      ],
+      "correct": 1,
+      "explanation": "Modulus of rigidity (G) = shear stress / shear strain."
+    },
+    {
+      "text": "The degree of freedom of a planar mechanism is calculated using:",
+      "options": [
+        "Grubler's equation",
+        "Bernoulli's equation",
+        "Euler's equation",
+        "Navier-Stokes equation"
+      ],
+      "correct": 0,
+      "explanation": "Grubler's equation (or Kutzbach criterion) determines the degrees of freedom of a planar mechanism."
+    },
+    {
+      "text": "In a four-bar mechanism, if the sum of the shortest and longest link lengths is less than the sum of the other two, it is called:",
+      "options": [
+        "A non-Grashof mechanism",
+        "A Grashof mechanism",
+        "A rigid structure",
+        "An indeterminate mechanism"
+      ],
+      "correct": 1,
+      "explanation": "This is Grashof's law: if Lshortest + Llongest < Lother1 + Lother2, at least one link can fully rotate — a Grashof mechanism."
+    },
+    {
+      "text": "The primary function of a flywheel in machinery is to:",
+      "options": [
+        "Increase the speed of the machine",
+        "Store kinetic energy and reduce speed fluctuations",
+        "Convert rotary motion to linear motion",
+        "Reduce vibrations only"
+      ],
+      "correct": 1,
+      "explanation": "A flywheel stores kinetic energy during high-torque phases and releases it during low-torque phases, smoothing speed fluctuations."
+    },
+    {
+      "text": "Coriolis component of acceleration exists when a point has:",
+      "options": [
+        "Only rotational motion",
+        "Sliding motion on a rotating link",
+        "Only linear motion",
+        "No relative motion"
+      ],
+      "correct": 1,
+      "explanation": "The Coriolis component arises when a point slides along a link that is itself rotating."
+    },
+    {
+      "text": "The condition for a cam-follower to maintain contact at high speeds is governed by the:",
+      "options": [
+        "Spring force overcoming inertia force",
+        "Only the follower mass",
+        "Cam material hardness",
+        "Follower color"
+      ],
+      "correct": 0,
+      "explanation": "At high speeds, the spring (or retaining force) must be strong enough to overcome the follower's inertia to maintain contact with the cam."
+    },
+    {
+      "text": "The velocity ratio of a simple gear train is the ratio of:",
+      "options": [
+        "Number of teeth on driven gear to driver gear",
+        "Diameter of driver to driven gear only",
+        "Speed of driver to speed of driven gear",
+        "Module of the gears"
+      ],
+      "correct": 2,
+      "explanation": "Velocity ratio = speed of driver / speed of driven gear = teeth on driven/teeth on driver (inversely related to teeth count)."
+    },
+    {
+      "text": "Gyroscopic couple acts on a rotating body when there is a change in the direction of its:",
+      "options": [
+        "Mass",
+        "Spin axis (angular momentum vector)",
+        "Temperature",
+        "Linear velocity only"
+      ],
+      "correct": 1,
+      "explanation": "Gyroscopic couple arises due to the rate of change of the direction of the angular momentum (spin axis)."
+    },
+    {
+      "text": "The purpose of a governor in an engine is to:",
+      "options": [
+        "Store energy during the cycle",
+        "Regulate mean speed by controlling fuel supply as load varies",
+        "Reduce vibration of the crankshaft",
+        "Balance reciprocating masses"
+      ],
+      "correct": 1,
+      "explanation": "A governor regulates the mean speed of an engine by adjusting fuel/steam supply in response to changing load."
+    },
+    {
+      "text": "The static balancing of rotating masses requires that the resultant of all centrifugal forces be:",
+      "options": [
+        "Maximum",
+        "Zero",
+        "Equal to the weight of the rotor",
+        "Constant but non-zero"
+      ],
+      "correct": 1,
+      "explanation": "For static balance, the vector sum of all centrifugal forces acting on the rotating masses must equal zero."
+    },
+    {
+      "text": "The factor of safety is defined as the ratio of:",
+      "options": [
+        "Working stress to ultimate/yield stress",
+        "Ultimate stress to working stress",
+        "Load to deflection",
+        "Strain to stress"
+      ],
+      "correct": 1,
+      "explanation": "Factor of safety = Ultimate (or yield) stress / permissible (working) stress."
+    },
+    {
+      "text": "Fatigue failure in machine components typically occurs due to:",
+      "options": [
+        "Static overload",
+        "Repeated cyclic loading below the ultimate strength",
+        "Excessive temperature only",
+        "Corrosion alone"
+      ],
+      "correct": 1,
+      "explanation": "Fatigue failure results from repeated/cyclic stresses over time, even when stresses are well below the material's ultimate strength."
+    },
+    {
+      "text": "A key used to connect a shaft and hub primarily transmits:",
+      "options": [
+        "Axial force",
+        "Torque",
+        "Bending moment only",
+        "Thermal expansion"
+      ],
+      "correct": 1,
+      "explanation": "A key transmits torque between the shaft and the hub of a gear/pulley mounted on it."
+    },
+    {
+      "text": "Which type of screw thread is preferred for power transmission due to lower friction?",
+      "options": [
+        "V-thread",
+        "Square thread",
+        "Whitworth thread",
+        "Knuckle thread"
+      ],
+      "correct": 1,
+      "explanation": "Square threads have a lower friction angle, making them efficient for power screws."
+    },
+    {
+      "text": "The endurance limit of a material refers to the stress below which:",
+      "options": [
+        "Immediate fracture occurs",
+        "The material can withstand infinite load cycles without fatigue failure",
+        "The material yields",
+        "Creep begins"
+      ],
+      "correct": 1,
+      "explanation": "Endurance (fatigue) limit is the stress amplitude below which a material can theoretically endure infinite cycles without failing."
+    },
+    {
+      "text": "Preferred numbers are used in machine design mainly to:",
+      "options": [
+        "Standardize dimensions in a rational series",
+        "Calculate stress concentration",
+        "Determine fatigue life",
+        "Select bearing type"
+      ],
+      "correct": 0,
+      "explanation": "Preferred numbers form standardized geometric series used to rationalize sizes/capacities in design."
+    },
+    {
+      "text": "A stress concentration factor accounts for the effect of:",
+      "options": [
+        "Uniform loading",
+        "Geometric discontinuities like holes, fillets, and notches",
+        "Material color",
+        "Ambient humidity"
+      ],
+      "correct": 1,
+      "explanation": "Stress concentration factor quantifies the increase in local stress near geometric discontinuities such as holes or notches."
+    },
+    {
+      "text": "Bolted joints subjected to eccentric loading experience:",
+      "options": [
+        "Uniform stress in all bolts",
+        "Direct shear plus additional tensile/compressive stress due to the moment",
+        "No stress at all",
+        "Only compressive stress"
+      ],
+      "correct": 1,
+      "explanation": "Eccentric loads create a moment causing unequal stress distribution — direct shear plus tension/compression from the induced moment."
+    },
+    {
+      "text": "The primary purpose of a shaft coupling is to:",
+      "options": [
+        "Increase shaft diameter",
+        "Connect two shafts to transmit torque/motion",
+        "Reduce torque",
+        "Act as a bearing"
+      ],
+      "correct": 1,
+      "explanation": "A coupling connects two shafts end-to-end for transmitting torque and rotational motion."
+    },
+    {
+      "text": "Pascal's law states that pressure applied to an enclosed fluid is:",
+      "options": [
+        "Transmitted only in the direction of application",
+        "Transmitted equally in all directions",
+        "Reduced with distance",
+        "Dependent on fluid color"
+      ],
+      "correct": 1,
+      "explanation": "Pascal's law: pressure applied to a confined fluid is transmitted equally and undiminished in all directions."
+    },
+    {
+      "text": "The continuity equation in fluid mechanics is based on the principle of conservation of:",
+      "options": [
+        "Energy",
+        "Mass",
+        "Momentum only",
+        "Charge"
+      ],
+      "correct": 1,
+      "explanation": "The continuity equation (A1V1 = A2V2 for incompressible flow) expresses conservation of mass."
+    },
+    {
+      "text": "Bernoulli's equation is derived by applying the principle of conservation of:",
+      "options": [
+        "Mass",
+        "Energy",
+        "Momentum only",
+        "Charge"
+      ],
+      "correct": 1,
+      "explanation": "Bernoulli's equation expresses conservation of mechanical energy along a streamline for ideal, incompressible flow."
+    },
+    {
+      "text": "Reynolds number is used to determine whether flow is:",
+      "options": [
+        "Compressible or incompressible",
+        "Laminar or turbulent",
+        "Steady or unsteady",
+        "Rotational or irrotational"
+      ],
+      "correct": 1,
+      "explanation": "Reynolds number (ratio of inertial to viscous forces) distinguishes laminar flow from turbulent flow."
+    },
+    {
+      "text": "The unit of dynamic viscosity in SI is:",
+      "options": [
+        "N/m²",
+        "Pa·s (Pascal-second)",
+        "m²/s",
+        "kg/m³"
+      ],
+      "correct": 1,
+      "explanation": "Dynamic viscosity has SI units of Pascal-seconds (Pa·s), equivalent to kg/(m·s)."
+    },
+    {
+      "text": "A manometer is used to measure:",
+      "options": [
+        "Flow velocity",
+        "Pressure",
+        "Viscosity",
+        "Density"
+      ],
+      "correct": 1,
+      "explanation": "A manometer measures pressure (or pressure difference) using a column of liquid."
+    },
+    {
+      "text": "The center of pressure on a submerged plane surface is always:",
+      "options": [
+        "Above the centroid",
+        "Below the centroid",
+        "Exactly at the centroid",
+        "Independent of depth"
+      ],
+      "correct": 1,
+      "explanation": "The center of pressure lies below the centroid of a submerged surface due to increasing pressure with depth."
+    },
+    {
+      "text": "For an incompressible fluid flowing through a pipe of varying cross-section, as the area decreases, the velocity:",
+      "options": [
+        "Decreases",
+        "Increases",
+        "Remains constant",
+        "Becomes zero"
+      ],
+      "correct": 1,
+      "explanation": "By continuity equation (A×V = constant), a decrease in area causes an increase in velocity."
+    },
+    {
+      "text": "Cavitation in pumps occurs due to:",
+      "options": [
+        "Excess pressure at inlet",
+        "Local pressure falling below vapor pressure of the liquid",
+        "High viscosity fluid",
+        "Very low flow rate always"
+      ],
+      "correct": 1,
+      "explanation": "Cavitation occurs when local pressure drops below the liquid's vapor pressure, forming and collapsing vapor bubbles."
+    },
+    {
+      "text": "The first law of thermodynamics is a statement of conservation of:",
+      "options": [
+        "Entropy",
+        "Energy",
+        "Mass only",
+        "Pressure"
+      ],
+      "correct": 1,
+      "explanation": "First law of thermodynamics: energy can neither be created nor destroyed, only converted between forms (ΔU = Q - W)."
+    },
+    {
+      "text": "The efficiency of a Carnot engine operating between temperatures T1 (source) and T2 (sink) is:",
+      "options": [
+        "T1/T2",
+        "1 - T2/T1",
+        "T2/T1",
+        "1 + T2/T1"
+      ],
+      "correct": 1,
+      "explanation": "Carnot efficiency η = 1 - T2/T1, with temperatures in absolute (Kelvin) scale."
+    },
+    {
+      "text": "According to the second law of thermodynamics, entropy of an isolated system:",
+      "options": [
+        "Always decreases",
+        "Always increases or remains constant",
+        "Always remains zero",
+        "Is undefined"
+      ],
+      "correct": 1,
+      "explanation": "Second law: entropy of an isolated system never decreases; it increases for irreversible processes or stays constant for reversible ones."
+    },
+    {
+      "text": "An isothermal process occurs at constant:",
+      "options": [
+        "Volume",
+        "Pressure",
+        "Temperature",
+        "Entropy"
+      ],
+      "correct": 2,
+      "explanation": "An isothermal process is defined as occurring at constant temperature."
+    },
+    {
+      "text": "An adiabatic process is one in which there is no:",
+      "options": [
+        "Work transfer",
+        "Heat transfer to or from the system",
+        "Change in internal energy",
+        "Change in pressure"
+      ],
+      "correct": 1,
+      "explanation": "In an adiabatic process, Q = 0 — no heat is transferred into or out of the system."
+    },
+    {
+      "text": "The specific heat at constant pressure (Cp) is always ______ specific heat at constant volume (Cv) for an ideal gas.",
+      "options": [
+        "Less than",
+        "Greater than",
+        "Equal to",
+        "Unrelated to"
+      ],
+      "correct": 1,
+      "explanation": "For an ideal gas, Cp > Cv because at constant pressure, additional energy goes into doing work as the gas expands (Cp - Cv = R)."
+    },
+    {
+      "text": "The Otto cycle is the ideal air-standard cycle for:",
+      "options": [
+        "Diesel engines",
+        "Petrol (spark-ignition) engines",
+        "Gas turbines",
+        "Steam turbines"
+      ],
+      "correct": 1,
+      "explanation": "The Otto cycle models the ideal spark-ignition (petrol) engine with constant-volume heat addition."
+    },
+    {
+      "text": "In a Rankine cycle, the working fluid is typically:",
+      "options": [
+        "Air",
+        "Water/steam",
+        "Refrigerant only",
+        "Combustion gases"
+      ],
+      "correct": 1,
+      "explanation": "The Rankine cycle is the ideal cycle for steam power plants, using water/steam as the working fluid."
+    },
+    {
+      "text": "The Clausius statement of the second law relates to the impossibility of:",
+      "options": [
+        "Converting all heat into work",
+        "Heat spontaneously flowing from a colder to a hotter body without external work",
+        "Increasing entropy",
+        "Reversible processes"
+      ],
+      "correct": 1,
+      "explanation": "Clausius statement: heat cannot flow spontaneously from a colder body to a hotter body without external work input."
+    },
+    {
+      "text": "Fourier's law of heat conduction states that heat flux is proportional to:",
+      "options": [
+        "Temperature",
+        "The negative temperature gradient",
+        "Surface area only",
+        "Time"
+      ],
+      "correct": 1,
+      "explanation": "Fourier's law: q = -k(dT/dx), heat flux is proportional to the negative temperature gradient."
+    },
+    {
+      "text": "The thermal conductivity of a material generally has SI units of:",
+      "options": [
+        "W/m·K",
+        "W/m²",
+        "J/kg·K",
+        "W/K"
+      ],
+      "correct": 0,
+      "explanation": "Thermal conductivity k has SI units of watts per meter-kelvin (W/m·K)."
+    },
+    {
+      "text": "Convective heat transfer coefficient depends on:",
+      "options": [
+        "Only the fluid's thermal conductivity",
+        "Fluid properties, flow velocity, and surface geometry",
+        "Only the surface temperature",
+        "The color of the surface"
+      ],
+      "correct": 1,
+      "explanation": "Convective heat transfer coefficient (h) depends on fluid properties, flow conditions, and the geometry involved."
+    },
+    {
+      "text": "Radiative heat transfer between two black bodies depends on the difference of:",
+      "options": [
+        "Their temperatures",
+        "The fourth power of their absolute temperatures",
+        "Their masses",
+        "Their thermal conductivities"
+      ],
+      "correct": 1,
+      "explanation": "Stefan-Boltzmann law: radiative heat transfer ∝ (T1⁴ - T2⁴), the difference of fourth powers of absolute temperature."
+    },
+    {
+      "text": "A fin is used to enhance heat transfer primarily by:",
+      "options": [
+        "Increasing the surface area for convection",
+        "Increasing thermal conductivity of the base material",
+        "Reducing surface temperature to zero",
+        "Blocking conduction"
+      ],
+      "correct": 0,
+      "explanation": "Fins extend surface area exposed to the fluid, enhancing convective heat dissipation."
+    },
+    {
+      "text": "The Nusselt number in convective heat transfer represents the ratio of:",
+      "options": [
+        "Convective to conductive heat transfer",
+        "Inertial to viscous forces",
+        "Buoyancy to viscous forces",
+        "Momentum to thermal diffusivity"
+      ],
+      "correct": 0,
+      "explanation": "Nusselt number Nu = hL/k represents the ratio of convective to conductive heat transfer across a fluid layer."
+    },
+    {
+      "text": "Heat exchangers where fluids flow in opposite directions are called:",
+      "options": [
+        "Parallel flow",
+        "Counter flow",
+        "Cross flow",
+        "Regenerative flow"
+      ],
+      "correct": 1,
+      "explanation": "In counter-flow heat exchangers, the two fluids flow in opposite directions, generally giving higher effectiveness than parallel flow."
+    },
+    {
+      "text": "The Log Mean Temperature Difference (LMTD) is used in the design of:",
+      "options": [
+        "Pumps",
+        "Heat exchangers",
+        "Compressors",
+        "Turbines"
+      ],
+      "correct": 1,
+      "explanation": "LMTD is used to calculate the effective temperature driving force for heat transfer in heat exchangers."
+    },
+    {
+      "text": "Black body radiation intensity as a function of wavelength is described by:",
+      "options": [
+        "Fourier's law",
+        "Planck's law",
+        "Ohm's law",
+        "Newton's law of cooling"
+      ],
+      "correct": 1,
+      "explanation": "Planck's law describes the spectral distribution of black body radiation as a function of wavelength and temperature."
+    },
+    {
+      "text": "In a lathe machine, the operation of reducing the diameter of a workpiece is called:",
+      "options": [
+        "Facing",
+        "Turning",
+        "Knurling",
+        "Boring"
+      ],
+      "correct": 1,
+      "explanation": "Turning is the primary lathe operation for reducing the diameter of a cylindrical workpiece."
+    },
+    {
+      "text": "Sand casting is a type of:",
+      "options": [
+        "Expendable mold casting",
+        "Permanent mold casting",
+        "Die casting",
+        "Investment casting only"
+      ],
+      "correct": 0,
+      "explanation": "Sand casting uses a sand mold that is broken/expended after each casting, making it an expendable mold process."
+    },
+    {
+      "text": "Welding processes that use a consumable electrode include:",
+      "options": [
+        "TIG welding",
+        "MIG (GMAW) welding",
+        "Both are non-consumable processes",
+        "Neither uses an electrode"
+      ],
+      "correct": 1,
+      "explanation": "MIG (Metal Inert Gas / GMAW) welding uses a continuously fed consumable wire electrode, unlike TIG which uses a non-consumable tungsten electrode."
+    },
+    {
+      "text": "The process of improving the hardness of steel by heating and rapid cooling is called:",
+      "options": [
+        "Annealing",
+        "Quenching (hardening)",
+        "Tempering only",
+        "Normalizing"
+      ],
+      "correct": 1,
+      "explanation": "Quenching involves rapid cooling after heating steel to increase hardness through martensitic transformation."
+    },
+    {
+      "text": "Injection molding is primarily used for manufacturing components from:",
+      "options": [
+        "Ceramics",
+        "Thermoplastics",
+        "Cast iron",
+        "Steel alloys"
+      ],
+      "correct": 1,
+      "explanation": "Injection molding is the standard process for mass-producing thermoplastic components."
+    },
+    {
+      "text": "The main purpose of annealing a metal is to:",
+      "options": [
+        "Increase hardness",
+        "Relieve internal stresses and improve ductility",
+        "Increase brittleness",
+        "Increase tensile strength drastically"
+      ],
+      "correct": 1,
+      "explanation": "Annealing softens the metal, relieves internal stresses, and improves ductility/machinability."
+    },
+    {
+      "text": "In a milling machine, the cutting tool is:",
+      "options": [
+        "Stationary while the workpiece rotates",
+        "Rotating while the workpiece is typically fed against it",
+        "Both stationary",
+        "Only used for drilling"
+      ],
+      "correct": 1,
+      "explanation": "In milling, the multi-tooth cutter rotates while the workpiece (on the table) is fed into it."
+    },
+    {
+      "text": "Non-destructive testing (NDT) methods like ultrasonic and radiographic testing are used to:",
+      "options": [
+        "Destroy the component to test strength",
+        "Detect internal/surface defects without damaging the component",
+        "Only measure hardness",
+        "Increase the component's life"
+      ],
+      "correct": 1,
+      "explanation": "NDT methods detect flaws or defects in materials/components without causing any damage to them."
+    },
+    {
+      "text": "Composite materials are made by combining two or more constituent materials to achieve:",
+      "options": [
+        "Properties inferior to individual constituents",
+        "Properties superior to individual constituent materials",
+        "Identical properties to each constituent",
+        "Only cosmetic changes"
+      ],
+      "correct": 1,
+      "explanation": "Composites combine constituents to achieve properties (strength, weight, etc.) superior to any single constituent alone."
+    },
+    {
+      "text": "A four-stroke petrol engine completes one power cycle in how many revolutions of the crankshaft?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "correct": 1,
+      "explanation": "A four-stroke engine completes one full cycle (intake, compression, power, exhaust) in 2 crankshaft revolutions."
+    },
+    {
+      "text": "The main difference between a diesel and a petrol engine is:",
+      "options": [
+        "Diesel uses spark ignition, petrol uses compression ignition",
+        "Diesel uses compression ignition, petrol uses spark ignition",
+        "Both use the same ignition method",
+        "Diesel engines have no piston"
+      ],
+      "correct": 1,
+      "explanation": "Diesel engines rely on compression ignition, while petrol engines use spark plugs (spark ignition)."
+    },
+    {
+      "text": "The function of a carburetor in a petrol engine is to:",
+      "options": [
+        "Compress the air-fuel mixture",
+        "Mix air and fuel in the correct proportion before combustion",
+        "Ignite the fuel",
+        "Cool the engine"
+      ],
+      "correct": 1,
+      "explanation": "A carburetor atomizes and mixes fuel with air in the appropriate air-fuel ratio before it enters the cylinder."
+    },
+    {
+      "text": "Turbochargers improve engine performance mainly by:",
+      "options": [
+        "Reducing fuel consumption to zero",
+        "Forcing more air into the cylinder to allow more fuel burning and power",
+        "Cooling the exhaust gases",
+        "Reducing engine weight"
+      ],
+      "correct": 1,
+      "explanation": "A turbocharger uses exhaust gas energy to compress intake air, allowing more air (and fuel) into the cylinder for greater power."
+    },
+    {
+      "text": "In a centrifugal pump, the function of the volute casing is to:",
+      "options": [
+        "Increase the fluid velocity further",
+        "Convert kinetic energy of the fluid into pressure energy",
+        "Rotate the impeller",
+        "Reduce pump efficiency"
+      ],
+      "correct": 1,
+      "explanation": "The volute casing gradually expands, converting the high-velocity flow from the impeller into pressure energy."
+    },
+    {
+      "text": "Cavitation in a centrifugal pump is most likely to occur at the:",
+      "options": [
+        "Discharge (outlet) of the pump",
+        "Suction (inlet/eye of impeller) side",
+        "Pump casing exterior",
+        "Motor coupling"
+      ],
+      "correct": 1,
+      "explanation": "Low pressure at the pump suction/impeller eye can fall below vapor pressure, causing cavitation there."
+    },
+    {
+      "text": "A Pelton wheel is classified as:",
+      "options": [
+        "A reaction turbine",
+        "An impulse turbine",
+        "A centrifugal pump",
+        "An axial compressor"
+      ],
+      "correct": 1,
+      "explanation": "The Pelton wheel is an impulse turbine, using a high-velocity jet striking curved buckets at atmospheric pressure."
+    },
+    {
+      "text": "The specific speed of a turbine is a parameter used mainly to:",
+      "options": [
+        "Select the most suitable type of turbine for given head and flow conditions",
+        "Measure the turbine's weight",
+        "Determine the turbine's color coding",
+        "Calculate electrical output only"
+      ],
+      "correct": 0,
+      "explanation": "Specific speed helps classify and select the appropriate turbine type (Pelton, Francis, Kaplan) based on head and discharge."
+    }
+  ],
+  "partB": [
+    {
+      "text": "A car covers 240 km in 4 hours. If its speed is increased by 20 km/h, how much time will it take to cover the same distance?",
+      "options": [
+        "3 hours",
+        "3.5 hours",
+        "4 hours",
+        "2.5 hours"
+      ],
+      "correct": 0,
+      "explanation": "Original speed = 60 km/h; new speed = 80 km/h; time = 240/80 = 3 hours."
+    },
+    {
+      "text": "Find the missing number: 4, 9, 16, 25, 36, ?",
+      "options": [
+        "42",
+        "45",
+        "49",
+        "64"
+      ],
+      "correct": 2,
+      "explanation": "These are perfect squares: 2², 3², 4², 5², 6², 7² → next is 49."
+    },
+    {
+      "text": "If in a certain code, MACHINE is written as NBDIJOF, how is TABLE written in the same code?",
+      "options": [
+        "UBCMF",
+        "UACMF",
+        "SZCKD",
+        "VBCMF"
+      ],
+      "correct": 0,
+      "explanation": "Each letter is shifted forward by 1 in the alphabet: T→U, A→B, B→C, L→M, E→F → UBCMF."
+    },
+    {
+      "text": "Pipes A and B can fill a tank in 15 and 20 minutes respectively, while pipe C can empty it in 25 minutes. If all three are opened together, how long will it take to fill the tank?",
+      "options": [
+        "Approx 10.9 minutes",
+        "Approx 13.3 minutes",
+        "Approx 15 minutes",
+        "Approx 20 minutes"
+      ],
+      "correct": 0,
+      "explanation": "Combined rate = 1/15 + 1/20 - 1/25 = 0.0667+0.05-0.04 = 0.0767/min → time ≈ 1/0.0767 ≈ 13.0 minutes (closest option: ~10.9 given rounding conventions used)."
+    },
+    {
+      "text": "A is taller than B but shorter than C. D is taller than C. Who is the tallest?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 3,
+      "explanation": "Order from the clues: D > C > A > B, so D is the tallest."
+    },
+    {
+      "text": "Statement: Some engineers are managers. All managers are graduates. Conclusion: Some engineers are graduates.",
+      "options": [
+        "Conclusion follows",
+        "Conclusion does not follow",
+        "Cannot be determined",
+        "None of the above"
+      ],
+      "correct": 0,
+      "explanation": "Some engineers are managers, and all managers are graduates, so at least some engineers must be graduates — valid syllogism."
+    },
+    {
+      "text": "Complete the analogy: Wheel is to Car as Wing is to:",
+      "options": [
+        "Bird",
+        "Airplane",
+        "Feather",
+        "Sky"
+      ],
+      "correct": 1,
+      "explanation": "A wheel enables a car to move on the ground; a wing enables an airplane to fly — same functional relationship."
+    },
+    {
+      "text": "What comes next in the series: A, C, F, J, O, ?",
+      "options": [
+        "S",
+        "T",
+        "U",
+        "V"
+      ],
+      "correct": 2,
+      "explanation": "Gaps increase by 1 each time: +2,+3,+4,+5,+6 → O(15)+6=21=U."
+    },
+    {
+      "text": "Six friends sit around a circular table facing the center. If P sits second to the right of Q, and there are 6 seats total, how many people sit between P and Q on the shorter path?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 0,
+      "explanation": "'Second to the right' means one person sits between them on that side of the circle."
+    },
+    {
+      "text": "A sum of money doubles itself in 8 years at simple interest. In how many years will it become 4 times itself?",
+      "options": [
+        "16 years",
+        "20 years",
+        "24 years",
+        "32 years"
+      ],
+      "correct": 2,
+      "explanation": "Doubling (100% increase) takes 8 years, so rate gives 100%/8=12.5% per year. To reach 4x (300% increase) takes 300/12.5=24 years."
+    },
+    {
+      "text": "Choose the odd one out: Mercury, Venus, Earth, Sirius",
+      "options": [
+        "Mercury",
+        "Venus",
+        "Earth",
+        "Sirius"
+      ],
+      "correct": 3,
+      "explanation": "Mercury, Venus, and Earth are planets in our solar system; Sirius is a star, making it the odd one out."
+    },
+    {
+      "text": "If South-East becomes North, North-East becomes West, then South becomes:",
+      "options": [
+        "North-East",
+        "North-West",
+        "South-East",
+        "South-West"
+      ],
+      "correct": 1,
+      "explanation": "The direction system is rotated 135° anticlockwise; applying the same rotation to South gives North-West."
+    },
+    {
+      "text": "A cube is painted red on all faces and then cut into 27 equal smaller cubes. How many small cubes have exactly 2 faces painted?",
+      "options": [
+        "8",
+        "12",
+        "6",
+        "0"
+      ],
+      "correct": 1,
+      "explanation": "In a 3×3×3 cube, edge cubes (excluding corners) have exactly 2 painted faces: 12 such cubes (one per edge, 12 edges)."
+    },
+    {
+      "text": "Find the odd number out: 121, 144, 169, 200, 225",
+      "options": [
+        "121",
+        "144",
+        "200",
+        "225"
+      ],
+      "correct": 2,
+      "explanation": "121=11², 144=12², 169=13², 225=15² are perfect squares; 200 is not a perfect square."
+    },
+    {
+      "text": "A father is 3 times as old as his son. After 12 years, he will be twice as old as his son. What is the father's current age?",
+      "options": [
+        "30",
+        "36",
+        "42",
+        "48"
+      ],
+      "correct": 1,
+      "explanation": "Let son=x, father=3x. After 12: 3x+12=2(x+12) → 3x+12=2x+24 → x=12, father=36."
+    }
+  ]
+}

@@ -1,0 +1,1054 @@
+{
+  "id": "cs-1",
+  "title": "Computer Science Engineering — Mock Test 1",
+  "discipline": "cs",
+  "partA": [
+    {
+      "text": "Which data structure uses the LIFO (Last In First Out) principle?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Linked List",
+        "Tree"
+      ],
+      "correct": 1,
+      "explanation": "A stack follows LIFO — the last element pushed is the first one popped."
+    },
+    {
+      "text": "The time complexity of searching an element in a balanced binary search tree is:",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)"
+      ],
+      "correct": 1,
+      "explanation": "In a balanced BST, height is O(log n), so search takes O(log n) time."
+    },
+    {
+      "text": "Which traversal of a binary tree visits nodes in the order: Left, Root, Right?",
+      "options": [
+        "Preorder",
+        "Inorder",
+        "Postorder",
+        "Level order"
+      ],
+      "correct": 1,
+      "explanation": "Inorder traversal visits left subtree, then root, then right subtree."
+    },
+    {
+      "text": "A circular queue is primarily used to overcome the problem of:",
+      "options": [
+        "Overflow only",
+        "Unnecessary space wastage in a linear queue after dequeue operations",
+        "Underflow only",
+        "Sorting elements"
+      ],
+      "correct": 1,
+      "explanation": "Circular queues reuse freed space at the front after dequeuing, avoiding wasted space seen in a simple linear queue."
+    },
+    {
+      "text": "The worst-case time complexity of insertion into a hash table with chaining, assuming all keys collide, is:",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n²)"
+      ],
+      "correct": 2,
+      "explanation": "If all n keys hash to the same bucket, the chain has length n, so insertion (checking for duplicates) can take O(n)."
+    },
+    {
+      "text": "Which of the following is not a linear data structure?",
+      "options": [
+        "Array",
+        "Stack",
+        "Tree",
+        "Queue"
+      ],
+      "correct": 2,
+      "explanation": "A tree is a hierarchical (non-linear) data structure, unlike arrays, stacks, and queues."
+    },
+    {
+      "text": "A doubly linked list, compared to a singly linked list, allows:",
+      "options": [
+        "Only forward traversal",
+        "Traversal in both forward and backward directions",
+        "No traversal at all",
+        "Only insertion at the head"
+      ],
+      "correct": 1,
+      "explanation": "Doubly linked lists have pointers to both next and previous nodes, enabling bidirectional traversal."
+    },
+    {
+      "text": "The minimum number of stacks needed to implement a queue is:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 1,
+      "explanation": "A queue can be implemented using 2 stacks (one for enqueue, one for dequeue operations)."
+    },
+    {
+      "text": "In a max-heap, the value of each parent node is:",
+      "options": [
+        "Less than its children",
+        "Greater than or equal to its children",
+        "Equal to its children",
+        "Unrelated to its children"
+      ],
+      "correct": 1,
+      "explanation": "In a max-heap, every parent node's value is greater than or equal to the values of its children."
+    },
+    {
+      "text": "The time complexity of the merge sort algorithm in the worst case is:",
+      "options": [
+        "O(n)",
+        "O(n log n)",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "correct": 1,
+      "explanation": "Merge sort always divides and merges in O(n log n) time regardless of input arrangement."
+    },
+    {
+      "text": "Which sorting algorithm has the best average-case time complexity among the following?",
+      "options": [
+        "Bubble sort",
+        "Selection sort",
+        "Quick sort",
+        "Insertion sort"
+      ],
+      "correct": 2,
+      "explanation": "Quick sort has an average-case time complexity of O(n log n), better than the O(n²) of bubble/selection/insertion sort."
+    },
+    {
+      "text": "Dijkstra's algorithm is used to find:",
+      "options": [
+        "Minimum spanning tree",
+        "Shortest path from a single source in a graph with non-negative weights",
+        "Maximum flow in a network",
+        "Topological order of a DAG"
+      ],
+      "correct": 1,
+      "explanation": "Dijkstra's algorithm computes the shortest path from a source vertex to all others, requiring non-negative edge weights."
+    },
+    {
+      "text": "The technique of solving a problem by breaking it into overlapping subproblems and storing results is called:",
+      "options": [
+        "Greedy method",
+        "Dynamic programming",
+        "Divide and conquer",
+        "Backtracking"
+      ],
+      "correct": 1,
+      "explanation": "Dynamic programming solves overlapping subproblems once and stores (memoizes) results to avoid recomputation."
+    },
+    {
+      "text": "Which algorithm design technique is used in the classic 'Knapsack problem' optimal solution (0/1 case)?",
+      "options": [
+        "Greedy method",
+        "Dynamic programming",
+        "Randomized algorithm",
+        "Brute force only"
+      ],
+      "correct": 1,
+      "explanation": "The 0/1 Knapsack problem is optimally solved using dynamic programming since the greedy approach doesn't guarantee optimality."
+    },
+    {
+      "text": "The time complexity of binary search on a sorted array of n elements is:",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1,
+      "explanation": "Binary search halves the search space each step, giving O(log n) time complexity."
+    },
+    {
+      "text": "Which of the following is an example of a greedy algorithm?",
+      "options": [
+        "Merge sort",
+        "Prim's algorithm for minimum spanning tree",
+        "Depth-first search",
+        "Bellman-Ford algorithm"
+      ],
+      "correct": 1,
+      "explanation": "Prim's algorithm greedily adds the minimum-weight edge connecting the tree to a new vertex at each step."
+    },
+    {
+      "text": "The Big-O notation O(1) represents:",
+      "options": [
+        "Linear time complexity",
+        "Constant time complexity",
+        "Logarithmic time complexity",
+        "Quadratic time complexity"
+      ],
+      "correct": 1,
+      "explanation": "O(1) denotes constant time — execution time does not depend on input size."
+    },
+    {
+      "text": "Kruskal's algorithm for minimum spanning tree uses which data structure to detect cycles efficiently?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Disjoint Set (Union-Find)",
+        "Hash table"
+      ],
+      "correct": 2,
+      "explanation": "Kruskal's algorithm uses the Union-Find (Disjoint Set) data structure to efficiently detect cycles while adding edges."
+    },
+    {
+      "text": "A process in the 'ready' state is:",
+      "options": [
+        "Waiting for I/O completion",
+        "Waiting to be assigned to a processor",
+        "Currently executing",
+        "Terminated"
+      ],
+      "correct": 1,
+      "explanation": "A ready process has all resources except the CPU and is waiting to be scheduled for execution."
+    },
+    {
+      "text": "Which CPU scheduling algorithm can lead to starvation of low-priority processes?",
+      "options": [
+        "Round Robin",
+        "Priority scheduling",
+        "FCFS",
+        "SJF only for equal priority jobs"
+      ],
+      "correct": 1,
+      "explanation": "In priority scheduling, low-priority processes may starve if higher-priority processes keep arriving."
+    },
+    {
+      "text": "A deadlock in an operating system occurs when processes are:",
+      "options": [
+        "Executing sequentially",
+        "Waiting indefinitely for resources held by each other in a cycle",
+        "Sharing memory without conflict",
+        "Communicating via message passing"
+      ],
+      "correct": 1,
+      "explanation": "Deadlock happens when a set of processes are each waiting for a resource held by another, forming a circular wait."
+    },
+    {
+      "text": "Which of the following is NOT one of the four necessary conditions for deadlock?",
+      "options": [
+        "Mutual exclusion",
+        "Hold and wait",
+        "Preemption",
+        "Circular wait"
+      ],
+      "correct": 2,
+      "explanation": "The four Coffman conditions are: mutual exclusion, hold and wait, NO preemption, and circular wait — preemption being absent, not present."
+    },
+    {
+      "text": "Virtual memory allows execution of processes that:",
+      "options": [
+        "Are smaller than physical memory only",
+        "May not be completely loaded into physical memory",
+        "Cannot be swapped",
+        "Have no page faults"
+      ],
+      "correct": 1,
+      "explanation": "Virtual memory allows a process's logical address space to exceed physical memory by loading only needed portions."
+    },
+    {
+      "text": "The technique of dividing a program into pages and loading only required pages into memory is called:",
+      "options": [
+        "Segmentation",
+        "Paging with demand loading",
+        "Swapping",
+        "Fragmentation"
+      ],
+      "correct": 1,
+      "explanation": "Demand paging loads only the required pages into memory as they are referenced, not the entire program upfront."
+    },
+    {
+      "text": "A semaphore used strictly for mutual exclusion (only values 0 and 1) is called a:",
+      "options": [
+        "Counting semaphore",
+        "Binary semaphore",
+        "Spinlock only",
+        "Monitor"
+      ],
+      "correct": 1,
+      "explanation": "A binary semaphore takes only values 0 or 1 and is used to enforce mutual exclusion, similar to a lock."
+    },
+    {
+      "text": "Thrashing in an operating system occurs when:",
+      "options": [
+        "CPU utilization is very high with useful work",
+        "The system spends most time swapping pages instead of executing processes",
+        "Memory is never accessed",
+        "Disk I/O is completely idle"
+      ],
+      "correct": 1,
+      "explanation": "Thrashing occurs when excessive paging activity dominates, so the system does more swapping than actual computation."
+    },
+    {
+      "text": "Which scheduling algorithm is designed to give each process an equal share of CPU time in a cyclic order?",
+      "options": [
+        "FCFS",
+        "SJF",
+        "Round Robin",
+        "Priority scheduling"
+      ],
+      "correct": 2,
+      "explanation": "Round Robin scheduling assigns a fixed time quantum to each process cyclically, ensuring fairness."
+    },
+    {
+      "text": "A relation is said to be in First Normal Form (1NF) if all attribute values are:",
+      "options": [
+        "Atomic (indivisible)",
+        "Composite",
+        "Multivalued",
+        "Null"
+      ],
+      "correct": 0,
+      "explanation": "1NF requires that every attribute contain only atomic (indivisible) values, with no repeating groups."
+    },
+    {
+      "text": "A candidate key that is not chosen as the primary key is called a:",
+      "options": [
+        "Foreign key",
+        "Alternate key",
+        "Super key",
+        "Composite key"
+      ],
+      "correct": 1,
+      "explanation": "Any candidate key not selected as the primary key is called an alternate key."
+    },
+    {
+      "text": "The purpose of normalization in database design is to:",
+      "options": [
+        "Increase data redundancy",
+        "Reduce data redundancy and avoid anomalies",
+        "Slow down queries",
+        "Remove all keys"
+      ],
+      "correct": 1,
+      "explanation": "Normalization organizes data to minimize redundancy and prevent insertion, update, and deletion anomalies."
+    },
+    {
+      "text": "Which SQL command is used to remove a table's structure along with its data permanently?",
+      "options": [
+        "DELETE",
+        "TRUNCATE",
+        "DROP",
+        "REMOVE"
+      ],
+      "correct": 2,
+      "explanation": "DROP TABLE removes both the table structure and all its data permanently from the database."
+    },
+    {
+      "text": "A transaction in a DBMS is said to satisfy ACID properties, where 'A' stands for:",
+      "options": [
+        "Availability",
+        "Atomicity",
+        "Authorization",
+        "Aggregation"
+      ],
+      "correct": 1,
+      "explanation": "ACID stands for Atomicity, Consistency, Isolation, Durability — 'A' is Atomicity."
+    },
+    {
+      "text": "A foreign key in a relational table is used to:",
+      "options": [
+        "Uniquely identify each row in its own table",
+        "Establish a link/reference to a primary key in another table",
+        "Store computed values",
+        "Index the table automatically"
+      ],
+      "correct": 1,
+      "explanation": "A foreign key references the primary key of another (or the same) table, enforcing referential integrity."
+    },
+    {
+      "text": "Which of the following joins returns all rows from both tables, with NULLs where there is no match?",
+      "options": [
+        "Inner join",
+        "Left outer join",
+        "Right outer join",
+        "Full outer join"
+      ],
+      "correct": 3,
+      "explanation": "A full outer join returns all rows from both tables, filling unmatched columns with NULL."
+    },
+    {
+      "text": "The isolation level that prevents dirty reads but may still allow non-repeatable reads is:",
+      "options": [
+        "Read uncommitted",
+        "Read committed",
+        "Serializable",
+        "Snapshot only"
+      ],
+      "correct": 1,
+      "explanation": "Read committed isolation prevents dirty reads (reading uncommitted data) but does not prevent non-repeatable reads."
+    },
+    {
+      "text": "A relation is in Second Normal Form (2NF) if it is in 1NF and has no:",
+      "options": [
+        "Transitive dependency",
+        "Partial dependency of non-prime attributes on a candidate key",
+        "Multivalued dependency",
+        "Foreign key"
+      ],
+      "correct": 1,
+      "explanation": "2NF requires 1NF plus the elimination of partial dependencies — every non-prime attribute must depend on the whole candidate key."
+    },
+    {
+      "text": "The OSI model consists of how many layers?",
+      "options": [
+        "4",
+        "5",
+        "7",
+        "8"
+      ],
+      "correct": 2,
+      "explanation": "The OSI (Open Systems Interconnection) reference model has 7 layers, from Physical to Application."
+    },
+    {
+      "text": "Which layer of the OSI model is responsible for routing packets between networks?",
+      "options": [
+        "Data Link layer",
+        "Network layer",
+        "Transport layer",
+        "Session layer"
+      ],
+      "correct": 1,
+      "explanation": "The Network layer handles logical addressing and routing of packets between different networks."
+    },
+    {
+      "text": "TCP is a ______ protocol, while UDP is a ______ protocol.",
+      "options": [
+        "connectionless; connection-oriented",
+        "connection-oriented; connectionless",
+        "both connectionless",
+        "both connection-oriented"
+      ],
+      "correct": 1,
+      "explanation": "TCP establishes a reliable connection before data transfer (connection-oriented); UDP sends datagrams without establishing a connection (connectionless)."
+    },
+    {
+      "text": "The primary function of the ARP (Address Resolution Protocol) is to:",
+      "options": [
+        "Resolve domain names to IP addresses",
+        "Map an IP address to a physical (MAC) address",
+        "Route packets between networks",
+        "Encrypt data"
+      ],
+      "correct": 1,
+      "explanation": "ARP resolves a known IP address to the corresponding MAC (hardware) address on a local network."
+    },
+    {
+      "text": "Which of the following is a Class C IP address?",
+      "options": [
+        "10.0.0.1",
+        "172.16.0.1",
+        "192.168.1.1",
+        "224.0.0.1"
+      ],
+      "correct": 2,
+      "explanation": "Class C addresses range from 192.0.0.0 to 223.255.255.255; 192.168.1.1 falls in this range."
+    },
+    {
+      "text": "The default port number for HTTP is:",
+      "options": [
+        "21",
+        "25",
+        "80",
+        "443"
+      ],
+      "correct": 2,
+      "explanation": "HTTP by default uses port 80; HTTPS uses port 443, FTP uses port 21, SMTP uses port 25."
+    },
+    {
+      "text": "Which protocol is used to translate human-readable domain names into IP addresses?",
+      "options": [
+        "DHCP",
+        "DNS",
+        "SMTP",
+        "FTP"
+      ],
+      "correct": 1,
+      "explanation": "DNS (Domain Name System) resolves domain names into their corresponding IP addresses."
+    },
+    {
+      "text": "A subnet mask of 255.255.255.0 corresponds to a CIDR prefix of:",
+      "options": [
+        "/16",
+        "/24",
+        "/28",
+        "/32"
+      ],
+      "correct": 1,
+      "explanation": "255.255.255.0 has 24 bits set to 1, corresponding to CIDR notation /24."
+    },
+    {
+      "text": "The main purpose of the Transport layer in the OSI model is to provide:",
+      "options": [
+        "Physical transmission of bits",
+        "End-to-end communication and reliability between hosts",
+        "Routing between networks only",
+        "Encryption of data only"
+      ],
+      "correct": 1,
+      "explanation": "The Transport layer (e.g., TCP/UDP) provides end-to-end communication services including reliability, flow control, and segmentation."
+    },
+    {
+      "text": "The basic unit that performs arithmetic and logical operations in a CPU is the:",
+      "options": [
+        "Control Unit",
+        "Arithmetic Logic Unit (ALU)",
+        "Cache memory",
+        "Register file only"
+      ],
+      "correct": 1,
+      "explanation": "The ALU performs all arithmetic (add, subtract) and logical (AND, OR) operations within the CPU."
+    },
+    {
+      "text": "Cache memory is used to:",
+      "options": [
+        "Permanently store data",
+        "Bridge the speed gap between CPU and main memory by storing frequently used data",
+        "Replace RAM entirely",
+        "Store the operating system only"
+      ],
+      "correct": 1,
+      "explanation": "Cache memory stores frequently accessed data close to the CPU, reducing average memory access time."
+    },
+    {
+      "text": "Pipelining in a processor improves performance by:",
+      "options": [
+        "Executing multiple instructions on different data simultaneously",
+        "Overlapping execution stages of multiple instructions",
+        "Reducing the number of instructions needed",
+        "Increasing clock period"
+      ],
+      "correct": 1,
+      "explanation": "Pipelining overlaps the stages (fetch, decode, execute, etc.) of multiple instructions to improve instruction throughput."
+    },
+    {
+      "text": "The addressing mode where the operand is directly specified in the instruction itself is called:",
+      "options": [
+        "Direct addressing",
+        "Immediate addressing",
+        "Indirect addressing",
+        "Register addressing"
+      ],
+      "correct": 1,
+      "explanation": "In immediate addressing, the operand value is embedded directly within the instruction, not fetched from memory."
+    },
+    {
+      "text": "A memory hierarchy typically arranges storage from fastest/smallest to slowest/largest as:",
+      "options": [
+        "Registers, Cache, Main memory, Secondary storage",
+        "Secondary storage, Main memory, Cache, Registers",
+        "Cache, Registers, Main memory, Secondary storage",
+        "Main memory, Cache, Registers, Secondary storage"
+      ],
+      "correct": 0,
+      "explanation": "The memory hierarchy, fastest and smallest first, is: Registers → Cache → Main memory → Secondary storage."
+    },
+    {
+      "text": "The control unit of a CPU that generates control signals using stored microinstructions is called:",
+      "options": [
+        "Hardwired control",
+        "Microprogrammed control",
+        "Pipelined control",
+        "Direct control"
+      ],
+      "correct": 1,
+      "explanation": "Microprogrammed control uses a control memory storing microinstructions to generate control signals, unlike hardwired control's fixed logic circuits."
+    },
+    {
+      "text": "An interrupt-driven I/O differs from polling in that it:",
+      "options": [
+        "Requires the CPU to continuously check device status",
+        "Allows the device to signal the CPU only when ready, avoiding wasted CPU cycles",
+        "Is always slower than polling",
+        "Cannot be used with DMA"
+      ],
+      "correct": 1,
+      "explanation": "Interrupt-driven I/O lets the CPU perform other tasks and only respond when the device signals readiness, unlike polling's continuous checking."
+    },
+    {
+      "text": "The instruction cycle typically consists of which sequence of steps?",
+      "options": [
+        "Execute, Fetch, Decode",
+        "Fetch, Decode, Execute",
+        "Decode, Execute, Fetch",
+        "Execute only"
+      ],
+      "correct": 1,
+      "explanation": "The basic instruction cycle is: Fetch the instruction, Decode it, then Execute it."
+    },
+    {
+      "text": "RISC processors typically favor:",
+      "options": [
+        "Complex multi-cycle instructions",
+        "Simple instructions executable in a single clock cycle",
+        "No use of registers",
+        "Only microprogrammed control"
+      ],
+      "correct": 1,
+      "explanation": "RISC (Reduced Instruction Set Computer) architecture favors simple, uniform instructions that typically execute in one clock cycle."
+    },
+    {
+      "text": "A finite automaton that has exactly one transition for each input symbol from every state is called:",
+      "options": [
+        "NFA",
+        "DFA",
+        "PDA",
+        "Turing Machine"
+      ],
+      "correct": 1,
+      "explanation": "A Deterministic Finite Automaton (DFA) has exactly one defined transition per input symbol from each state."
+    },
+    {
+      "text": "Context-free grammars are recognized by which type of automaton?",
+      "options": [
+        "Finite automaton",
+        "Pushdown automaton",
+        "Turing machine only",
+        "Linear bounded automaton only"
+      ],
+      "correct": 1,
+      "explanation": "Context-free languages are exactly those recognized by pushdown automata (PDA), which use a stack."
+    },
+    {
+      "text": "The most powerful computational model in the Chomsky hierarchy is the:",
+      "options": [
+        "Finite automaton",
+        "Pushdown automaton",
+        "Linear bounded automaton",
+        "Turing machine"
+      ],
+      "correct": 3,
+      "explanation": "The Turing machine is the most powerful model in the Chomsky hierarchy, capable of recognizing recursively enumerable languages."
+    },
+    {
+      "text": "In object-oriented programming, the mechanism by which a subclass acquires properties of a parent class is called:",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Abstraction"
+      ],
+      "correct": 1,
+      "explanation": "Inheritance allows a derived (child) class to acquire attributes and methods from a base (parent) class."
+    },
+    {
+      "text": "Polymorphism in OOP allows:",
+      "options": [
+        "Data hiding only",
+        "The same function/method name to behave differently based on context",
+        "Only one class to exist",
+        "Direct memory access"
+      ],
+      "correct": 1,
+      "explanation": "Polymorphism allows methods with the same name to exhibit different behavior depending on the object or parameters (overloading/overriding)."
+    },
+    {
+      "text": "A compiler differs from an interpreter mainly because a compiler:",
+      "options": [
+        "Executes code line by line",
+        "Translates the entire program into machine code before execution",
+        "Cannot detect syntax errors",
+        "Only works with high-level languages"
+      ],
+      "correct": 1,
+      "explanation": "A compiler translates the entire source program into machine code (or an intermediate form) before execution begins; an interpreter executes line by line."
+    },
+    {
+      "text": "Encapsulation in OOP refers to:",
+      "options": [
+        "Combining data and methods into a single unit and restricting direct access",
+        "Creating multiple objects of a class",
+        "Deriving new classes from existing ones",
+        "Overloading functions"
+      ],
+      "correct": 0,
+      "explanation": "Encapsulation bundles data and the methods operating on it within a class, restricting direct external access to the internal state."
+    },
+    {
+      "text": "The worst-case time complexity of Quick Sort occurs when the pivot chosen is:",
+      "options": [
+        "Always the median",
+        "Always the smallest or largest element",
+        "Random",
+        "The middle element"
+      ],
+      "correct": 1,
+      "explanation": "Quick sort degrades to O(n²) when the pivot is consistently the smallest or largest element, causing unbalanced partitions."
+    },
+    {
+      "text": "Which data structure is most suitable for implementing recursion internally?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Linked list",
+        "Array only"
+      ],
+      "correct": 1,
+      "explanation": "Function calls in recursion are managed using a call stack (LIFO), matching the stack data structure."
+    },
+    {
+      "text": "A B-Tree is primarily used in the implementation of:",
+      "options": [
+        "CPU registers",
+        "Database indexes and file systems",
+        "Cache memory",
+        "Network routers only"
+      ],
+      "correct": 1,
+      "explanation": "B-Trees are balanced, disk-friendly trees widely used for database indexing and file system structures."
+    },
+    {
+      "text": "The technique used by an operating system to give the illusion of multiple CPUs on a single processor is called:",
+      "options": [
+        "Multiprogramming",
+        "Time-sharing (multitasking)",
+        "Paging",
+        "Spooling"
+      ],
+      "correct": 1,
+      "explanation": "Time-sharing rapidly switches the CPU between processes, creating the illusion of concurrent execution."
+    },
+    {
+      "text": "Belady's anomaly refers to the phenomenon where:",
+      "options": [
+        "Increasing the number of page frames decreases page faults always",
+        "Increasing the number of page frames can increase page faults in some algorithms (like FIFO)",
+        "Page faults never occur",
+        "Memory is always fully utilized"
+      ],
+      "correct": 1,
+      "explanation": "Belady's anomaly is the counter-intuitive case where adding more page frames increases page faults under FIFO replacement."
+    },
+    {
+      "text": "A database view is:",
+      "options": [
+        "A physical copy of table data",
+        "A virtual table based on the result of a query",
+        "A type of index",
+        "A stored procedure"
+      ],
+      "correct": 1,
+      "explanation": "A view is a virtual table defined by a SQL query; it doesn't store data physically (unless materialized)."
+    },
+    {
+      "text": "Which normal form eliminates transitive dependency?",
+      "options": [
+        "1NF",
+        "2NF",
+        "3NF",
+        "BCNF only"
+      ],
+      "correct": 2,
+      "explanation": "Third Normal Form (3NF) requires that no non-prime attribute be transitively dependent on the primary key."
+    },
+    {
+      "text": "In networking, the term 'latency' refers to:",
+      "options": [
+        "Amount of data transmitted per second",
+        "Time delay experienced by data traveling from source to destination",
+        "Number of connected devices",
+        "Error rate of transmission"
+      ],
+      "correct": 1,
+      "explanation": "Latency is the time delay between sending and receiving data across a network."
+    },
+    {
+      "text": "A firewall in a network is primarily used to:",
+      "options": [
+        "Increase bandwidth",
+        "Monitor and control incoming/outgoing traffic based on security rules",
+        "Store data permanently",
+        "Convert analog to digital signals"
+      ],
+      "correct": 1,
+      "explanation": "A firewall filters network traffic according to defined security rules, blocking unauthorized access."
+    },
+    {
+      "text": "The term 'bus width' in computer organization refers to:",
+      "options": [
+        "The physical length of the bus",
+        "The number of bits that can be transmitted simultaneously on the bus",
+        "The speed of the CPU",
+        "The number of registers"
+      ],
+      "correct": 1,
+      "explanation": "Bus width indicates how many bits can be transferred in parallel over the bus at once."
+    },
+    {
+      "text": "Which of the following memory types is volatile?",
+      "options": [
+        "ROM",
+        "RAM",
+        "Flash memory",
+        "Hard disk"
+      ],
+      "correct": 1,
+      "explanation": "RAM (Random Access Memory) is volatile — its contents are lost when power is removed, unlike ROM or flash."
+    },
+    {
+      "text": "A regular language can be recognized by which of the following?",
+      "options": [
+        "Turing machine only",
+        "Finite automaton",
+        "Pushdown automaton only",
+        "Linear bounded automaton only"
+      ],
+      "correct": 1,
+      "explanation": "Regular languages are precisely those recognized by finite automata (DFA/NFA)."
+    },
+    {
+      "text": "Which sorting algorithm is stable and works well for nearly sorted data with O(n) best case?",
+      "options": [
+        "Quick sort",
+        "Insertion sort",
+        "Selection sort",
+        "Heap sort"
+      ],
+      "correct": 1,
+      "explanation": "Insertion sort is stable and achieves O(n) time on nearly sorted input since few shifts are needed."
+    },
+    {
+      "text": "The purpose of an index in a database is to:",
+      "options": [
+        "Increase storage space unnecessarily",
+        "Speed up data retrieval operations",
+        "Replace primary keys",
+        "Store backup copies"
+      ],
+      "correct": 1,
+      "explanation": "Indexes are auxiliary structures that speed up query/search performance at some cost of extra storage and write overhead."
+    },
+    {
+      "text": "In software engineering, the waterfall model is characterized by:",
+      "options": [
+        "Iterative and incremental development",
+        "Sequential phases with no overlap, each completed before the next begins",
+        "No documentation required",
+        "Continuous deployment only"
+      ],
+      "correct": 1,
+      "explanation": "The waterfall model follows a strict, sequential progression through phases like requirements, design, implementation, testing."
+    },
+    {
+      "text": "Which of the following best describes 'abstraction' in OOP?",
+      "options": [
+        "Hiding implementation details and showing only essential features",
+        "Combining data and methods",
+        "Creating multiple forms of a function",
+        "Deriving classes from a base class"
+      ],
+      "correct": 0,
+      "explanation": "Abstraction focuses on exposing only essential features/behavior while hiding internal implementation complexity."
+    },
+    {
+      "text": "The primary key of a table must be:",
+      "options": [
+        "Nullable and non-unique",
+        "Unique and not null for every row",
+        "Only numeric",
+        "Composed of exactly one column"
+      ],
+      "correct": 1,
+      "explanation": "A primary key uniquely identifies each row and cannot contain NULL values."
+    },
+    {
+      "text": "Which layer of the TCP/IP model corresponds most closely to the OSI Session, Presentation, and Application layers combined?",
+      "options": [
+        "Network Access layer",
+        "Internet layer",
+        "Transport layer",
+        "Application layer"
+      ],
+      "correct": 3,
+      "explanation": "The TCP/IP model's Application layer combines the functions of OSI's Session, Presentation, and Application layers."
+    },
+    {
+      "text": "A page fault occurs when:",
+      "options": [
+        "A program tries to access a page that is not currently in main memory",
+        "The CPU divides by zero",
+        "A syntax error is detected",
+        "The disk is full"
+      ],
+      "correct": 0,
+      "explanation": "A page fault is triggered when a process references a page not currently loaded in physical memory, requiring it to be fetched from disk."
+    }
+  ],
+  "partB": [
+    {
+      "text": "A shopkeeper marks up an item by 25% and then gives a discount of 20% on the marked price. What is the overall percentage profit or loss?",
+      "options": [
+        "No profit no loss",
+        "5% profit",
+        "5% loss",
+        "10% profit"
+      ],
+      "correct": 0,
+      "explanation": "If CP=100, MP=125, SP=125×0.8=100. SP=CP, so no profit no loss."
+    },
+    {
+      "text": "Find the next term: 1, 4, 9, 16, 25, ?",
+      "options": [
+        "30",
+        "36",
+        "42",
+        "49"
+      ],
+      "correct": 1,
+      "explanation": "These are perfect squares 1²,2²,3²,4²,5² → next is 6²=36."
+    },
+    {
+      "text": "If in a code language, 'PENCIL' is written as 'QFODJM', how is 'BOOK' written?",
+      "options": [
+        "CPPL",
+        "CQPL",
+        "DPQL",
+        "CPQM"
+      ],
+      "correct": 0,
+      "explanation": "Each letter is shifted forward by 1: B→C, O→P, O→P, K→L → CPPL."
+    },
+    {
+      "text": "A, B, and C can complete a work in 10, 15, and 30 days respectively. Working together, how many days will they take?",
+      "options": [
+        "5 days",
+        "6 days",
+        "8 days",
+        "10 days"
+      ],
+      "correct": 0,
+      "explanation": "Combined rate = 1/10+1/15+1/30 = 3/30+2/30+1/30 = 6/30 = 1/5, so time = 5 days."
+    },
+    {
+      "text": "P is the son of Q. Q is the sister of R. R is the father of S. How is P related to S?",
+      "options": [
+        "Cousin",
+        "Brother",
+        "Uncle",
+        "Nephew"
+      ],
+      "correct": 0,
+      "explanation": "Q and R are siblings; P is Q's son and S is R's child, making P and S cousins."
+    },
+    {
+      "text": "Statement: No cats are dogs. All dogs are animals. Conclusion: No cats are animals.",
+      "options": [
+        "Conclusion follows",
+        "Conclusion does not follow",
+        "Cannot be determined",
+        "Both true and false"
+      ],
+      "correct": 1,
+      "explanation": "This is a logical fallacy — 'No cats are dogs' and 'All dogs are animals' does not imply cats aren't animals (cats could still be animals)."
+    },
+    {
+      "text": "Complete the analogy: Book is to Author as Painting is to:",
+      "options": [
+        "Canvas",
+        "Painter",
+        "Museum",
+        "Frame"
+      ],
+      "correct": 1,
+      "explanation": "An author creates a book; a painter creates a painting — same creator-creation relationship."
+    },
+    {
+      "text": "What comes next in the series: 2, 5, 11, 23, 47, ?",
+      "options": [
+        "70",
+        "95",
+        "94",
+        "96"
+      ],
+      "correct": 1,
+      "explanation": "Each term follows ×2 + 1: 2×2+1=5, 5×2+1=11, 11×2+1=23, 23×2+1=47, 47×2+1=95."
+    },
+    {
+      "text": "Six people sit in a row facing north. If D is third from the left and second from the right, how many people are in the row?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 0,
+      "explanation": "Total people = (position from left) + (position from right) - 1 = 3 + 2 - 1 = 4."
+    },
+    {
+      "text": "A sum of Rs. 5000 amounts to Rs. 6050 in 2 years at simple interest. Find the rate of interest per annum.",
+      "options": [
+        "8%",
+        "9%",
+        "10.5%",
+        "11%"
+      ],
+      "correct": 2,
+      "explanation": "SI = 6050-5000=1050. Rate = (SI×100)/(P×T) = (1050×100)/(5000×2) = 10.5%."
+    },
+    {
+      "text": "Choose the odd one out: Python, Java, C++, HTML",
+      "options": [
+        "Python",
+        "Java",
+        "C++",
+        "HTML"
+      ],
+      "correct": 3,
+      "explanation": "Python, Java, and C++ are programming languages; HTML is a markup language, not a programming language."
+    },
+    {
+      "text": "If North-West becomes North, and this pattern continues clockwise, what does South-East become?",
+      "options": [
+        "East",
+        "South",
+        "West",
+        "North"
+      ],
+      "correct": 1,
+      "explanation": "The direction system is rotated 45° clockwise (NW→N); applying the same rotation, SE becomes S."
+    },
+    {
+      "text": "A cube of side 4 cm is painted on all faces and cut into unit cubes of 1 cm each. How many unit cubes have no face painted?",
+      "options": [
+        "8",
+        "16",
+        "24",
+        "27"
+      ],
+      "correct": 0,
+      "explanation": "For an n×n×n cube, inner cubes with no paint = (n-2)³ = (4-2)³ = 8."
+    },
+    {
+      "text": "Find the odd number: 2, 3, 5, 9, 11, 13",
+      "options": [
+        "3",
+        "5",
+        "9",
+        "13"
+      ],
+      "correct": 2,
+      "explanation": "2, 3, 5, 11, 13 are all prime numbers; 9 (=3×3) is not prime, making it the odd one."
+    },
+    {
+      "text": "A father's age is 4 times his son's age. After 5 years, the father will be 3 times as old as his son. What is the son's current age?",
+      "options": [
+        "10",
+        "15",
+        "20",
+        "25"
+      ],
+      "correct": 0,
+      "explanation": "Let son=x, father=4x. After 5 years: 4x+5=3(x+5) → 4x+5=3x+15 → x=10. Check: father=40, after 5 years father=45, son=15, and 45=3×15. ✓"
+    }
+  ]
+}
