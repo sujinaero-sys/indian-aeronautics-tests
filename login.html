@@ -378,6 +378,78 @@ document
 
         /*
          * Normal login routing.
+         *
+         * IMPORTANT:
+         * If the student came from a protected series
+         * but does not have access to that series,
+         * DO NOT fall through to another portal.
+         */
+
+        if (
+          returnTo &&
+          access !== "NONE"
+        ) {
+
+          const decoded =
+            decodeURIComponent(
+              returnTo
+            );
+
+
+          /*
+           * Student requested ISRO,
+           * but does not have ISRO access.
+           */
+
+          if (
+            decoded.includes(
+              "/isro-mock-tests/"
+            ) &&
+            access === "HAL"
+          ) {
+
+            errorBox.classList.add(
+              "visible"
+            );
+
+            errorBox.textContent =
+              "Your account has HAL access only. This account does not include ISRO Mock Tests.";
+
+            return;
+
+          }
+
+
+          /*
+           * Student requested HAL,
+           * but does not have HAL access.
+           */
+
+          if (
+            decoded.includes(
+              "/portal.html"
+            ) &&
+            access === "ISRO"
+          ) {
+
+            errorBox.classList.add(
+              "visible"
+            );
+
+            errorBox.textContent =
+              "Your account has ISRO access only. This account does not include HAL Mock Tests.";
+
+            return;
+
+          }
+
+        }
+
+
+        /*
+         * Normal login routing when
+         * there is no protected return
+         * destination.
          */
 
         if (
