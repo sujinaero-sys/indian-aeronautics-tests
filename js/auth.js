@@ -6,7 +6,7 @@
 const IA_SESSION_KEY = "ia_session_v1";
 
 const IA_AUTH_URL =
-  "https://script.google.com/macros/s/AKfycbzfZwoF7StscCZZ2GC0TqI9Z98gA3d3CZz3VZmjChw4BUNT6hsfrjic5xpZR0c0KfJy/exec";
+  "https://script.google.com/macros/s/AKfycbzjOLtnukHD3bKfgUZ_SkWfQezXGfmQtEzSRWqeGwJg_Sgldl7SpDc8CJ-ir8IYVeoq/exec";
 
 
 /* =========================================================
@@ -491,3 +491,4 @@ function iaLogout() {
     "index.html";
 
 }
+

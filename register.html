@@ -1,0 +1,536 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Create Student Account — Indian Aeronautics</title>
+
+<link rel="icon" href="assets/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.account-card {
+  max-width: 560px;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.success-box {
+  display: none;
+  padding: 20px;
+  border-radius: 12px;
+  background: #e8fff3;
+  border: 1px solid #35b978;
+  margin-top: 20px;
+}
+
+.success-box.visible {
+  display: block;
+}
+
+.error-box {
+  display: none;
+  padding: 14px;
+  border-radius: 10px;
+  background: #fff0f0;
+  border: 1px solid #e57373;
+  margin-bottom: 18px;
+}
+
+.error-box.visible {
+  display: block;
+}
+
+.student-id {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="topbar">
+
+  <a class="brand" href="index.html">
+    <img src="assets/logo.png"
+         alt="Indian Aeronautics logo">
+
+    <span class="brand-name">
+      INDIAN AERONAUTICS
+    </span>
+  </a>
+
+  <a class="btn btn-outline"
+     href="index.html">
+    Back home
+  </a>
+
+</div>
+
+
+<div class="center-page">
+
+  <div class="card account-card">
+
+    <h2 class="panel-title">
+      Create Student Account
+    </h2>
+
+    <p class="panel-sub">
+      Create your Indian Aeronautics student account first.
+      Your Student ID will be generated automatically.
+    </p>
+
+
+    <div id="errorBox"
+         class="error-box">
+    </div>
+
+
+    <form id="registerForm">
+
+
+      <div class="field">
+
+        <label for="fullName">
+          Full Name
+        </label>
+
+        <input
+          id="fullName"
+          type="text"
+          autocomplete="name"
+          placeholder="Your full name"
+          required
+        >
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="email">
+          Email ID
+        </label>
+
+        <input
+          id="email"
+          type="email"
+          autocomplete="email"
+          placeholder="you@example.com"
+          required
+        >
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="mobile">
+          Mobile Number
+        </label>
+
+        <input
+          id="mobile"
+          type="tel"
+          autocomplete="tel"
+          inputmode="numeric"
+          placeholder="9876543210"
+          required
+        >
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="password">
+          Password
+        </label>
+
+        <input
+          id="password"
+          type="password"
+          autocomplete="new-password"
+          minlength="8"
+          placeholder="Minimum 8 characters"
+          required
+        >
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="confirmPassword">
+          Confirm Password
+        </label>
+
+        <input
+          id="confirmPassword"
+          type="password"
+          autocomplete="new-password"
+          minlength="8"
+          placeholder="Enter password again"
+          required
+        >
+
+      </div>
+
+
+      <button
+        id="createButton"
+        type="submit"
+        class="btn btn-primary btn-block">
+
+        Create Account
+
+      </button>
+
+
+    </form>
+
+
+    <div
+      id="successBox"
+      class="success-box">
+
+      <strong>
+        Account created successfully!
+      </strong>
+
+      <p>
+        Your Student ID is:
+      </p>
+
+      <div
+        id="studentId"
+        class="student-id">
+      </div>
+
+      <p>
+        Please save this Student ID.
+        You will need it to log in.
+      </p>
+
+      <a
+        href="login.html"
+        class="btn btn-primary btn-block">
+
+        Continue to Student Login
+
+      </a>
+
+    </div>
+
+
+    <p class="small muted mt-24 text-center">
+
+      Already have an account?
+
+      <a href="login.html">
+        Student Login
+      </a>
+
+    </p>
+
+  </div>
+
+</div>
+
+
+<script>
+
+const IA_AUTH_URL =
+"https://script.google.com/macros/s/AKfycbzjOLtnukHD3bKfgUZ_SkWfQezXGfmQtEzSRWqeGwJg_Sgldl7SpDc8CJ-ir8IYVeoq/exec";
+
+
+async function sha256(text) {
+
+  const encoder =
+    new TextEncoder();
+
+  const data =
+    encoder.encode(text);
+
+  const hash =
+    await crypto.subtle.digest(
+      "SHA-256",
+      data
+    );
+
+  return Array
+    .from(
+      new Uint8Array(hash)
+    )
+    .map(
+      b =>
+        b.toString(16)
+         .padStart(2, "0")
+    )
+    .join("");
+
+}
+
+
+document
+  .getElementById("registerForm")
+  .addEventListener(
+    "submit",
+    async function(e) {
+
+      e.preventDefault();
+
+
+      const name =
+        document
+          .getElementById("fullName")
+          .value
+          .trim();
+
+
+      const email =
+        document
+          .getElementById("email")
+          .value
+          .trim()
+          .toLowerCase();
+
+
+      const mobile =
+        document
+          .getElementById("mobile")
+          .value
+          .trim();
+
+
+      const password =
+        document
+          .getElementById("password")
+          .value;
+
+
+      const confirmPassword =
+        document
+          .getElementById("confirmPassword")
+          .value;
+
+
+      const errorBox =
+        document
+          .getElementById("errorBox");
+
+
+      const successBox =
+        document
+          .getElementById("successBox");
+
+
+      const button =
+        document
+          .getElementById("createButton");
+
+
+      errorBox.classList.remove(
+        "visible"
+      );
+
+
+      if (
+        password.length < 8
+      ) {
+
+        errorBox.textContent =
+          "Password must contain at least 8 characters.";
+
+        errorBox.classList.add(
+          "visible"
+        );
+
+        return;
+
+      }
+
+
+      if (
+        password !==
+        confirmPassword
+      ) {
+
+        errorBox.textContent =
+          "Passwords do not match.";
+
+        errorBox.classList.add(
+          "visible"
+        );
+
+        return;
+
+      }
+
+
+      const cleanMobile =
+        mobile.replace(
+          /\D/g,
+          ""
+        );
+
+
+      if (
+        cleanMobile.length < 10
+      ) {
+
+        errorBox.textContent =
+          "Please enter a valid mobile number.";
+
+        errorBox.classList.add(
+          "visible"
+        );
+
+        return;
+
+      }
+
+
+      button.disabled =
+        true;
+
+      button.textContent =
+        "Creating account...";
+
+
+      try {
+
+        const passwordHash =
+          await sha256(
+            password
+          );
+
+
+        const form =
+          new URLSearchParams();
+
+
+        form.append(
+          "action",
+          "register"
+        );
+
+
+        form.append(
+          "name",
+          name
+        );
+
+
+        form.append(
+          "email",
+          email
+        );
+
+
+        form.append(
+          "mobile",
+          cleanMobile
+        );
+
+
+        form.append(
+          "passwordHash",
+          passwordHash
+        );
+
+
+        const response =
+          await fetch(
+            IA_AUTH_URL,
+            {
+              method: "POST",
+              body: form
+            }
+          );
+
+
+        const result =
+          await response.json();
+
+
+        if (
+          !result.success
+        ) {
+
+          errorBox.textContent =
+            result.error ||
+            "Unable to create account.";
+
+          errorBox.classList.add(
+            "visible"
+          );
+
+          return;
+
+        }
+
+
+        document
+          .getElementById(
+            "studentId"
+          )
+          .textContent =
+          result.student.id;
+
+
+        document
+          .getElementById(
+            "registerForm"
+          )
+          .style.display =
+          "none";
+
+
+        successBox.classList.add(
+          "visible"
+        );
+
+
+      } catch(error) {
+
+        console.error(
+          error
+        );
+
+
+        errorBox.textContent =
+          "Unable to connect to the registration service. Please try again.";
+
+        errorBox.classList.add(
+          "visible"
+        );
+
+      } finally {
+
+        button.disabled =
+          false;
+
+        button.textContent =
+          "Create Account";
+
+      }
+
+    }
+  );
+
+</script>
+
+</body>
+</html>
+

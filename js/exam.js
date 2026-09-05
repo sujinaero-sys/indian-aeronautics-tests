@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    EXAM RUNNER
    ========================================================================== */
 
@@ -210,7 +210,7 @@ function submitExam(auto) {
 
 async function backupResult(result) {
   const BACKUP_URL =
-    "https://script.google.com/macros/s/AKfycbzfZwoF7StscCZZ2GC0TqI9Z98gA3d3CZz3VZmjChw4BUNT6hsfrjic5xpZR0c0KfJy/exec";
+    "https://script.google.com/macros/s/AKfycbzjOLtnukHD3bKfgUZ_SkWfQezXGfmQtEzSRWqeGwJg_Sgldl7SpDc8CJ-ir8IYVeoq/exec";
 
   try {
     await fetch(BACKUP_URL, {
@@ -289,3 +289,4 @@ function renderResults(correct, total, sectionScores, reviewRows, auto) {
   root.innerHTML = html;
   window.scrollTo(0, 0);
 }
+
