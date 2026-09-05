@@ -203,28 +203,35 @@ const session =
 if (session) {
 
   const catalogScript =
-    document.createElement(
-      "script"
-    );
+    document.createElement("script");
 
   catalogScript.src =
     "assets/catalog.js";
 
-  document.body.appendChild(
-    catalogScript
-  );
+  catalogScript.onload = function() {
 
+    const homeScript =
+      document.createElement("script");
 
-  const homeScript =
-    document.createElement(
-      "script"
+    homeScript.src =
+      "assets/home.js";
+
+    document.body.appendChild(
+      homeScript
     );
 
-  homeScript.src =
-    "assets/home.js";
+  };
+
+  catalogScript.onerror = function() {
+
+    console.error(
+      "Unable to load ISRO test catalog."
+    );
+
+  };
 
   document.body.appendChild(
-    homeScript
+    catalogScript
   );
 
 }
@@ -234,3 +241,4 @@ if (session) {
 
 </body>
 </html>
+
