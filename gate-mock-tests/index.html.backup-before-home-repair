@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+GATE Aerospace Engineering (AE) â€” Mock Test Series
+</title>
+
+<link
+  rel="stylesheet"
+  href="../css/style.css"
+>
+
+</head>
+
+
+<body>
+
+
+<div class="wrap">
+
+<header class="site-head">
+
+  <div class="mark">
+    GATEÂ·27
+  </div>
+
+  <div class="head-text">
+
+    <h1>
+      GATE Aerospace Engineering (AE) Mock Test Series
+    </h1>
+
+    <p>
+      Full-syllabus practice series for GATE Aerospace Engineering.
+    </p>
+
+  </div>
+
+</header>
+
+
+
+<section
+  class="pattern-strip"
+  aria-label="Exam pattern reference"
+>
+
+  <div class="pattern-block">
+
+    <span class="pattern-label">
+      General Aptitude
+    </span>
+
+    <span class="pattern-value">
+      10 Q Â· 15 marks
+    </span>
+
+    <span class="pattern-sub">
+      1-mark: âˆ’1/3 wrong Â· 2-mark: âˆ’2/3 wrong
+    </span>
+
+  </div>
+
+
+  <div class="pattern-block">
+
+    <span class="pattern-label">
+      Core (AE)
+    </span>
+
+    <span class="pattern-value">
+      55 Q Â· 85 marks
+    </span>
+
+    <span class="pattern-sub">
+      MCQ negative Â· MSQ &amp; NAT no negative marking
+    </span>
+
+  </div>
+
+
+  <div class="pattern-block">
+
+    <span class="pattern-label">
+      Full Paper
+    </span>
+
+    <span class="pattern-value">
+      65 Q Â· 100 marks Â· 180 min
+    </span>
+
+    <span class="pattern-sub">
+      per official GATE AE pattern
+    </span>
+
+  </div>
+
+</section>
+
+
+
+<main>
+
+
+<section
+  class="discipline"
+  id="ae"
+>
+
+  <h2>
+    Aerospace Engineering
+    <span class="post-code">AE</span>
+  </h2>
+
+  <div
+    class="test-grid"
+    data-discipline="ae"
+  ></div>
+
+</section>
+
+
+</main>
+
+
+
+<footer class="site-foot">
+
+  <p>
+    Unofficial practice material.
+    Not affiliated with GATE, IIT Guwahati, or IIT Madras.
+  </p>
+
+</footer>
+
+
+</div>
+
+
+
+<script src="../js/gate-auth.js"></script>
+
+
+<script>
+
+const session =
+  iaRequireAccess(
+    "GATE",
+    "../gate-login.html?return=" +
+    encodeURIComponent(
+      window.location.pathname
+    )
+  );
+
+
+if (session) {
+
+  const catalogScript =
+    document.createElement(
+      "script"
+    );
+
+  catalogScript.src =
+    "assets/catalog.js";
+
+  catalogScript.onload = function () {
+
+    const homeScript =
+      document.createElement(
+        "script"
+      );
+
+    homeScript.src =
+      "assets/home.js";
+
+    document.body.appendChild(
+      homeScript
+    );
+
+  };
+
+  catalogScript.onerror = function () {
+    console.error("Unable to load GATE catalog.");
+  };
+
+}
+
+</script>
+
+
+</body>
+</html>
+
+
+
+

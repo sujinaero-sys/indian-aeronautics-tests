@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GATE Aerospace Engineering (AE) - Mock Test Series</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="wrap">
+
+  <header class="site-head">
+
+    <div class="mark">
+      GATE-27
+    </div>
+
+    <div class="head-text">
+
+      <h1>GATE Aerospace Engineering (AE) Mock Test Series</h1>
+
+      <p>
+        Full-syllabus practice series for GATE Aerospace Engineering.
+      </p>
+
+    </div>
+
+  </header>
+
+
+  <section class="pattern-strip" aria-label="Exam pattern reference">
+
+    <div class="pattern-block">
+
+      <span class="pattern-label">
+        General Aptitude
+      </span>
+
+      <span class="pattern-value">
+        10 Q - 15 marks
+      </span>
+
+      <span class="pattern-sub">
+        1-mark: -1/3 wrong - 2-mark: -2/3 wrong
+      </span>
+
+    </div>
+
+
+    <div class="pattern-block">
+
+      <span class="pattern-label">
+        Core (AE)
+      </span>
+
+      <span class="pattern-value">
+        55 Q - 85 marks
+      </span>
+
+      <span class="pattern-sub">
+        MCQ negative - MSQ &amp; NAT no negative marking
+      </span>
+
+    </div>
+
+
+    <div class="pattern-block">
+
+      <span class="pattern-label">
+        Full Paper
+      </span>
+
+      <span class="pattern-value">
+        65 Q - 100 marks - 180 min
+      </span>
+
+      <span class="pattern-sub">
+        Full-length GATE AE practice pattern
+      </span>
+
+    </div>
+
+  </section>
+
+
+  <main>
+
+    <section class="discipline" id="ae">
+
+      <h2>
+        Aerospace Engineering
+        <span class="post-code">AE</span>
+      </h2>
+
+      <div
+        class="test-grid"
+        data-discipline="ae"
+      ></div>
+
+      <div
+        id="gate-home-status"
+        style="margin-top:20px;padding:12px;border-radius:8px;"
+      >
+        Loading GATE mock tests...
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-foot">
+
+    <p>
+      Unofficial practice material.
+      Not affiliated with GATE, IIT Guwahati, or IIT Madras.
+    </p>
+
+  </footer>
+
+</div>
+
+
+<script src="../js/gate-auth.js"></script>
+
+<script>
+
+(function () {
+
+  function showStatus(message, isError) {
+
+    const box = document.getElementById("gate-home-status");
+
+    if (!box) {
+      return;
+    }
+
+    box.textContent = message;
+
+    if (isError) {
+      box.style.border = "1px solid #dc3545";
+    } else {
+      box.style.border = "1px solid #198754";
+    }
+
+  }
+
+
+  try {
+
+    if (typeof iaRequireAccess !== "function") {
+
+      showStatus(
+        "GATE authentication module could not be loaded.",
+        true
+      );
+
+      console.error(
+        "iaRequireAccess() is not available."
+      );
+
+      return;
+
+    }
+
+
+    const session = iaRequireAccess(
+      "GATE",
+      "../gate-login.html?return=" +
+      encodeURIComponent(
+        window.location.pathname
+      )
+    );
+
+
+    if (!session) {
+
+      showStatus(
+        "Redirecting to GATE login...",
+        false
+      );
+
+      return;
+
+    }
+
+
+    const catalogScript =
+      document.createElement("script");
+
+    catalogScript.src =
+      "assets/catalog.js";
+
+    catalogScript.onload = function () {
+
+      console.log(
+        "GATE catalog.js loaded successfully."
+      );
+
+
+      if (
+        typeof TEST_CATALOG === "undefined"
+      ) {
+
+        showStatus(
+          "GATE catalog loaded, but TEST_CATALOG is unavailable.",
+          true
+        );
+
+        console.error(
+          "TEST_CATALOG is undefined."
+        );
+
+        return;
+
+      }
+
+
+      const homeScript =
+        document.createElement("script");
+
+      homeScript.src =
+        "assets/home.js";
+
+      homeScript.onload = function () {
+
+        console.log(
+          "GATE home.js loaded successfully."
+        );
+
+
+        setTimeout(function () {
+
+          const grid =
+            document.querySelector(
+              ".test-grid[data-discipline='ae']"
+            );
+
+
+          if (
+            grid &&
+            grid.children.length > 0
+          ) {
+
+            showStatus(
+              "GATE Aerospace Engineering Mock Tests loaded successfully.",
+              false
+            );
+
+          } else {
+
+            showStatus(
+              "GATE catalog loaded, but no mock tests were rendered.",
+              true
+            );
+
+            console.error(
+              "home.js loaded but no test cards were rendered."
+            );
+
+          }
+
+        }, 100);
+
+      };
+
+
+      homeScript.onerror = function () {
+
+        showStatus(
+          "Unable to load GATE home module.",
+          true
+        );
+
+        console.error(
+          "Unable to load assets/home.js"
+        );
+
+      };
+
+
+      document.body.appendChild(
+        homeScript
+      );
+
+    };
+
+
+    catalogScript.onerror = function () {
+
+      showStatus(
+        "Unable to load GATE mock-test catalog.",
+        true
+      );
+
+      console.error(
+        "Unable to load assets/catalog.js"
+      );
+
+    };
+
+
+    document.body.appendChild(
+      catalogScript
+    );
+
+  }
+  catch (error) {
+
+    console.error(
+      "GATE home initialization error:",
+      error
+    );
+
+    showStatus(
+      "GATE page initialization failed. Check the browser console.",
+      true
+    );
+
+  }
+
+})();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1911 @@
+﻿
+/* =========================================================
+   SAFE GATE CALCULATOR
+   ---------------------------------------------------------
+   CSP-safe arithmetic evaluator.
+
+   IMPORTANT:
+   Do NOT use eval(), Function(), or new Function().
+   Only arithmetic expressions are accepted.
+   ========================================================= */
+
+function iaGateSafeCalculate(expression) {
+
+  let expr =
+    String(expression || "")
+      .trim();
+
+  if (!expr) {
+    throw new Error("Empty calculator expression.");
+  }
+
+  /*
+   * Normalise calculator symbols.
+   */
+  expr = expr
+    .replace(/×/g, "*")
+    .replace(/÷/g, "/")
+    .replace(/−/g, "-")
+    .replace(/,/g, "")
+    .replace(/\s+/g, "");
+
+  /*
+   * Convert percentage values.
+   *
+   * Example:
+   *   50% -> (50/100)
+   */
+  expr = expr.replace(
+    /(\d+(?:\.\d+)?)%/g,
+    "($1/100)"
+  );
+
+  /*
+   * Security:
+   * Only numbers, decimal points, arithmetic operators,
+   * parentheses and exponentiation are allowed.
+   */
+  if (!/^[0-9.+\-*/^()]+$/.test(expr)) {
+    throw new Error(
+      "Calculator accepts arithmetic expressions only."
+    );
+  }
+
+  /*
+   * Protect against malformed operator sequences.
+   */
+  if (
+    /[*/^]{2,}/.test(expr) ||
+    /\/\//.test(expr)
+  ) {
+    throw new Error(
+      "Invalid calculator expression."
+    );
+  }
+
+  /*
+   * Recursive-descent parser.
+   *
+   * Grammar:
+   *
+   * expression = term ( + | - term )*
+   * term       = power ( * | / power )*
+   * power      = unary ( ^ power )?
+   * unary      = +unary | -unary | primary
+   * primary    = number | ( expression )
+   */
+
+  let index = 0;
+
+  function peek() {
+    return expr[index] || "";
+  }
+
+  function consume(char) {
+
+    if (peek() === char) {
+      index++;
+      return true;
+    }
+
+    return false;
+  }
+
+  function parseNumber() {
+
+    const start = index;
+
+    let dotCount = 0;
+
+    while (index < expr.length) {
+
+      const ch = expr[index];
+
+      if (ch === ".") {
+
+        dotCount++;
+
+        if (dotCount > 1) {
+          break;
+        }
+
+        index++;
+        continue;
+      }
+
+      if (ch >= "0" && ch <= "9") {
+        index++;
+        continue;
+      }
+
+      break;
+    }
+
+    if (start === index) {
+      throw new Error(
+        "Number expected."
+      );
+    }
+
+    const value =
+      Number(
+        expr.slice(start, index)
+      );
+
+    if (!Number.isFinite(value)) {
+      throw new Error(
+        "Invalid number."
+      );
+    }
+
+    return value;
+  }
+
+  function parsePrimary() {
+
+    if (consume("(")) {
+
+      const value =
+        parseExpression();
+
+      if (!consume(")")) {
+        throw new Error(
+          "Missing closing parenthesis."
+        );
+      }
+
+      return value;
+    }
+
+    return parseNumber();
+  }
+
+  function parseUnary() {
+
+    if (consume("+")) {
+      return parseUnary();
+    }
+
+    if (consume("-")) {
+      return -parseUnary();
+    }
+
+    return parsePrimary();
+  }
+
+  function parsePower() {
+
+    const left =
+      parseUnary();
+
+    if (consume("^")) {
+
+      const right =
+        parsePower();
+
+      const value =
+        Math.pow(left, right);
+
+      if (!Number.isFinite(value)) {
+        throw new Error(
+          "Invalid power operation."
+        );
+      }
+
+      return value;
+    }
+
+    return left;
+  }
+
+  function parseTerm() {
+
+    let value =
+      parsePower();
+
+    while (true) {
+
+      if (consume("*")) {
+
+        value *= parsePower();
+
+      }
+      else if (consume("/")) {
+
+        const divisor =
+          parsePower();
+
+        if (divisor === 0) {
+          throw new Error(
+            "Cannot divide by zero."
+          );
+        }
+
+        value /= divisor;
+
+      }
+      else {
+
+        break;
+
+      }
+
+    }
+
+    return value;
+  }
+
+  function parseExpression() {
+
+    let value =
+      parseTerm();
+
+    while (true) {
+
+      if (consume("+")) {
+
+        value += parseTerm();
+
+      }
+      else if (consume("-")) {
+
+        value -= parseTerm();
+
+      }
+      else {
+
+        break;
+
+      }
+
+    }
+
+    return value;
+  }
+
+  const result =
+    parseExpression();
+
+  /*
+   * Every character must have been consumed.
+   */
+  if (index !== expr.length) {
+
+    throw new Error(
+      "Invalid calculator expression near: " +
+      expr.slice(index)
+    );
+
+  }
+
+  if (!Number.isFinite(result)) {
+
+    throw new Error(
+      "Calculator result is not finite."
+    );
+
+  }
+
+  return result;
+}
+
+
+/* =========================================================
+   GATE SAFE RESUME / ACTIVE ATTEMPT STORAGE
+   ---------------------------------------------------------
+   The backend is authoritative.
+
+   sessionStorage is only a browser-side convenience so that
+   a page refresh can remember which attemptToken belongs to
+   the current test.
+
+   The server remains responsible for deciding whether an
+   attempt is still IN_PROGRESS or already COMPLETED.
+   ========================================================= */
+
+(function () {
+
+  const IA_GATE_ACTIVE_ATTEMPT_KEY = "ia_gate_active_attempt_v2";
+
+  window.IA_GATE_ACTIVE_ATTEMPT_KEY =
+    IA_GATE_ACTIVE_ATTEMPT_KEY;
+
+  window.iaGateGetActiveAttempt = function () {
+
+    try {
+
+      const raw =
+        sessionStorage.getItem(
+          IA_GATE_ACTIVE_ATTEMPT_KEY
+        );
+
+      if (!raw) {
+        return null;
+      }
+
+      return JSON.parse(raw);
+
+    } catch (err) {
+
+      console.warn(
+        "Unable to read saved GATE attempt.",
+        err
+      );
+
+      return null;
+
+    }
+
+  };
+
+
+  window.iaGateSaveActiveAttempt = function (data) {
+
+    try {
+
+      if (!data) {
+        return;
+      }
+
+      sessionStorage.setItem(
+        IA_GATE_ACTIVE_ATTEMPT_KEY,
+        JSON.stringify(data)
+      );
+
+    } catch (err) {
+
+      console.warn(
+        "Unable to save GATE active attempt.",
+        err
+      );
+
+    }
+
+  };
+
+
+  window.iaGateClearActiveAttempt = function () {
+
+    try {
+
+      sessionStorage.removeItem(
+        IA_GATE_ACTIVE_ATTEMPT_KEY
+      );
+
+    } catch (err) {
+
+      console.warn(
+        "Unable to clear GATE active attempt.",
+        err
+      );
+
+    }
+
+  };
+
+})();
+
+/* ==========================================================================
+   INDIAN AERONAUTICS â€” SHARED EXAM ENGINE (GATE-accurate)
+   ---------------------------------------------------------
+   Matches official GATE exam-day conventions:
+     - Marking: MCQ negative (1/3 for 1-mark, 2/3 for 2-mark);
+       MSQ = all-correct-options-only, no negative marking;
+       NAT = tolerance-based, no negative marking.
+     - 5-state question palette: Not Visited / Not Answered /
+       Answered / Marked for Review / Answered & Marked for Review
+       (the last one IS evaluated â€” GATE counts a response even
+       if the question is also marked for review).
+     - Section tabs (General Aptitude / core subject), palette
+       scoped to the active section, exactly like the real
+       interface.
+     - Pre-exam instructions + declaration checkbox, timer starts
+       only once the candidate clicks "I am ready to begin".
+     - On-screen virtual scientific calculator (GATE does not
+       allow physical calculators; a virtual one is provided
+       on-screen instead).
+
+   Each test.html must, before loading this file:
+     1. Load its own folder's assets/catalog.js  (TEST_CATALOG)
+     2. Load ../js/auth.js
+     3. Define: const IA_EXAM_FAMILY = "ISRO";  (or "GATE" / "HAL")
+
+   Question JSON shape â€” unchanged from before, see
+   gate-mock-tests/data/ae/mock1.json for a full example.
+   ========================================================================== */
+
+(function () {
+
+  const SECTION_LABELS = {
+    ga: "General Aptitude",
+    eng: "English & Reasoning",
+    aero: "Core Subject"
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const testFile = params.get("test");
+
+  const loginPath =
+    "../login.html?return=" +
+    encodeURIComponent(window.location.pathname + window.location.search);
+
+
+  /* ---------------------------------------------------
+     1. SESSION + BROAD FAMILY ACCESS
+     --------------------------------------------------- */
+
+  const session =
+    iaRequireAccess(
+      typeof IA_EXAM_FAMILY !== "undefined" ? IA_EXAM_FAMILY : "",
+      loginPath
+    );
+
+  if (!session) {
+    return;
+  }
+
+
+  /* ---------------------------------------------------
+     2. RESOLVE CATALOG ENTRY
+     --------------------------------------------------- */
+
+  const entry =
+    typeof TEST_CATALOG !== "undefined"
+      ? TEST_CATALOG.find(function (t) { return t.file === testFile; })
+      : null;
+
+  const root = document.getElementById("exam-root");
+
+  if (!testFile || !entry) {
+    if (root) {
+      root.innerHTML =
+        '<div class="exam-error">This test could not be found. ' +
+        '<a href="index.html">Back to test list</a></div>';
+    }
+    return;
+  }
+
+  if (!entry.available) {
+    if (root) {
+      root.innerHTML =
+        '<div class="exam-error">This test is not published yet. ' +
+        '<a href="index.html">Back to test list</a></div>';
+    }
+    return;
+  }
+
+
+  /* ---------------------------------------------------
+     3. STATE
+     --------------------------------------------------- */
+
+  const state = {
+    meta: null,
+    questions: [],
+    sections: [],          // ordered list of section keys present
+    responses: {},          // qno -> answer
+    marked: {},               // qno -> bool (marked for review)
+    visited: {},               // qno -> bool
+    current: 0,
+    currentSection: null,
+    attemptToken: null,
+    startedAt: null,
+    timerHandle: null,
+    secondsLeft: 0,
+    submitted: false,
+    examStarted: false        // true only after the instructions screen is accepted
+  };
+
+
+  /* ---------------------------------------------------
+     4. START ATTEMPT (server-side gate + reservation)
+     --------------------------------------------------- */
+
+  function startAttempt() {
+
+    const body = new URLSearchParams();
+    body.append("action", "startAttempt");
+    body.append("studentId", session.id);
+    body.append("testId", entry.id);
+    body.append("paper", entry.id);
+
+    return fetch(IA_AUTH_URL, { method: "POST", body: body })
+      .then(function (res) { return res.json(); })
+      .then(function (result) {
+
+        if (!result.success) {
+          throw new Error(result.error || "Unable to start this attempt.");
+        }
+
+        state.attemptToken = result.attemptToken;
+        state.startedAt = result.startedAt;
+
+        /*
+         * Persist the backend attempt token so the same
+         * IN_PROGRESS attempt can be resumed after refresh.
+         */
+        if (
+          state.attemptToken &&
+          typeof window.iaGateSaveActiveAttempt === "function"
+        ) {
+
+          window.iaGateSaveActiveAttempt({
+
+            studentId: session.id,
+            testId: entry.id,
+            paper: entry.id,
+            attemptToken: state.attemptToken,
+            startedAt: state.startedAt,
+            savedAt: new Date().toISOString()
+
+          });
+
+          console.log(
+            "[GATE] Active attempt token saved:",
+            state.attemptToken
+          );
+
+        }
+        else {
+
+          console.error(
+            "[GATE] ERROR: attemptToken was not saved.",
+            {
+              attemptToken: state.attemptToken,
+              saveFunctionAvailable:
+                typeof window.iaGateSaveActiveAttempt === "function"
+            }
+          );
+
+        }
+
+        return result;
+
+      });
+
+  }
+
+
+  /* ---------------------------------------------------
+     5. LOAD QUESTIONS
+     --------------------------------------------------- */
+
+  function loadQuestions() {
+
+    return fetch(entry.file)
+      .then(function (res) {
+        if (!res.ok) throw new Error("Could not load the question paper.");
+        return res.json();
+      })
+      .then(function (data) {
+
+        state.meta = data.meta || {};
+        state.questions = data.questions || [];
+
+        const seen = {};
+        state.sections = [];
+
+        state.questions.forEach(function (q) {
+          if (!seen[q.section]) {
+            seen[q.section] = true;
+            state.sections.push(q.section);
+          }
+        });
+
+        state.currentSection = state.sections[0];
+
+      });
+
+  }
+
+
+  /* ---------------------------------------------------
+     6. INSTRUCTIONS + DECLARATION SCREEN
+     --------------------------------------------------- */
+
+  function renderInstructions() {
+
+    const marksTable = buildMarkingSchemeTable();
+    const sectionSummary = buildSectionSummary();
+    const totalQ = state.questions.length;
+    const totalMarks = state.questions.reduce(function (s, q) { return s + q.marks; }, 0);
+    const minutes = Number(state.meta.durationMinutes || 180);
+
+    root.innerHTML =
+      '<div class="exam-instructions">' +
+      '  <h2>' + escapeHtml(state.meta.title || entry.label) + '</h2>' +
+      '  <p class="exam-instr-sub">' + totalQ + ' questions &middot; ' + totalMarks +
+      '  marks &middot; ' + minutes + ' minutes</p>' +
+
+      '  <h3>General Instructions</h3>' +
+      '  <ul class="exam-instr-list">' +
+      '    <li>The clock will be set at the server. The countdown timer at the top of the screen ' +
+      '        will display the remaining time. When the timer reaches zero, the test will end ' +
+      '        by itself â€” you do not need to submit manually.</li>' +
+      '    <li>The Question Palette on the right shows the status of each question using the ' +
+      '        symbols below.</li>' +
+      '    <li>The <strong>Mark for Review &amp; Next</strong> button marks a question for later ' +
+      '        review. If you had already entered an answer before marking it, that answer ' +
+      '        <strong>is still evaluated</strong> â€” marking for review does not discard it.</li>' +
+      '    <li>The <strong>Clear Response</strong> button clears the response for the current question.</li>' +
+      '    <li>You can navigate between sections and questions in any order, any number of times, ' +
+      '        until the test ends.</li>' +
+      '    <li>A virtual, on-screen scientific calculator is available via the Calculator button ' +
+      '        in the header. Physical calculators are not required.</li>' +
+      '  </ul>' +
+
+      '  <h3>Question Palette Legend</h3>' +
+      '  <div class="exam-legend exam-legend-lg">' +
+      '    <span class="dot dot-notvisited"></span> Not Visited' +
+      '    <span class="dot dot-notanswered"></span> Not Answered' +
+      '    <span class="dot dot-answered"></span> Answered' +
+      '    <span class="dot dot-marked"></span> Marked for Review' +
+      '    <span class="dot dot-answered-marked"></span> Answered &amp; Marked for Review (evaluated)' +
+      '  </div>' +
+
+      '  <h3>Marking Scheme</h3>' +
+      marksTable +
+
+      '  <h3>Sections</h3>' +
+      sectionSummary +
+
+      '  <label class="exam-declaration">' +
+      '    <input type="checkbox" id="exam-declare-checkbox">' +
+      '    I have read and understood the instructions. I am aware that clicking on the ' +
+      '    "I am ready to begin" button will start the timer, which cannot be paused.' +
+      '  </label>' +
+
+      '  <button type="button" class="exam-btn exam-btn-primary exam-btn-start" ' +
+      '    id="exam-start-btn" disabled>I am ready to begin</button>' +
+      '</div>';
+
+    document.getElementById("exam-declare-checkbox").addEventListener("change", function (e) {
+      document.getElementById("exam-start-btn").disabled = !e.target.checked;
+    });
+
+    document.getElementById("exam-start-btn").addEventListener("click", function () {
+      beginExam();
+    });
+
+  }
+
+  function buildMarkingSchemeTable() {
+
+    const rows = {};
+
+    state.questions.forEach(function (q) {
+
+      const key = q.type + "-" + q.marks;
+
+      if (!rows[key]) {
+        rows[key] = { type: q.type, marks: q.marks, negMarks: q.negMarks, count: 0 };
+      }
+
+      rows[key].count++;
+
+    });
+
+    const typeLabel = { mcq: "MCQ", msq: "MSQ (multi-select)", nat: "NAT (numerical)" };
+
+    const body = Object.keys(rows).sort().map(function (key) {
+
+      const r = rows[key];
+
+      let negText = "None";
+      if (r.type === "mcq" && r.negMarks) {
+        negText = "\u2212" + r.negMarks.toFixed(3).replace(/0+$/, "").replace(/\.$/, "") + " per wrong answer";
+      }
+
+      return (
+        '<tr><td>' + typeLabel[r.type] + '</td><td>' + r.count + '</td><td>' + r.marks +
+        '</td><td>' + negText + '</td></tr>'
+      );
+
+    }).join("");
+
+    return (
+      '<table class="exam-result-table exam-marking-table">' +
+      '<tr><th>Type</th><th>Count</th><th>Marks each</th><th>Negative marking</th></tr>' +
+      body +
+      '</table>' +
+      '<p class="exam-instr-note">MSQ: full marks only if all correct options (and no incorrect ' +
+      'ones) are selected; otherwise zero. No negative marking on MSQ or NAT questions.</p>'
+    );
+
+  }
+
+  function buildSectionSummary() {
+
+    const rows = state.sections.map(function (sec) {
+
+      const qs = state.questions.filter(function (q) { return q.section === sec; });
+      const marks = qs.reduce(function (s, q) { return s + q.marks; }, 0);
+
+      return (
+        '<tr><td>' + (SECTION_LABELS[sec] || sec) + '</td><td>' + qs.length +
+        '</td><td>' + marks + '</td></tr>'
+      );
+
+    }).join("");
+
+    return (
+      '<table class="exam-result-table">' +
+      '<tr><th>Section</th><th>Questions</th><th>Marks</th></tr>' +
+      rows +
+      '</table>'
+    );
+
+  }
+
+  function beginExam() {
+
+    state.examStarted = true;
+    renderShell();
+    renderQuestion();
+    startTimer();
+
+    document.getElementById("exam-submit-btn")
+      .addEventListener("click", confirmSubmit);
+
+    document.getElementById("exam-calc-btn")
+      .addEventListener("click", toggleCalculator);
+
+    window.addEventListener("beforeunload", function (e) {
+      if (!state.submitted) {
+        e.preventDefault();
+        e.returnValue = "";
+      }
+    });
+
+  }
+
+
+  /* ---------------------------------------------------
+     7. RENDER SHELL
+     --------------------------------------------------- */
+
+  function renderShell() {
+
+    root.innerHTML =
+      '<div class="exam-shell">' +
+      '  <header class="exam-header">' +
+      '    <div class="exam-title"></div>' +
+      '    <button type="button" class="exam-calc-toggle" id="exam-calc-btn" title="Virtual Calculator">ðŸ–© Calculator</button>' +
+      '    <div class="exam-timer" id="exam-timer">--:--:--</div>' +
+      '    <button type="button" class="exam-submit-btn" id="exam-submit-btn">Submit Test</button>' +
+      '  </header>' +
+      '  <nav class="exam-section-tabs" id="exam-section-tabs"></nav>' +
+      '  <div class="exam-body">' +
+      '    <main class="exam-question-panel" id="exam-question-panel"></main>' +
+      '    <aside class="exam-palette-panel" id="exam-palette-panel"></aside>' +
+      '  </div>' +
+      '</div>' +
+      '<div class="exam-calculator" id="exam-calculator" hidden></div>' +
+      '<div class="exam-modal-backdrop" id="exam-modal-backdrop" hidden>' +
+      '  <div class="exam-modal" id="exam-modal"></div>' +
+      '</div>';
+
+    root.querySelector(".exam-title").textContent =
+      (state.meta.title || entry.label + " â€” Mock " + entry.num);
+
+    renderSectionTabs();
+    buildCalculator();
+
+  }
+
+  function renderSectionTabs() {
+
+    const nav = document.getElementById("exam-section-tabs");
+
+    nav.innerHTML = state.sections.map(function (sec) {
+
+      const qs = state.questions.filter(function (q) { return q.section === sec; });
+      const answeredCount = qs.filter(hasResponse).length;
+
+      return (
+        '<button type="button" class="exam-tab' +
+        (sec === state.currentSection ? " active" : "") + '" data-section="' + sec + '">' +
+        (SECTION_LABELS[sec] || sec) +
+        ' <span class="exam-tab-count">' + answeredCount + '/' + qs.length + '</span>' +
+        '</button>'
+      );
+
+    }).join("");
+
+    nav.querySelectorAll(".exam-tab").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+
+        const sec = btn.dataset.section;
+        state.currentSection = sec;
+
+        const firstIndex = state.questions.findIndex(function (q) { return q.section === sec; });
+        goTo(firstIndex);
+
+      });
+    });
+
+  }
+
+
+  /* ---------------------------------------------------
+     8. TIMER
+     --------------------------------------------------- */
+
+  function startTimer() {
+
+    const minutes = Number(state.meta.durationMinutes || 180);
+    state.secondsLeft = minutes * 60;
+
+    updateTimerDisplay();
+
+    state.timerHandle = setInterval(function () {
+
+      state.secondsLeft--;
+      updateTimerDisplay();
+
+      if (state.secondsLeft <= 0) {
+        clearInterval(state.timerHandle);
+        submitTest(true);
+      }
+
+    }, 1000);
+
+  }
+
+  function updateTimerDisplay() {
+
+    const el = document.getElementById("exam-timer");
+    if (!el) return;
+
+    const h = Math.floor(state.secondsLeft / 3600);
+    const m = Math.floor((state.secondsLeft % 3600) / 60);
+    const s = state.secondsLeft % 60;
+
+    el.textContent =
+      String(h).padStart(2, "0") + ":" +
+      String(m).padStart(2, "0") + ":" +
+      String(s).padStart(2, "0");
+
+    if (state.secondsLeft <= 300) {
+      el.classList.add("exam-timer-low");
+    }
+
+  }
+
+
+  /* ---------------------------------------------------
+     9. RENDER QUESTION
+     --------------------------------------------------- */
+
+  function renderQuestion() {
+
+    
+
+    /*
+     * Restore all previously saved answers before
+     * the question controls are generated.
+     */
+    iaGateRestoreResponses();
+const q = state.questions[state.current];
+    if (!q) return;
+
+    state.visited[q.qno] = true;
+    state.currentSection = q.section;
+
+    const panel = document.getElementById("exam-question-panel");
+
+    let optionsHtml = "";
+
+    if (q.type === "nat") {
+
+      const val = state.responses[q.qno];
+
+      optionsHtml =
+        '<input type="text" inputmode="decimal" class="exam-nat-input" ' +
+        'id="exam-nat-input" placeholder="Enter numeric answer" value="' +
+        (val !== undefined ? escapeHtml(String(val)) : "") + '">';
+
+    } else {
+
+      const inputType = q.type === "msq" ? "checkbox" : "radio";
+      const current = state.responses[q.qno];
+
+      optionsHtml = (q.options || []).map(function (opt, i) {
+
+        const letter = String.fromCharCode(65 + i);
+        const checked =
+          q.type === "msq"
+            ? Array.isArray(current) && current.indexOf(letter) !== -1
+            : current === letter;
+
+        return (
+          '<label class="exam-option">' +
+          '<input type="' + inputType + '" name="exam-opt" value="' + letter + '"' +
+          (checked ? " checked" : "") + '>' +
+          '<span class="exam-option-letter">' + letter + '</span>' +
+          '<span class="exam-option-text">' + escapeHtml(opt) + '</span>' +
+          '</label>'
+        );
+
+      }).join("");
+
+    }
+
+    panel.innerHTML =
+      '<div class="exam-q-meta">' +
+      (SECTION_LABELS[q.section] || q.section) + ' &middot; Q' + q.qno + ' &middot; ' +
+      q.marks + ' mark' + (q.marks > 1 ? "s" : "") +
+      (q.type === "msq" ? " &middot; multiple correct, no negative marking" : "") +
+      (q.type === "nat" ? " &middot; numerical answer, no negative marking" : "") +
+      (q.type === "mcq" ? " &middot; \u2212" + q.negMarks.toFixed(2) + " for wrong answer" : "") +
+      '</div>' +
+      '<div class="exam-q-text">' + escapeHtml(q.question) + '</div>' +
+      '<div class="exam-options">' + optionsHtml + '</div>' +
+      '<div class="exam-actions">' +
+      '  <button type="button" class="exam-btn" id="btn-clear">Clear Response</button>' +
+      '  <button type="button" class="exam-btn" id="btn-mark">Mark for Review &amp; Next</button>' +
+      '  <button type="button" class="exam-btn exam-btn-primary" id="btn-save-next">Save &amp; Next</button>' +
+      '</div>' +
+      '<div class="exam-nav">' +
+      '  <button type="button" class="exam-btn" id="btn-prev"' +
+      (state.current === 0 ? " disabled" : "") + '>Previous</button>' +
+      '  <button type="button" class="exam-btn" id="btn-next"' +
+      (state.current === state.questions.length - 1 ? " disabled" : "") + '>Next</button>' +
+      '</div>';
+
+    wireQuestionEvents(q);
+    renderSectionTabs();
+    renderPalette();
+
+  }
+
+  function wireQuestionEvents(q) {
+
+    if (q.type === "nat") {
+
+      const input = document.getElementById("exam-nat-input");
+      input.addEventListener("input", function () {
+        iaGateSetResponse(q.qno, input.value);
+      });
+
+    } else {
+
+      const inputs = document.querySelectorAll('input[name="exam-opt"]');
+
+      inputs.forEach(function (inp) {
+        inp.addEventListener("change", function () {
+
+          if (q.type === "msq") {
+
+            const selected =
+              Array.from(document.querySelectorAll('input[name="exam-opt"]:checked'))
+                .map(function (el) { return el.value; });
+
+            iaGateSetResponse(q.qno, selected);
+
+          } else {
+            iaGateSetResponse(q.qno, inp.value);
+          }
+
+        });
+
+      });
+
+    }
+
+    document.getElementById("btn-clear").addEventListener("click", function () {
+      iaGateDeleteResponse(q.qno);
+      renderQuestion();
+    });
+
+    // Real GATE behaviour: marking for review does NOT clear an
+    // existing response â€” it stays, and is still evaluated.
+    document.getElementById("btn-mark").addEventListener("click", function () {
+      state.marked[q.qno] = true;
+      goTo(state.current + 1);
+    });
+
+    document.getElementById("btn-save-next").addEventListener("click", function () {
+      state.marked[q.qno] = false;
+      goTo(state.current + 1);
+    });
+
+    document.getElementById("btn-prev").addEventListener("click", function () {
+      goTo(state.current - 1);
+    });
+
+    document.getElementById("btn-next").addEventListener("click", function () {
+      goTo(state.current + 1);
+    });
+
+  }
+
+  function goTo(index) {
+
+    if (index < 0 || index >= state.questions.length) return;
+
+    state.current = index;
+    renderQuestion();
+
+  }
+
+
+  /* ---------------------------------------------------
+     10. PALETTE  (scoped to the active section, GATE-style)
+     --------------------------------------------------- */
+
+  function renderPalette() {
+
+    const panel = document.getElementById("exam-palette-panel");
+
+    const legend =
+      '<div class="exam-legend">' +
+      '<span class="dot dot-answered"></span>Answered ' +
+      '<span class="dot dot-notanswered"></span>Not answered ' +
+      '<span class="dot dot-marked"></span>Marked ' +
+      '<span class="dot dot-answered-marked"></span>Ans.+Marked ' +
+      '<span class="dot dot-notvisited"></span>Not visited' +
+      '</div>';
+
+    const sectionQuestions = state.questions
+      .map(function (q, i) { return { q: q, i: i }; })
+      .filter(function (item) { return item.q.section === state.currentSection; });
+
+    const grid = sectionQuestions.map(function (item) {
+
+      const cls = paletteStatus(item.q);
+
+      return (
+        '<button type="button" class="exam-palette-btn ' + cls +
+        (item.i === state.current ? " current" : "") + '" data-index="' + item.i + '">' +
+        item.q.qno + '</button>'
+      );
+
+    }).join("");
+
+    const counts = summariseCounts(sectionQuestions.map(function (item) { return item.q; }));
+
+    panel.innerHTML =
+      legend +
+      '<div class="exam-palette-grid">' + grid + '</div>' +
+      '<div class="exam-palette-counts">' +
+      '<div><span class="dot dot-answered"></span>Answered: ' + counts.answered + '</div>' +
+      '<div><span class="dot dot-notanswered"></span>Not answered: ' + counts.notAnswered + '</div>' +
+      '<div><span class="dot dot-marked"></span>Marked: ' + counts.marked + '</div>' +
+      '<div><span class="dot dot-answered-marked"></span>Ans.+Marked: ' + counts.answeredMarked + '</div>' +
+      '<div><span class="dot dot-notvisited"></span>Not visited: ' + counts.notVisited + '</div>' +
+      '</div>';
+
+    panel.querySelectorAll(".exam-palette-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        goTo(Number(btn.dataset.index));
+      });
+    });
+
+  }
+
+  function paletteStatus(q) {
+
+    const answered = hasResponse(q);
+    const marked = !!state.marked[q.qno];
+    const visited = !!state.visited[q.qno];
+
+    if (marked && answered) return "answered-marked";
+    if (marked) return "marked";
+    if (answered) return "answered";
+    if (visited) return "notanswered";
+    return "notvisited";
+
+  }
+
+  function summariseCounts(questions) {
+
+    const counts = { answered: 0, notAnswered: 0, marked: 0, answeredMarked: 0, notVisited: 0 };
+
+    questions.forEach(function (q) {
+
+      const status = paletteStatus(q);
+
+      if (status === "answered") counts.answered++;
+      else if (status === "notanswered") counts.notAnswered++;
+      else if (status === "marked") counts.marked++;
+      else if (status === "answered-marked") counts.answeredMarked++;
+      else counts.notVisited++;
+
+    });
+
+    return counts;
+
+  }
+
+  function hasResponse(q) {
+
+    const r = state.responses[q.qno];
+
+    if (r === undefined || r === null || r === "") return false;
+    if (Array.isArray(r) && r.length === 0) return false;
+
+    return true;
+
+  }
+
+
+  /* ---------------------------------------------------
+     11. SUBMIT
+     --------------------------------------------------- */
+
+  function confirmSubmit() {
+
+    const counts = summariseCounts(state.questions);
+    const total = state.questions.length;
+
+    showModal(
+      '<h3>Submit test?</h3>' +
+      '<table class="exam-result-table">' +
+      '<tr><td>Answered</td><td>' + (counts.answered + counts.answeredMarked) + '</td></tr>' +
+      '<tr><td>Not answered</td><td>' + counts.notAnswered + '</td></tr>' +
+      '<tr><td>Marked for review (not answered)</td><td>' + counts.marked + '</td></tr>' +
+      '<tr><td>Not visited</td><td>' + counts.notVisited + '</td></tr>' +
+      '<tr><td>Total questions</td><td>' + total + '</td></tr>' +
+      '</table>' +
+      '<div class="exam-modal-actions">' +
+      '  <button type="button" class="exam-btn" id="modal-cancel">Continue Test</button>' +
+      '  <button type="button" class="exam-btn exam-btn-primary" id="modal-submit">Submit</button>' +
+      '</div>'
+    );
+
+    document.getElementById("modal-cancel").addEventListener("click", hideModal);
+    document.getElementById("modal-submit").addEventListener("click", function () {
+      hideModal();
+      submitTest(false);
+    });
+
+  }
+
+  function submitTest(autoSubmitted) {
+
+    if (state.submitted) return;
+    state.submitted = true;
+
+    if (state.timerHandle) clearInterval(state.timerHandle);
+
+    const sectionScores = {
+      ga: { correct: 0, total: 0 },
+      eng: { correct: 0, total: 0 },
+      aero: { correct: 0, total: 0 }
+    };
+
+    let score = 0;
+    let totalMarks = 0;
+
+    const questionLog = state.questions.map(function (q) {
+
+      const bucket = sectionScores[q.section] || sectionScores.aero;
+      bucket.total++;
+      totalMarks += q.marks;
+
+      const studentAnswer = state.responses[q.qno];
+      const graded = gradeQuestion(q, studentAnswer);
+
+      if (graded.isCorrect) {
+        score += q.marks;
+        bucket.correct++;
+      } else if (graded.attempted && graded.negMarksApplied) {
+        score -= q.negMarks || 0;
+      }
+
+      return {
+        question: q.question,
+        options: q.options || [],
+        studentAnswer: studentAnswer,
+        correctAnswer: q.answer,
+        isCorrect: graded.isCorrect,
+      attempted: graded.attempted,
+      explanation: q.explanation || ""};
+
+    });
+
+    score = Math.round(score * 100) / 100;
+    const percentage = totalMarks
+      ? Math.round((score / totalMarks) * 10000) / 100
+      : 0;
+
+    // --------------------------------------------------------
+    // Explicit result counters required by the GATE backend
+    // --------------------------------------------------------
+    let attempted = 0;
+    let correct = 0;
+    let wrong = 0;
+    let unanswered = 0;
+
+    questionLog.forEach(function (item) {
+      if (item && item.isCorrect) {
+        correct++;
+        attempted++;
+      } else if (item && item.attempted) {
+        attempted++;
+        wrong++;
+      } else {
+        unanswered++;
+      }
+    });
+
+    const payload = {
+      studentId: session.id,
+      studentName: session.name,
+      email: session.email,
+      testId: entry.id,
+      paper: entry.id,
+      paperTitle: state.meta.title || (entry.label + " â€” Mock " + entry.num),
+      score: score,
+      totalQuestions: state.questions.length,
+      percentage: percentage,
+      attempted: attempted,
+      correct: correct,
+      wrong: wrong,
+      unanswered: unanswered,
+      sectionScores: sectionScores,
+      autoSubmitted: !!autoSubmitted,
+      attemptToken: state.attemptToken,
+      startedAt: state.startedAt,
+      submittedAt: new Date().toISOString(),
+      questions: questionLog
+    };
+
+    // text/plain avoids a CORS preflight the Apps Script web app
+    // cannot answer (no doOptions handler).
+    fetch(IA_AUTH_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload)
+    }).catch(function (err) {
+      console.error("Result backup failed:", err);
+    }).finally(function () {
+      iaMarkCredentialFinished(session.id);
+      renderResultScreen(payload);
+    });
+
+  }
+
+  /**
+   * Official GATE marking:
+   *  - MCQ: negative marking (1/3 of the question's marks for
+   *    1-mark Qs, 2/3 for 2-mark Qs) on a wrong pick; 0 if
+   *    unattempted.
+   *  - MSQ: full marks only if the response set exactly equals
+   *    the correct set; otherwise 0. No negative marking.
+   *  - NAT: full marks if within tolerance of the published
+   *    answer. No negative marking.
+   */
+  function gradeQuestion(q, studentAnswer) {
+
+    if (!hasResponse(q)) {
+      return { attempted: false, isCorrect: false, negMarksApplied: false };
+    }
+
+    let isCorrect = false;
+
+    if (q.type === "mcq") {
+
+      isCorrect = studentAnswer === q.answer;
+
+    } else if (q.type === "msq") {
+
+      const given = Array.isArray(studentAnswer) ? studentAnswer.slice().sort() : [];
+      const correct = Array.isArray(q.answer) ? q.answer.slice().sort() : [];
+
+      isCorrect =
+        given.length === correct.length &&
+        given.every(function (v, i) { return v === correct[i]; });
+
+    } else if (q.type === "nat") {
+
+      const given = parseFloat(studentAnswer);
+      const target = Number(q.answer);
+      const tol = q.tolerance !== undefined ? Number(q.tolerance) : 0.01;
+
+      isCorrect = !isNaN(given) && Math.abs(given - target) <= tol;
+
+    }
+
+    return {
+      attempted: true,
+      isCorrect: isCorrect,
+      negMarksApplied: !isCorrect && q.type === "mcq"
+    };
+
+  }
+
+
+  /* ---------------------------------------------------
+     12. RESULT SCREEN
+     --------------------------------------------------- */
+
+  function renderResultScreen(payload) {
+
+    root.innerHTML =
+      '<div class="exam-result">' +
+      '  <h2>Test submitted</h2>' +
+      '  <p class="exam-result-paper">' + escapeHtml(payload.paperTitle) + '</p>' +
+      '  <div class="exam-result-score">' + payload.score + ' / ' + (
+        state.questions.reduce(function (s, q) { return s + q.marks; }, 0)
+      ) + '</div>' +
+      '  <div class="exam-result-percent">' + payload.percentage + '%</div>' +
+      '  <table class="exam-result-table">' +
+      '    <tr><th>Section</th><th>Correct</th><th>Total</th></tr>' +
+      '    <tr><td>General Aptitude</td><td>' + payload.sectionScores.ga.correct + '</td><td>' + payload.sectionScores.ga.total + '</td></tr>' +
+      '    <tr><td>Core Subject</td><td>' + payload.sectionScores.aero.correct + '</td><td>' + payload.sectionScores.aero.total + '</td></tr>' +
+      '  </table>' +
+      '  <a class="exam-btn exam-btn-primary" href="index.html">Back to Test List</a>' +
+      '</div>';
+
+  }
+
+
+  /* ---------------------------------------------------
+     13. MODAL
+     --------------------------------------------------- */
+
+  function showModal(html) {
+    document.getElementById("exam-modal").innerHTML = html;
+    document.getElementById("exam-modal-backdrop").hidden = false;
+  }
+
+  function hideModal() {
+    document.getElementById("exam-modal-backdrop").hidden = true;
+  }
+
+
+  /* ---------------------------------------------------
+     14. VIRTUAL CALCULATOR
+     ---------------------------------------------------
+     GATE does not permit physical calculators; a basic
+     on-screen scientific calculator is provided instead.
+     Expression is built entirely from button clicks (the
+     display is read-only), so the characters fed to the
+     evaluator are always from a known-safe set.
+     --------------------------------------------------- */
+
+  let calcExpr = "";
+  let calcDisplayExpr = "";
+
+  function buildCalculator() {
+
+    const box = document.getElementById("exam-calculator");
+
+    const buttons = [
+      ["C", "clear"], ["âŒ«", "back"], ["(", "("], [")", ")"], ["Ã·", "/"],
+      ["7", "7"], ["8", "8"], ["9", "9"], ["Ã—", "*"], ["âˆš", "sqrt"],
+      ["4", "4"], ["5", "5"], ["6", "6"], ["âˆ’", "-"], ["xÂ²", "sq"],
+      ["1", "1"], ["2", "2"], ["3", "3"], ["+", "+"], ["1/x", "inv"],
+      ["0", "0"], [".", "."], ["Ï€", "pi"], ["e", "e"], ["=", "eq"],
+      ["sin", "sin"], ["cos", "cos"], ["tan", "tan"], ["log", "log"], ["ln", "ln"]
+    ];
+
+    box.innerHTML =
+      '<div class="exam-calc-display" id="exam-calc-display">0</div>' +
+      '<div class="exam-calc-grid">' +
+      buttons.map(function (b) {
+        return '<button type="button" class="exam-calc-btn" data-op="' + b[1] + '">' + b[0] + '</button>';
+      }).join("") +
+      '</div>';
+
+    box.querySelectorAll(".exam-calc-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        calcPress(btn.dataset.op);
+      });
+    });
+
+  }
+
+  function toggleCalculator() {
+    const box = document.getElementById("exam-calculator");
+    box.hidden = !box.hidden;
+  }
+
+  function calcPress(op) {
+
+    const display = document.getElementById("exam-calc-display");
+
+    if (op === "clear") {
+      calcExpr = "";
+      calcDisplayExpr = "";
+    } else if (op === "back") {
+      calcExpr = calcExpr.slice(0, -1);
+      calcDisplayExpr = calcDisplayExpr.slice(0, -1);
+    } else if (op === "eq") {
+
+      try {
+        // calcExpr is built exclusively from the whitelisted button
+        // set above, never from free text input.
+        const value = iaGateSafeCalculate(calcExpr);
+        calcExpr = String(Math.round(value * 1e10) / 1e10);
+        calcDisplayExpr = calcExpr;
+      } catch (e) {
+        calcExpr = "";
+        calcDisplayExpr = "Error";
+      }
+
+    } else if (op === "sqrt") {
+      calcExpr += "Math.sqrt(";
+      calcDisplayExpr += "âˆš(";
+    } else if (op === "sq") {
+      calcExpr += "**2";
+      calcDisplayExpr += "Â²";
+    } else if (op === "inv") {
+      calcExpr = "1/(" + calcExpr + ")";
+      calcDisplayExpr = "1/(" + calcDisplayExpr + ")";
+    } else if (op === "pi") {
+      calcExpr += "Math.PI";
+      calcDisplayExpr += "Ï€";
+    } else if (op === "e") {
+      calcExpr += "Math.E";
+      calcDisplayExpr += "e";
+    } else if (["sin", "cos", "tan", "log", "ln"].indexOf(op) !== -1) {
+
+      const fnMap = { sin: "Math.sin", cos: "Math.cos", tan: "Math.tan", log: "Math.log10", ln: "Math.log" };
+      calcExpr += fnMap[op] + "(";
+      calcDisplayExpr += op + "(";
+
+    } else {
+      calcExpr += op;
+      calcDisplayExpr += op === "*" ? "Ã—" : (op === "/" ? "Ã·" : op);
+    }
+
+    display.textContent = calcDisplayExpr || "0";
+
+  }
+
+
+  /* ---------------------------------------------------
+     15. HELPERS
+     --------------------------------------------------- */
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  }
+
+
+  /* ---------------------------------------------------
+     16. BOOT
+     --------------------------------------------------- */
+
+  if (root) {
+    root.innerHTML = '<div class="exam-loading">Preparing your test&hellip;</div>';
+  }
+
+  startAttempt()
+    .then(loadQuestions)
+    .then(renderInstructions)
+    .catch(function (err) {
+
+      if (root) {
+        root.innerHTML =
+          '<div class="exam-error">' + escapeHtml(err.message || String(err)) +
+          ' <a href="index.html">Back to test list</a></div>';
+      }
+
+    });
+
+})();
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   GATE UI RESUME CONTROLLER
+   ---------------------------------------------------------
+   The backend keeps an attempt IN_PROGRESS until final
+   submission.
+
+   This controller remembers whether the student actually
+   pressed Start Test. On a browser refresh, the engine may
+   return to the instruction screen; when an active attempt
+   exists, we automatically activate the test UI again.
+
+   A first-time visitor is NOT auto-started.
+   ========================================================= */
+
+(function () {
+
+  const STARTED_KEY =
+    "ia_gate_test_started_v2";
+
+  const getAttempt =
+    window.iaGateGetActiveAttempt;
+
+  function getCurrentStudentId() {
+
+    try {
+
+      if (
+        typeof session !== "undefined" &&
+        session &&
+        session.id
+      ) {
+        return String(session.id);
+      }
+
+    } catch (e) {}
+
+    try {
+
+      if (
+        typeof iaGetSession === "function"
+      ) {
+
+        const s = iaGetSession();
+
+        if (s && s.id) {
+          return String(s.id);
+        }
+
+      }
+
+    } catch (e) {}
+
+    return "";
+
+  }
+
+
+  function getTestKey() {
+
+    try {
+
+      const params =
+        new URLSearchParams(
+          window.location.search
+        );
+
+      return (
+        params.get("test") ||
+        ""
+      );
+
+    } catch (e) {
+
+      return "";
+
+    }
+
+  }
+
+
+  function getStartedKey() {
+
+    const studentId =
+      getCurrentStudentId();
+
+    const testKey =
+      getTestKey();
+
+    return (
+      STARTED_KEY +
+      "::" +
+      studentId +
+      "::" +
+      testKey
+    );
+
+  }
+
+
+  function markStarted() {
+
+    try {
+
+      sessionStorage.setItem(
+        getStartedKey(),
+        "1"
+      );
+
+      console.log(
+        "[GATE] Test-start flag saved."
+      );
+
+    } catch (e) {
+
+      console.warn(
+        "[GATE] Could not save test-start flag.",
+        e
+      );
+
+    }
+
+  }
+
+
+  function wasStarted() {
+
+    try {
+
+      return (
+        sessionStorage.getItem(
+          getStartedKey()
+        ) === "1"
+      );
+
+    } catch (e) {
+
+      return false;
+
+    }
+
+  }
+
+
+  function isActiveAttemptForThisTest() {
+
+    if (
+      typeof getAttempt !== "function"
+    ) {
+      return false;
+    }
+
+    const attempt =
+      getAttempt();
+
+    if (!attempt) {
+      return false;
+    }
+
+    const studentId =
+      getCurrentStudentId();
+
+    const testKey =
+      getTestKey();
+
+    if (
+      !attempt.attemptToken
+    ) {
+      return false;
+    }
+
+    if (
+      studentId &&
+      attempt.studentId &&
+      String(attempt.studentId) !== studentId
+    ) {
+      return false;
+    }
+
+    /*
+     * Do NOT compare attempt.testId with the URL test value.
+     *
+     * The frontend URL contains the JSON paper path
+     * (example: data/ae/mock1.json), while the backend
+     * attempt may use its own logical test ID
+     * (example: ae-1).
+     *
+     * The attemptToken is the authoritative identifier for
+     * the active server-side attempt.
+     */
+
+    return true;
+
+  }
+
+
+  /*
+   * Mark the test as started whenever the actual Start Test
+   * button is clicked.
+   *
+   * Capture phase makes this run before the existing handler.
+   */
+  function installStartListener() {
+
+    const btn =
+      document.getElementById(
+        "exam-start-btn"
+      );
+
+    if (!btn) {
+      return false;
+    }
+
+    if (
+      btn.dataset.iaResumeListenerInstalled === "1"
+    ) {
+      return true;
+    }
+
+    btn.dataset.iaResumeListenerInstalled =
+      "1";
+
+    btn.addEventListener(
+      "click",
+      function () {
+        markStarted();
+      },
+      true
+    );
+
+    return true;
+
+  }
+
+
+  /*
+   * After refresh, the existing engine renders the
+   * instruction page. Once the Start button exists, if this
+   * student had already started this test in this tab and
+   * there is an active backend attempt, click Start Test once.
+   */
+  function tryResume() {
+
+    if (!wasStarted()) {
+      return false;
+    }
+
+    if (!isActiveAttemptForThisTest()) {
+      return false;
+    }
+
+    const btn =
+      document.getElementById(
+        "exam-start-btn"
+      );
+
+    if (!btn) {
+      return false;
+    }
+
+    if (
+      btn.dataset.iaResumeTriggered === "1"
+    ) {
+      return true;
+    }
+
+    btn.dataset.iaResumeTriggered =
+      "1";
+
+    console.log(
+      "[GATE] Active attempt detected. Resuming test UI."
+    );
+
+    /*
+     * Give the original page a moment to finish attaching
+     * its own listeners and rendering the instruction screen.
+     */
+    setTimeout(
+      function () {
+
+        try {
+
+          /*
+           * The normal Start Test handler requires the
+           * declaration checkbox to be checked.
+           *
+           * This is safe here because tryResume() only runs
+           * after BOTH conditions are true:
+           *
+           *   1. The student previously started this test.
+           *   2. A valid active attemptToken exists.
+           *
+           * Therefore we are not bypassing the declaration
+           * for a first-time visitor.
+           */
+
+          const declaration =
+            document.getElementById(
+              "exam-declare-checkbox"
+            );
+
+          if (declaration) {
+
+            declaration.checked = true;
+
+            /*
+             * Notify any checkbox listener as well.
+             */
+            declaration.dispatchEvent(
+              new Event(
+                "change",
+                {
+                  bubbles: true
+                }
+              )
+            );
+
+            console.log(
+              "[GATE] Resume declaration automatically accepted."
+            );
+
+          }
+
+          btn.click();
+
+        } catch (err) {
+
+          console.error(
+            "[GATE] Resume click failed.",
+            err
+          );
+
+        }
+
+      },
+      100
+    );
+
+    return true;
+
+  }
+
+
+  /*
+   * The engine renders asynchronously, so install listeners
+   * repeatedly for a short period.
+   */
+  function watch() {
+
+    let checks = 0;
+
+    const timer =
+      setInterval(
+        function () {
+
+          checks++;
+
+          installStartListener();
+
+          if (tryResume()) {
+
+            clearInterval(timer);
+            return;
+
+          }
+
+          /*
+           * Stop after roughly 15 seconds.
+           */
+          if (checks >= 75) {
+
+            clearInterval(timer);
+
+          }
+
+        },
+        200
+      );
+
+  }
+
+
+  /*
+   * Start after DOM is available.
+   */
+  if (
+    document.readyState === "loading"
+  ) {
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      watch
+    );
+
+  }
+  else {
+
+    watch();
+
+  }
+
+})();
+
+
+
+
+
+

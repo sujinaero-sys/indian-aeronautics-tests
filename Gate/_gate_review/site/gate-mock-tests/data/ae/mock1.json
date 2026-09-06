@@ -1,0 +1,456 @@
+{
+  "meta": {
+    "title": "GATE Aerospace Engineering (AE) — Mock Test 1",
+    "durationMinutes": 180,
+    "instructions": "65 questions, 100 marks. Q1–Q5 and Q11–Q35: 1 mark each. Q6–Q10 and Q36–Q65: 2 marks each. MCQ: 1/3 negative marking for 1-mark questions, 2/3 for 2-mark questions. MSQ and NAT: no negative marking.",
+    "note": "A small number of figure-dependent questions (marked needsReview in the source data) should be manually verified against the official answer key before this test goes live — see the assistant's message for the list."
+  },
+  "questions": [
+    {
+      "qno": 1, "section": "ga", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "\"He often _____ the numbers. False claims are not going to help. Honesty _____ trust\", said the manager. Choose the option with the correct order of words to fill the blanks.",
+      "options": ["exaggerates; engenders", "excels; encourages", "aggravates; alleviates", "diminishes; eliminates"],
+      "answer": "A",
+      "explanation": "\"Exaggerates\" fits false-claims context; \"engenders\" (creates/gives rise to) fits honesty-trust relationship."
+    },
+    {
+      "qno": 2, "section": "ga", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "In the sequence of tiles shown (dot-count tiles: 2, 3, ?, 6, 8), the missing tile indicated by the question mark should be:",
+      "options": ["4 dots (2×2)", "5 dots", "6 dots (2×3)", "8 dots (2×4)"],
+      "answer": "A",
+      "explanation": "Differences between consecutive dot counts follow +1, +1, +2, +2: 2, 3, 4, 6, 8.",
+      "needsReview": true
+    },
+    {
+      "qno": 3, "section": "ga", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "A school has 100 students distributed among 1st to 10th standards. Based on this, which one of the following statements is always correct?",
+      "options": ["There are at least 10 students who belong to the same standard.", "There is at least one student in each standard.", "There are at most 10 students in 10th standard.", "The total number of students from 1st to 5th standards is at least 50."],
+      "answer": "A",
+      "explanation": "Pigeonhole principle: 100 students in 10 standards guarantees at least ⌈100/10⌉ = 10 in some standard."
+    },
+    {
+      "qno": 4, "section": "ga", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "How many 3-digit numbers can be formed using three distinct single digit prime numbers?",
+      "options": ["64", "24", "12", "4"],
+      "answer": "B",
+      "explanation": "Single-digit primes: 2,3,5,7 (4 of them). Choosing 3 distinct and arranging: P(4,3) = 4×3×2 = 24."
+    },
+    {
+      "qno": 5, "section": "ga", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "In a group of students, 10 students like Mathematics, 12 students like English, 4 students like both Mathematics and English, and 6 students like neither Mathematics nor English. The number of students in the group is ____",
+      "options": ["18", "20", "24", "32"],
+      "answer": "C",
+      "explanation": "|M∪E| = 10+12−4 = 18; total = 18 + 6 (neither) = 24."
+    },
+    {
+      "qno": 6, "section": "ga", "type": "mcq", "marks": 2, "negMarks": 0.667,
+      "question": "Charity : P :: Retaliation : Q. Choose the appropriate pair of words P and Q that fit the analogy.",
+      "options": ["P = Parsimonious; Q = Vengeful", "P = Altruistic; Q = Amicable", "P = Resentful; Q = Spiteful", "P = Magnanimous; Q = Vindictive"],
+      "answer": "D",
+      "explanation": "A magnanimous person performs charity; a vindictive person retaliates."
+    },
+    {
+      "qno": 7, "section": "ga", "type": "mcq", "marks": 2, "negMarks": 0.667,
+      "question": "A paper shown in Panel I is folded along the dashed lines to construct a cube. The shaded regions in Panel I appear on the outer surface of the cube. Referring to cubes (i) and (ii) in Panel II, which option is correct?",
+      "options": ["Only (i) can correspond to the unfolded cube in Panel I.", "Only (ii) can correspond to the unfolded cube in Panel I.", "Both (i) and (ii) can correspond to the unfolded cube in Panel I.", "Neither (i) nor (ii) can correspond to the unfolded cube in Panel I."],
+      "answer": null,
+      "explanation": "Figure-dependent (net-folding spatial reasoning) — verify against the official answer key before publishing.",
+      "needsReview": true
+    },
+    {
+      "qno": 8, "section": "ga", "type": "mcq", "marks": 2, "negMarks": 0.667,
+      "question": "Consider the cube shown with its 8 corners labelled a–h. All corners are to be coloured such that any two corners connected by an edge must be of different colours. The minimum number of colours required is ________",
+      "options": ["8", "4", "3", "2"],
+      "answer": "D",
+      "explanation": "The cube's vertex-adjacency graph is bipartite (no odd cycles), so it is 2-colourable."
+    },
+    {
+      "qno": 9, "section": "ga", "type": "mcq", "marks": 2, "negMarks": 0.667,
+      "question": "Four hills H1, H2, H3, H4: (i) Neither H2 nor H3 is the easternmost hill. (ii) Neither H2 nor H3 is the westernmost hill. (iii) Neither the easternmost nor westernmost hill is the southernmost hill. (iv) Two hills are located west of H2. (v) The southernmost hill has at least two hills to its east. The southernmost hill is ________.",
+      "options": ["H1", "H2", "H3", "H4"],
+      "answer": "C",
+      "explanation": "H1/H4 occupy the east/west extremes; H2 sits 3rd from west (two hills west of it) and H3 2nd from west. Only H3 (2nd from west) has ≥2 hills to its east, satisfying (iii) and (v)."
+    },
+    {
+      "qno": 10, "section": "ga", "type": "mcq", "marks": 2, "negMarks": 0.667,
+      "question": "Circle C1 (center O1, radius r1) touches square VWXY at P and Q; circle C2 (center O2, radius r2) touches the square at R and S; the circles touch each other at T. Given r1 = 1 cm and VY = VW = 4 cm, r2 = _____ cm.",
+      "options": ["4 − 3√2", "1 + 2√2", "7 − 4√2", "5 + 3√2"],
+      "answer": "C",
+      "explanation": "O1=(1,1), O2=(4−r2,4−r2). Setting |O1O2| = r1+r2 gives √2(3−r2) = 1+r2 ⇒ r2 = 7−4√2 ≈ 1.343."
+    },
+    {
+      "qno": 11, "section": "aero", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "Consider the contour C shown (diamond O→P→Q→R→O). For the vector F = (x+2y)ê_x + (2x+4y)ê_y, the integral ∮_C F·dl = ________.",
+      "options": ["0", "2", "4", "6"],
+      "answer": "A",
+      "explanation": "curl F (∂Q/∂x − ∂P/∂y) = 2 − 2 = 0, so F is conservative and the closed-loop integral vanishes."
+    },
+    {
+      "qno": 12, "section": "aero", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "The Fourier series representation of a square wave shows fluctuations (overshoot/ringing) near the jump discontinuities. These fluctuations are named after which scientist?",
+      "options": ["Cauchy", "Fourier", "Gibbs", "Laplace"],
+      "answer": "C",
+      "explanation": "This is the Gibbs phenomenon."
+    },
+    {
+      "qno": 13, "section": "aero", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "The equation ∂φ/∂t + a·∂φ/∂x = 0 (a ≠ 0 constant) represents ________.",
+      "options": ["linear wave propagation", "transient heat conduction", "Newton's law of cooling", "radiative transfer"],
+      "answer": "A",
+      "explanation": "This is the 1-D linear advection (wave) equation, φ(x,t) = f(x−at)."
+    },
+    {
+      "qno": 14, "section": "aero", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "Which one of the following makes an ideal air-standard Stirling cycle?",
+      "options": ["Two reversible isobars, and two reversible adiabatics", "Two reversible isotherms, and two reversible isobars", "Two reversible isotherms, and two reversible isochores", "Isentropic compression, constant volume heat addition, isentropic expansion, and constant volume heat rejection"],
+      "answer": "C",
+      "explanation": "The Stirling cycle consists of two isothermal and two constant-volume (isochoric) processes."
+    },
+    {
+      "qno": 15, "section": "aero", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "In fluid dynamics, d'Alembert's paradox refers to which one of the following?",
+      "options": ["Deviation of drag from D ∝ v² at very low speeds", "Deviation of drag from D ∝ v² at high subsonic speeds", "Prediction of zero drag by potential flow theory", "Presence of shocks in transonic flows"],
+      "answer": "C",
+      "explanation": "Inviscid potential flow theory predicts zero drag on a body in steady flow, contradicting observed drag — the paradox."
+    },
+    {
+      "qno": 16, "section": "aero", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "The number of independent elastic constants that a fully anisotropic linear elastic material can have is ______.",
+      "options": ["36", "21", "10", "2"],
+      "answer": "B",
+      "explanation": "The 6×6 stiffness matrix is symmetric, giving 21 independent constants."
+    },
+    {
+      "qno": 17, "section": "aero", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "A cantilever beam with an unsymmetric cross-section is subjected to a transverse shear force (P) at its free end. P acts at the shear center of the beam cross-section. Which statement is TRUE about the deformation of this beam?",
+      "options": ["The beam undergoes only torsion", "The beam undergoes only bending", "The beam undergoes both torsion and bending", "The beam undergoes neither torsion nor bending"],
+      "answer": "B",
+      "explanation": "A load applied at the shear center produces bending with no twist, by definition of the shear center."
+    },
+    {
+      "qno": 18, "section": "aero", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "Two ideal gas turbine cycles, 1-2-3-4-1 and 1-2-3'-4'-1, share the same compression process (1-2) but reach a higher peak temperature T3' > T3. Which statement is FALSE?",
+      "options": ["The thermal efficiency of the two cycles is the same", "The specific work of the two cycles is the same", "The processes 2-3 and 2-3' are isobaric", "The amount of heat added in the combustion process is greater for the cycle 1-2-3'-4'-1"],
+      "answer": "B",
+      "explanation": "Ideal Brayton efficiency depends only on pressure ratio, so it's equal for both (A true) — but the cycle reaching higher T3' produces more net specific work, so (B) is false."
+    },
+    {
+      "qno": 19, "section": "aero", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "The velocity potential function φ = 5x − 12y represents which one of the following?",
+      "options": ["Doublet", "Irrotational vortex", "Source", "Uniform flow"],
+      "answer": "D",
+      "explanation": "u = ∂φ/∂x = 5, v = ∂φ/∂y = −12: constant velocity everywhere — uniform flow."
+    },
+    {
+      "qno": 20, "section": "aero", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "The fundamental purpose of the Kutta condition in thin airfoil theory is ________.",
+      "options": ["to determine the total strength of the source distribution", "to determine the speed of the uniform flow", "to incorporate the essential effect of viscosity in the potential flow theory", "to incorporate the concept of induced drag in the inviscid theory"],
+      "answer": "C",
+      "explanation": "The Kutta condition fixes the circulation so flow leaves smoothly at the trailing edge, indirectly modelling the (viscous) mechanism that prevents flow around a sharp edge."
+    },
+    {
+      "qno": 21, "section": "aero", "type": "mcq", "marks": 1, "negMarks": 0.333,
+      "question": "In the figure shown, the jet boundary from a nozzle first converges toward the centerline downstream of the exit, then forms a diamond shock pattern. The flow at the nozzle exit is ________.",
+      "options": ["overexpanded", "underexpanded", "ideally expanded", "subsonic"],
+      "answer": "A",
+      "explanation": "The jet boundary curving inward immediately past the exit (oblique shocks turning flow inward) is characteristic of an overexpanded jet.",
+      "needsReview": true
+    },
+    {
+      "qno": 22, "section": "aero", "type": "msq", "marks": 1, "negMarks": 0,
+      "question": "An n×n square matrix A satisfies Aᵀ = A⁻¹. The determinant of this matrix may take which of the following value(s)?",
+      "options": ["+1", "−1", "n", "0"],
+      "answer": ["A", "B"],
+      "explanation": "Aᵀ=A⁻¹ makes A orthogonal, so det(A)² = 1, giving det(A) = ±1."
+    },
+    {
+      "qno": 23, "section": "aero", "type": "msq", "marks": 1, "negMarks": 0,
+      "question": "Which of the following statements is/are TRUE about the stability of an aircraft?",
+      "options": ["Static stability of an aircraft is sufficient to guarantee its dynamic stability", "Static stability of an aircraft is related only to its initial tendency to return towards the equilibrium position from which it is disturbed", "An aircraft may be dynamically unstable even if it is statically stable", "Dynamic stability is related to the time history of aircraft motion after being disturbed from its equilibrium position"],
+      "answer": ["B", "C", "D"],
+      "explanation": "Static stability only concerns initial tendency; it does not guarantee dynamic stability."
+    },
+    {
+      "qno": 24, "section": "aero", "type": "msq", "marks": 1, "negMarks": 0,
+      "question": "For a given air-standard power, the propulsive efficiency of a turbofan engine is more than that of a turbojet engine. Which of the following is/are the reason(s) for this?",
+      "options": ["The mass flow rate is more for a turbofan engine", "The exit velocity is lower for a turbofan engine", "A turbofan engine operates at a lower altitude", "The fan of a turbofan engine consumes lesser power"],
+      "answer": ["A", "B"],
+      "explanation": "Bypass air raises mass flow and lowers exit velocity, both of which raise propulsive efficiency η_p = 2/(1+Ve/V)."
+    },
+    {
+      "qno": 25, "section": "aero", "type": "msq", "marks": 1, "negMarks": 0,
+      "question": "Shown are qualitative lift-curve illustrations for an airfoil with two different control surfaces in retracted/deployed configurations (Figure P and Figure Q). Which of the following is/are TRUE?",
+      "options": ["Figure P is for a flap", "Figure P is for a slat", "Figure Q is for a slat", "Figure Q is for a flap"],
+      "answer": ["A", "C"],
+      "explanation": "A flap deployment shifts the lift curve up (higher CL at same α) without extending stall angle — Figure P. A slat extends the linear range to a higher stall angle — Figure Q.",
+      "needsReview": true
+    },
+    {
+      "qno": 26, "section": "aero", "type": "msq", "marks": 1, "negMarks": 0,
+      "question": "The state of stress at a point in a 2-D body is [σ] in the x-y system. Transformation matrix [Q] rotates the system to x'-y'. Select the CORRECT option(s) representing the state of stress in the new system.",
+      "options": ["[Q][σ][Q]ᵀ", "[Q][σ][Q]⁻¹", "([Q]⁻¹)ᵀ[σ][Q]ᵀ", "[Q]⁻¹[σ][Q]"],
+      "answer": ["A", "B", "C"],
+      "explanation": "Q is orthogonal (Q⁻¹=Qᵀ), so [Q][σ][Q]ᵀ, [Q][σ][Q]⁻¹, and ([Q]⁻¹)ᵀ[σ][Q]ᵀ are all algebraically identical and correct; (D) is the inverse transform."
+    },
+    {
+      "qno": 27, "section": "aero", "type": "msq", "marks": 1, "negMarks": 0,
+      "question": "The figure shows the blading of the rotors of two axial turbomachines under typical operating conditions, Configuration I and Configuration II. Which statement(s) is/are TRUE?",
+      "options": ["Configuration I corresponds to the rotor of a compressor and Configuration II to a turbine", "Configuration I corresponds to the rotor of a turbine and Configuration II to a compressor", "The rotor blades of the turbomachine in Configuration I move along the +θ direction", "The rotor blades of the turbomachine in Configuration II move along the +θ direction"],
+      "answer": null,
+      "explanation": "Figure-dependent (blade curvature and rotation-direction reading) — verify against the official answer key before publishing.",
+      "needsReview": true
+    },
+    {
+      "qno": 28, "section": "aero", "type": "msq", "marks": 1, "negMarks": 0,
+      "question": "A multi-stage axial compressor operates at two points, A and B, on the same speed line (A near the peak of the characteristic, B further along toward higher mass flow). If η is isentropic efficiency, select the statement(s) that is/are TRUE.",
+      "options": ["η_A > η_B", "η_B > η_A", "In comparison to point B, point A is closer to the surge point", "In comparison to point A, point B is closer to the choke point"],
+      "answer": ["A", "C", "D"],
+      "explanation": "A sits near the top of the characteristic (near surge, near peak efficiency); B is further along toward high flow (near choke), off the efficiency peak."
+    },
+    {
+      "qno": 29, "section": "aero", "type": "msq", "marks": 1, "negMarks": 0,
+      "question": "Which of the following statements is/are TRUE regarding critical and drag divergence Mach numbers of a wing?",
+      "options": ["Critical Mach number is the minimum freestream Mach number for which sonic condition is attained somewhere over the wing", "Drag divergence Mach number is always higher than the critical Mach number", "Drag divergence Mach number is the local Mach number over the wing at which the drag increases drastically", "Critical Mach number is independent of the angle of attack"],
+      "answer": ["A", "B"],
+      "explanation": "(C) is false — drag divergence Mach number is a freestream Mach number, not local. (D) is false — critical Mach number depends on angle of attack."
+    },
+    {
+      "qno": 30, "section": "aero", "type": "msq", "marks": 1, "negMarks": 0,
+      "question": "A flow is steady, inviscid and one-dimensional, with no shaft work or body forces. Which of the following is/are possible under the given conditions?",
+      "options": ["Oblique shocks", "Sound propagation", "Rayleigh flow", "Fanno flow"],
+      "answer": ["B", "C"],
+      "explanation": "Oblique shocks are inherently 2-D (turn the flow); Fanno flow requires friction, inconsistent with an inviscid assumption."
+    },
+    {
+      "qno": 31, "section": "aero", "type": "nat", "marks": 1, "negMarks": 0,
+      "question": "An aircraft starts gliding in power-off condition at an altitude of 4 km. Given that the maximum lift to drag ratio of the aircraft is 15, the maximum glide range that the aircraft can cover, measured along the ground, is ________ km (rounded off to the nearest integer).",
+      "answer": 60, "tolerance": 0.5,
+      "explanation": "Glide range = altitude × (L/D)max = 4 × 15 = 60 km."
+    },
+    {
+      "qno": 32, "section": "aero", "type": "nat", "marks": 1, "negMarks": 0,
+      "question": "If a matrix can be written as A = uvᵀ, where both u and v are n-dimensional real-valued non-zero column vectors, then the rank of the matrix A is ________ (answer in integer).",
+      "answer": 1, "tolerance": 0,
+      "explanation": "An outer product of two non-zero vectors always has rank 1."
+    },
+    {
+      "qno": 33, "section": "aero", "type": "nat", "marks": 1, "negMarks": 0,
+      "question": "The response x(t) of a freely vibrating single degree of freedom underdamped system is x(t) = A e^(−5t) sin(10t + φ). The damping ratio of the system is ________ (rounded off to 3 decimal places).",
+      "answer": 0.447, "tolerance": 0.003,
+      "explanation": "ζωn = 5, ωd = 10, ωn = √(5²+10²) = 11.18; ζ = 5/11.18 = 0.447."
+    },
+    {
+      "qno": 34, "section": "aero", "type": "nat", "marks": 1, "negMarks": 0,
+      "question": "The vortex shedding frequency behind a landing gear model is 50 Hz at 5 m/s in a wind tunnel. If the actual landing gear is 10× the model size, operating at 50 m/s, the expected vortex shedding frequency is ________ Hz (rounded off to the nearest integer).",
+      "answer": 50, "tolerance": 1,
+      "explanation": "Strouhal-number similarity: f·L/V constant. f_actual = 50 × (1/10) × (50/5) = 50 Hz."
+    },
+    {
+      "qno": 35, "section": "aero", "type": "nat", "marks": 1, "negMarks": 0,
+      "question": "An elliptic wing has a span of 6 m and a planform area of 6 m². When generating a lift coefficient of 0.6, the induced drag it incurs is ________ × 10⁻³ (rounded off to 1 decimal place).",
+      "answer": 19.1, "tolerance": 0.2,
+      "explanation": "AR = b²/S = 6. CDi = CL²/(πeAR) = 0.36/(π×6) = 0.0191 = 19.1×10⁻³ (e=1 for elliptic wing)."
+    },
+    {
+      "qno": 36, "section": "aero", "type": "mcq", "marks": 2, "negMarks": 0.667,
+      "question": "An earth satellite has position vector r = (8000p̂ + 9000q̂) km and velocity vector v = (−6p̂ + 6q̂) km/s (perifocal frame). μ = 398600 km³/s². Which trajectory does the satellite follow?",
+      "options": ["Circle", "Hyperbola", "Parabola", "Straight line"],
+      "answer": "B",
+      "explanation": "|r| = 12041.6 km, v²/2 = 36, μ/r = 33.10; specific energy = 36−33.10 = 2.90 > 0 → hyperbolic orbit."
+    },
+    {
+      "qno": 37, "section": "aero", "type": "mcq", "marks": 2, "negMarks": 0.667,
+      "question": "For A = [[a,b],[c,d]], if a+b = c+d and a,b,c,d ≠ 0, which statement about A is FALSE?",
+      "options": ["[1,1]ᵀ is an eigenvector", "λ = a+b is an eigenvalue", "λ = d−b is an eigenvalue", "λ = d+b is an eigenvalue"],
+      "answer": "D",
+      "explanation": "A[1,1]ᵀ = (a+b)[1,1]ᵀ, so λ1=a+b is an eigenvalue with eigenvector [1,1]. Since trace = a+d = λ1+λ2, λ2 = d−b, not d+b."
+    },
+    {
+      "qno": 38, "section": "aero", "type": "mcq", "marks": 2, "negMarks": 0.667,
+      "question": "In an ideal turbofan engine, the compressor is driven by the HP turbine and the fan by the LP turbine. With τr = Tt0/T0, τc = Tt3/Tt2, τλ = Tt4/T0, the total temperature ratio of the HP turbine (Tt4.5/Tt4) is given by ______.",
+      "options": ["1 − (τr/τλ)(τc − 1)", "1 + (τr/τλ)(τc + 1)", "1 − (τr/τλ)(τc + 1)", "1 + (τr/τλ)(τc − 1)"],
+      "answer": "A",
+      "explanation": "Energy balance: cp(Tt4−Tt4.5)=cp(Tt3−Tt2) ⇒ Tt4.5/Tt4 = 1 − (τr/τλ)(τc−1)."
+    },
+    {
+      "qno": 39, "section": "aero", "type": "mcq", "marks": 2, "negMarks": 0.667,
+      "question": "An ideal rocket has characteristic exhaust velocity 1200 m/s, mass flow rate 75 kg/s, thrust coefficient 1.5, and nozzle throat area 0.025 m². The chamber pressure (kPa) and specific impulse due to gravity (s) are ________, respectively (g = 9.8 m/s²).",
+      "options": ["3600 and 183.67", "4600 and 190.51", "3600 and 175.23", "3500 and 183.67"],
+      "answer": "A",
+      "explanation": "pc = c*·ṁ/At = 1200×75/0.025 = 3,600,000 Pa. F = Cf·pc·At = 135,000 N. Isp = F/(ṁg) = 135000/(75×9.8) = 183.67 s."
+    },
+    {
+      "qno": 40, "section": "aero", "type": "mcq", "marks": 2, "negMarks": 0.667,
+      "question": "A unit square body is subjected to the deformation field u = −ay, v = ax ('a' a constant). Due to this deformation field, the body undergoes _______ in the x-y plane.",
+      "options": ["biaxial deformation", "pure shear", "pure bending", "rigid body rotation"],
+      "answer": "D",
+      "explanation": "The displacement gradient [[0,−a],[a,0]] is purely antisymmetric — zero strain, pure rotation."
+    },
+    {
+      "qno": 41, "section": "aero", "type": "mcq", "marks": 2, "negMarks": 0.667,
+      "question": "A launch vehicle of mass 10 tons is launched vertically, with 8 tons of propellant burning completely at a constant rate over 50 s. Engine Isp = 250 s. The acceleration experienced by the vehicle at lift-off is ________ (g0 = sea-level gravity).",
+      "options": ["g0", "2g0", "3g0", "4g0"],
+      "answer": "C",
+      "explanation": "ṁ = 8000/50 = 160 kg/s. F = ṁ·Isp·g0. a = F/m0 − g0 = g0(ṁ·Isp/m0 − 1) = g0(160×250/10000 − 1) = 3g0."
+    },
+    {
+      "qno": 42, "section": "aero", "type": "mcq", "marks": 2, "negMarks": 0.667,
+      "question": "A compressor stage has stations 1 (rotor inlet), 2 (rotor exit/stator inlet), 3 (stator exit). p0i, T0i, Ci are average total pressure, total temperature and absolute flow speed at station i. Select the CORRECT option considering losses.",
+      "options": [
+        "p01<p02, p02>p03; T01<T02, T02≈T03; C1<C2, C2>C3",
+        "p01<p02, p02=p03; T01<T02, T02≈T03; C1<C2, C2=C3",
+        "p01<p02, p02>p03; T01<T02, T02<T03; C1>C2, C2>C3",
+        "p01<p02, p02<p03; T01<T02, T02<T03; C1=C2=C3"
+      ],
+      "answer": "A",
+      "explanation": "Rotor adds work (T rises, p rises despite losses; flow accelerates/swirls, C rises). Stator does no work (Tt conserved, T02≈T03) but diffuses flow, so p falls with losses and C decreases."
+    },
+    {
+      "qno": 43, "section": "aero", "type": "mcq", "marks": 2, "negMarks": 0.667,
+      "question": "An experimental study maps low-Reynolds-number incompressible 2-D aerodynamics of a novel airfoil, with parameters: speed, density, viscosity, chord, angle of attack. With 10 equally-spaced test values of each independent non-dimensional parameter, the minimum number of test runs N_min is ________.",
+      "options": ["10", "100", "10,000", "1,00,000"],
+      "answer": "B",
+      "explanation": "5 physical variables, 3 fundamental dimensions ⇒ 2 independent dimensionless groups (Re, α). 10² = 100 test runs."
+    },
+    {
+      "qno": 44, "section": "aero", "type": "msq", "marks": 2, "negMarks": 0,
+      "question": "Which of the following process(es) is/are involved in the compression of air in an ideal ramjet engine?",
+      "options": ["oblique shock", "mechanical compression", "normal shock", "subsonic diffusion"],
+      "answer": ["A", "C", "D"],
+      "explanation": "A ramjet has no compressor (no mechanical compression); air is compressed via shocks (oblique/normal) and subsonic diffusion in the inlet."
+    },
+    {
+      "qno": 45, "section": "aero", "type": "msq", "marks": 2, "negMarks": 0,
+      "question": "The deformation of an open-section bar under pure torsion can be solved using an appropriate Prandtl stress function. Which of the following statements is/are true about the Prandtl stress function?",
+      "options": ["It satisfies the equilibrium equation", "It is zero on the lateral surfaces of the bar", "It satisfies the compatibility equation", "It does not satisfy the equilibrium equation"],
+      "answer": ["A", "B", "C"],
+      "explanation": "The Prandtl stress function is constructed to identically satisfy equilibrium, is defined to vanish on the boundary, and its governing Poisson equation enforces compatibility."
+    },
+    {
+      "qno": 46, "section": "aero", "type": "msq", "marks": 2, "negMarks": 0,
+      "question": "The figure shows velocity triangles at inlet/outlet of the rotor of a low hub-to-tip ratio axial compressor at mid-span (C = absolute, W = relative velocity; U = blade speed = 100 m/s; height = 80 m/s). Select the CORRECT statement(s) for this device.",
+      "options": ["The axial velocity is constant across the rotor", "The flow coefficient is 0.6", "The blade loading coefficient is 0.6", "If the acoustic velocity at the rotor inlet is 350 m/s, the inlet relative Mach number is 0.333"],
+      "answer": null,
+      "explanation": "Figure-dependent (exact tangential-velocity segments from the diagram are needed) — verify against the official answer key before publishing. The single '80 m/s' height value for both triangles does suggest constant axial velocity (A) is very likely true.",
+      "needsReview": true
+    },
+    {
+      "qno": 47, "section": "aero", "type": "msq", "marks": 2, "negMarks": 0,
+      "question": "Consider flow over an oval modeled using elementary potential flows: uniform flow U plus a pair of counter-rotating irrotational line vortices (∓Γ) offset from the centerline by 'a'. Which of the following statements is/are TRUE for this model?",
+      "options": ["Increasing U enlarges the oval", "Increasing Γ enlarges the oval", "Interchanging the sense of the two vortices does not alter the oval", "Moving the vortices too far apart causes the oval to break up"],
+      "answer": null,
+      "explanation": "Niche potential-flow topology question — verify against the official answer key before publishing.",
+      "needsReview": true
+    },
+    {
+      "qno": 48, "section": "aero", "type": "msq", "marks": 2, "negMarks": 0,
+      "question": "What is/are the use(s) of the single horseshoe vortex model of finite wing aerodynamic theory?",
+      "options": ["It can approximate the wing pitching moment coefficient", "It can approximate the wing induced drag coefficient", "It can approximate the effect of the wing on the induced drag coefficient of a typical horizontal tail", "It can approximate the aerodynamic benefit/penalty of formation flight compared to isolated flight"],
+      "answer": ["B", "C", "D"],
+      "explanation": "A single horseshoe vortex gives total lift and induced-drag/downwash effects (including on a tail or a formation partner), but not a pitching-moment distribution."
+    },
+    {
+      "qno": 49, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "d²y/dx² + 2·dy/dx + y = 0, with y|x=0 = 0 and dy/dx|x=0 = 1. The value of dy/dx at x = ln(2) is ________ (rounded off to three decimal places).",
+      "answer": 0.153, "tolerance": 0.003,
+      "explanation": "Repeated root r=−1: y = x·e^(−x); y' = e^(−x)(1−x). At x=ln2: e^(−ln2)=0.5, (1−ln2)=0.3069 ⇒ y'=0.153."
+    },
+    {
+      "qno": 50, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "An object of mass 1 kg is launched with initial speed v0 into a viscous liquid; drag D = αv, α = 1 kg/s, gravity ignored. Time taken to slow to v0/2 is ________ s (rounded off to 2 decimal places).",
+      "answer": 0.69, "tolerance": 0.02,
+      "explanation": "v = v0·e^(−αt/m); v0/2 ⇒ t = m·ln2/α = ln2 = 0.69 s."
+    },
+    {
+      "qno": 51, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "The minimum value of the function f(x) = |x| + |2x+3| for real x is ________ (rounded off to 1 decimal place).",
+      "answer": 1.5, "tolerance": 0.1,
+      "explanation": "f is piecewise linear with corners at x=0 and x=−1.5; minimum occurs at x=−1.5, where f = 1.5."
+    },
+    {
+      "qno": 52, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "Isobutane (C4H10) burns completely in pure oxygen: C4H10 + 6.5 O2 → 4 CO2 + 5 H2O. Standard heats of formation (kcal/mole): isobutane −31.489, CO2 −94.052, H2O(vapour) −60.150. The heat of reaction is ________ kcal (rounded off to 2 decimal places).",
+      "answer": -645.47, "tolerance": 0.5,
+      "explanation": "ΔH = [4(−94.052)+5(−60.150)] − [−31.489+0] = −676.958 + 31.489 = −645.47 kcal."
+    },
+    {
+      "qno": 53, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "A 250 MW furnace melts and heats aluminium from 25°C to 900°C (solid cp = 0.9 kJ/kg-K, latent heat = 390 kJ/kg, liquid cp = 1.108 kJ/kg-K, melting point 660°C, furnace efficiency 70%). The amount of aluminium processed per hour is ________ kg (rounded off to 1 decimal place).",
+      "answer": 513271.4, "tolerance": 500,
+      "explanation": "Energy/kg = 0.9(635) + 390 + 1.108(240) = 1227.42 kJ/kg. Useful power = 175,000 kJ/s. Rate = 175000/1227.42 = 142.58 kg/s × 3600 ≈ 513,271.4 kg/hr."
+    },
+    {
+      "qno": 54, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "For an airfoil, the pitching moment coefficient is taken about a point 0.3c behind the leading edge, varying with CL per the given table (CL: 0.2,0.4,0.6,0.8 → Cm: −0.02,0,0.02,0.04). The distance of the aerodynamic center from the leading edge, as a fraction of chord, is ________ (rounded off to one decimal place).",
+      "answer": 0.2, "tolerance": 0.02,
+      "explanation": "dCm,ref/dCL = 0.1 = h_ref − h_ac = 0.3 − h_ac ⇒ h_ac = 0.2."
+    },
+    {
+      "qno": 55, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "An earth satellite moves in an elliptical orbit with perigee altitude 300 km and apogee altitude 3000 km (earth radius = 6378 km). The eccentricity of the orbit is __________ (rounded off to three decimal places).",
+      "answer": 0.168, "tolerance": 0.002,
+      "explanation": "rp = 6678, ra = 9378. e = (ra−rp)/(ra+rp) = 2700/16056 = 0.168."
+    },
+    {
+      "qno": 56, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "A finite wing of aspect ratio 10, span effectiveness factor 0.95, airfoil lift slope 0.106/deg, zero-lift angle of attack −1.5°. The lift coefficient at angle of attack 3.5° is ________ (rounded off to 2 decimal places).",
+      "answer": 0.44, "tolerance": 0.02,
+      "explanation": "Finite-wing slope a = a0/(1 + 57.3a0/(πeAR)) = 0.106/1.2035 = 0.0881/deg. CL = 0.0881×(3.5−(−1.5)) = 0.44."
+    },
+    {
+      "qno": 57, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "WA and WB are max take-off weights for ambient conditions A (p=1 bar, T=50°C) and B (p=0.66 bar, T=−30°C), all else equal. The ratio WB/WA is ________ (rounded off to 3 decimal places).",
+      "answer": 0.877, "tolerance": 0.01,
+      "explanation": "Max weight scales with air density (fixed CLmax/speed). ρA=1.078, ρB=0.946 kg/m³ (ideal gas, R=287 J/kgK). WB/WA = ρB/ρA = 0.877."
+    },
+    {
+      "qno": 58, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "A thin-walled circular tube has ultimate strength (tension and compression) 200 MPa, mean radius 0.2 m, wall thickness 0.004 m. Based on maximum stress criteria, the maximum torque the tube can sustain is ________ kN-m (round off to the nearest integer).",
+      "answer": 201, "tolerance": 3,
+      "explanation": "Pure torsion gives principal stresses ±τ; τ_max = 200 MPa. τ = T/(2·Am·t), Am = πr² = 0.1257 m². T = τ·2·Am·t ≈ 201 kN·m."
+    },
+    {
+      "qno": 59, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "A bar (negligible mass, E=200 GPa, A=100 mm², L=100 mm) is in series with a spring (k=200 kN/mm) and mass M=100 kg. The natural frequency of free vibration is ________ rad/s (rounded off to the nearest integer).",
+      "answer": 1000, "tolerance": 15,
+      "explanation": "k_bar = EA/L = 2×10⁸ N/m; k_spring = 2×10⁸ N/m (series). k_eff = (k_bar·k_spring)/(k_bar+k_spring) = 1×10⁸ N/m. ωn = √(k_eff/M) = 1000 rad/s."
+    },
+    {
+      "qno": 60, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "A stepped cantilever beam (E=200 GPa) has segment A–B: L1=100 mm, I1=100 mm⁴; segment B–C: L2=100 mm, I2=700 mm⁴ (C fixed). A shear force P=30 N acts at A. The deflection at A is ________ mm (rounded off to 1 decimal place).",
+      "answer": 1.0, "tolerance": 0.1,
+      "explanation": "δ_A = (P/E)∫x²/I(x)dx over both segments = (30/200000)×6666.7 ≈ 1.0 mm."
+    },
+    {
+      "qno": 61, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "A centrifugal compressor has a constant-width radial diffuser; diameters at inlet/outlet are 0.2 m and 0.3 m. Average velocities are (60êr+75êθ) m/s at inlet and (u·êr+50êθ) m/s at outlet. Treating flow as steady and incompressible, the value of u is ________ (rounded off to the nearest integer).",
+      "answer": 40, "tolerance": 1,
+      "explanation": "Continuity (constant width, incompressible): r·Cr = const. 0.1×60 = 0.15×u ⇒ u = 40."
+    },
+    {
+      "qno": 62, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "A gas mixture at 800 kPa and density 5 kg/m³ enters a turbine stage. Nozzle exit temperature 790 K, stage exit temperature 750 K. cp = 0.72 kJ/kg-K, γ = 1.33. The degree of reaction of the turbine stage is ________ (rounded off to 2 decimal places).",
+      "answer": 0.27, "tolerance": 0.03,
+      "explanation": "R_gas = cp(γ−1)/γ = 178.6 J/kgK. T1 = p/(ρR) = 895.7 K. R = (T2−T3)/(T1−T3) = (790−750)/(895.7−750) = 0.27."
+    },
+    {
+      "qno": 63, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "Thin airfoil theory predicts the zero-lift angle of attack αL=0 of NACA 2412 as −2.1°. The corresponding prediction for NACA 5410 is ________ degrees (rounded off to 1 decimal place).",
+      "answer": -5.3, "tolerance": 0.3,
+      "explanation": "Both airfoils share max-camber position (40% chord); αL=0 scales linearly with camber magnitude. Scale factor 5/2 = 2.5 ⇒ −2.1×2.5 = −5.3°."
+    },
+    {
+      "qno": 64, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "A centered Prandtl-Meyer expansion fan turns a Mach 1.78 flow through θ=4°. Using the Prandtl-Meyer table, the angle ψ made by the ending wave with respect to the incoming stream is ________ degrees (rounded off to 1 decimal place).",
+      "answer": 27.4, "tolerance": 1.5,
+      "explanation": "ν(M1)=20.15°; ν(M2)=20.15+4=24.15° ⇒ M2=1.92 (exact table match). μ2=asin(1/1.92)=31.4°. ψ = μ2 − θ = 27.4°.",
+      "needsReview": true
+    },
+    {
+      "qno": 65, "section": "aero", "type": "nat", "marks": 2, "negMarks": 0,
+      "question": "A Mach 1.5 airflow enters a round duct of length 20 cm, diameter 3 cm, exiting at Mach 1.1. Using the Fanno flow table, the average Fanning friction factor f of the duct is ________ × 10⁻³ (rounded off to 1 decimal place).",
+      "answer": 4.7, "tolerance": 0.3,
+      "explanation": "Δ(4fL*/D) = (1361−99.35)×10⁻⁴ = 0.1262 = 4f(0.2)/(0.03) ⇒ f ≈ 4.7×10⁻³."
+    }
+  ]
+}

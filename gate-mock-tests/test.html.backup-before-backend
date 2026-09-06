@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+GATE AE Mock Test — Indian Aeronautics
+</title>
+
+<link
+  rel="stylesheet"
+  href="assets/style.css"
+>
+
+<link
+  rel="stylesheet"
+  href="../css/exam.css"
+>
+
+</head>
+
+
+<body>
+
+<div id="exam-root">
+  <div class="exam-loading">Preparing your test&hellip;</div>
+</div>
+
+<script src="assets/catalog.js"></script>
+<script src="../js/auth.js"></script>
+
+<script>
+  const IA_EXAM_FAMILY = "GATE";
+</script>
+
+<script src="../js/test-engine.js"></script>
+
+</body>
+</html>
