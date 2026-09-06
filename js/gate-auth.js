@@ -5,7 +5,7 @@
 
 const IA_SESSION_KEY = "ia_gate_session_v1";
 
-const IA_AUTH_URL = "/api/gate";
+const IA_AUTH_URL = "https://script.google.com/macros/s/AKfycbwZvpZ9gxUfDFEZZTI5yOV37somFnqY-n91XNvLU9ZLGyLX3aJY2CbNKpr3Mfvd-yk/exec";
 
 
 /* =========================================================
@@ -523,6 +523,7 @@ function iaLogout() {
     "index.html";
 
 }
+
 
 
 
